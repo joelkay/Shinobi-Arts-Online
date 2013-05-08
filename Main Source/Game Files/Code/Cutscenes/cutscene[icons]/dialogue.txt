@@ -1,0 +1,41 @@
+Nurse: Hi there, are you ok?
+
+You: ...ermm .. yeah I'm fine.. (choice 1) 
+	Arrgh.. what happened? (choice 2)
+
+IF PLAYER SELECTED CHOICE 1:
+Nurse: Alright then, be safe.
+/no cutscene
+
+IF PLYER SELECTED CHOICE 2:
+Nurse: You don't remember? You were knocked out cold and some Jounins brought you here.
+*2-3 second pause*   *screen slowly fades black* (code this stuff in)
+
+cutscene starts.....
+
+Player walks through field..
+
+You: Man I'm sick of this Stupid D-rank search missions...
+
+*walk closer near a tree*
+
+You: Here kitty kitty....
+
+*2 second pause*
+
+You:hmm?
+
+*3 sound nin run accross the map right infront of the player*
+
+You: ............ (confused)
+
+1-2 second pause
+
+*iruka and kakashi run across the map also*
+
+Kakashi: We better hurry or we'll loose em.
+
+Iruka: Right.
+
+*once kakashi and iruka is out of the map, the player began to follow them.*
+

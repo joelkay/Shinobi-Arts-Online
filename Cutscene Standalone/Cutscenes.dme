@@ -1,0 +1,53 @@
+// DM Environment file for puppet.dme.
+// All manual changes should be made outside the BEGIN_ and END_ blocks.
+// New source code should be placed in .dm files: choose File/New --> Code File.
+
+// BEGIN_INTERNALS
+// END_INTERNALS
+
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+#define FILE_DIR "cutscene[icons]"
+#define FILE_DIR "map_Maps"
+#define FILE_DIR "map_Maps/web"
+#define FILE_DIR "music"
+#define FILE_DIR "Swap Maps Handling"
+#define FILE_DIR "z-DEPENDENCIES"
+#define FILE_DIR "z-DEPENDENCIES/[Map Maker]"
+#define FILE_DIR "z-DEPENDENCIES/[Map Maker]/Build Icons"
+#define FILE_DIR "z-DEPENDENCIES/[Map Maker]/Build Icons/added"
+#define FILE_DIR "z-DEPENDENCIES/[Map Maker]/Build Icons/added/trees and stuff"
+// END_FILE_DIR
+
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+
+// BEGIN_INCLUDE
+#include <forum_account\visibilitygroups\visibility-groups.dme>
+#include <lummoxjr\swapmaps\SwapMaps.dme>
+#include "cutscene specific proc use\attack and damage procs\Dec procs.dm"
+#include "handling\popups.dm"
+#include "handling\transitions.dm"
+#include "scenes\scenes.dm"
+#include "scenes\scenes2.dm"
+#include "scenes\scenes3.dm"
+#include "scenes\scenes4.dm"
+#include "scenes\tutorial 2.dm"
+#include "scenes\zcompletescenes.dm"
+#include "Swap Maps Handling\cover map.dm"
+#include "Swap Maps Handling\Map Handler.dm"
+#include "z-DEPENDENCIES\MAIN.dm"
+#include "z-DEPENDENCIES\Skin.dmf"
+#include "z-DEPENDENCIES\[Map Maker]\Map Build.dm"
+#include "z-DEPENDENCIES\[Map Maker]\Map I-Build.dm"
+#include "z-DEPENDENCIES\[Map Maker]\Build Icons\Obj Codes\FLOORING.dm"
+#include "z-DEPENDENCIES\[Map Maker]\Build Icons\Obj Codes\HIDEOUT32.dm"
+#include "z-DEPENDENCIES\[Map Maker]\Build Icons\Obj Codes\MOUNTAINS32.dm"
+#include "z-DEPENDENCIES\[Map Maker]\Build Icons\Obj Codes\SNOW.dm"
+#include "z-DEPENDENCIES\[Map Maker]\Build Icons\Obj Codes\TREESNEW.dm"
+#include "z-DEPENDENCIES\concrete\dependencies.dm"
+#include "z-DEPENDENCIES\concrete\more dependency.dm"
+#include "z-DEPENDENCIES\concrete\resolution.dm"
+#include "z-DEPENDENCIES\concrete\SmoothMove.dm"
+// END_INCLUDE
+
