@@ -1,23 +1,23 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: Build Icons\added\autocoder\autocoder.dm;Code\Build Turfs.dm;Code\SAO Build(Game).dm
-PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild_rsc.zip
+WINDOW: Build Icons\added\autocoder\autocoder.dm;Code\Build Turfs.dm;Code\SAO Build(Game).dm;SAOBUILD.dmf;Code\SAO I-Build.dm;Code\Load and Save.dm
 LAST_COMPILE_VERSION: 499.1183
+PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild_rsc.zip
 PACKAGE_DME_DEMO: 
 PACKAGE_DME_CLEANCHECK: OFF
-PACKAGE_RSC_CLEANCHECK: OFF
-PACKAGE_DMB_HUB: 
 PACKAGE_TYPE: 0
+PACKAGE_DMB_HUB: 
+PACKAGE_RSC_CLEANCHECK: OFF
 PACKAGE_DMB_CLEANCHECK: OFF
 PACKAGE_DME_START: 
-DIR: Build Icons Build Icons\added Build Icons\added\autocoder Code 
+DIR: Code 
 PACKAGE_DME_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild_src.zip
-FILE: Code\SAO Build(Game).dm
+FILE: Code\Load and Save.dm
 PACKAGE_DME_INFO: 
+LAST_COMPILE_TIME: 1368137002
 PACKAGE_DMB_NAME: C:\Users\Joelie\Dropbox\Public\SAO\SAOBuild.zip
-LAST_COMPILE_TIME: 1368116256
-PACKAGE_DMB_INFO: map_Maps/
 AUTO_FILE_DIR: ON
+PACKAGE_DMB_INFO: map_Maps/
 */
 // END_INTERNALS

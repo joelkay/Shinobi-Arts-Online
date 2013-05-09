@@ -1,6 +1,7 @@
 mob
 	var/tmp/list/followers=list()
 	var/tmp/mapmode=1
+	var/showlist=1//default to enable it
 	verb
 		load()
 			set hidden=1
@@ -216,6 +217,7 @@ body
 				html += "</center>"
 			else
 				html+="<center>No maps in the folder!</center>"
+
 			src<<browse(html,"window=savefilelist;can_close=1;can_minimize=0;can_resize=0")
 
 
@@ -225,5 +227,45 @@ body
 			src.icon = arg
 
 
+
+		LoadListMaps()
+			set hidden = 1
+			if(!showlist)
+				winset(src,null,{"
+				loadlist.is-visible = "false";
+				loadlist2.is-visible = "false";
+				"})
+				showlist=1
+				return
+
+			else
+				showlist=0
+				winset(src,null,{"
+				loadlist.is-visible = "true";
+				loadlist2.is-visible = "true";
+				"})
+
+
+			var/html = {"
+<html>
+<style type="text/css">
+body
+{
+	background-color: #000000;
+	color: #ffffff;
+}
+</style>"}
+			var/filelist = flist("map_Maps/")
+			if(length(filelist) != 0)
+				html+="<font size = 6><font color=green><center>Maps</center></font><font size = 5><br>"
+				html += "<center>"
+				for(var/m in filelist)
+					html+= m
+					html+="<br>"
+				html += "</center>"
+			else
+				html+="<center>No maps in the folder!</center>"
+
+			src<<browse(html,"window=loadlist;can_close=1;can_minimize=0;can_resize=0")
 
 

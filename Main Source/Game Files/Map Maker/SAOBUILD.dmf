@@ -1151,6 +1151,86 @@ window "load"
 		macro = ""
 		menu = ""
 		on-close = ""
+	elem "loadlist2"
+		type = LABEL
+		pos = 8,200
+		size = 112x72
+		anchor1 = 2,56
+		anchor2 = 32,76
+		font-family = ""
+		font-size = 0
+		font-style = "bold"
+		text-color = #000000
+		background-color = #bb944a
+		is-visible = false
+		is-disabled = false
+		is-transparent = true
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "When loading a map, dont enter the .txt extension. Only type the name. E.g: warmap"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = true
+	elem "button4"
+		type = BUTTON
+		pos = 280,46
+		size = 95x26
+		anchor1 = 74,13
+		anchor2 = 100,20
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #303030
+		background-color = #a9843f
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = "is-checked"
+		on-size = ""
+		text = "List Maps"
+		image = ""
+		command = "LoadListMaps"
+		is-flat = false
+		stretch = false
+		is-checked = false
+		group = ""
+		button-type = pushbutton
+	elem "loadlist"
+		type = BROWSER
+		pos = 168,72
+		size = 208x280
+		anchor1 = 45,20
+		anchor2 = 100,98
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = #a9843f
+		is-visible = false
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		show-history = false
+		show-url = false
+		auto-format = true
+		use-title = false
+		on-show = ""
+		on-hide = ""
 	elem "button5"
 		type = BUTTON
 		pos = 8,328
@@ -1207,10 +1287,10 @@ window "load"
 		text-wrap = false
 	elem "label1"
 		type = LABEL
-		pos = 27,112
+		pos = 16,104
 		size = 101x21
-		anchor1 = 7,31
-		anchor2 = 33,37
+		anchor1 = 4,29
+		anchor2 = 31,35
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -1233,10 +1313,10 @@ window "load"
 		text-wrap = false
 	elem "buttontemp"
 		type = BUTTON
-		pos = 128,112
+		pos = 24,120
 		size = 85x16
-		anchor1 = 34,31
-		anchor2 = 57,36
+		anchor1 = 6,33
+		anchor2 = 29,38
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -1261,10 +1341,10 @@ window "load"
 		button-type = pushbutton
 	elem "button39"
 		type = BUTTON
-		pos = 32,176
+		pos = 15,160
 		size = 95x26
-		anchor1 = 9,49
-		anchor2 = 34,56
+		anchor1 = 4,44
+		anchor2 = 29,52
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -1289,10 +1369,10 @@ window "load"
 		button-type = pushbutton
 	elem "button8"
 		type = BUTTON
-		pos = 33,88
+		pos = 16,72
 		size = 95x24
-		anchor1 = 9,24
-		anchor2 = 34,31
+		anchor1 = 4,20
+		anchor2 = 30,27
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -1317,10 +1397,10 @@ window "load"
 		button-type = pushbutton
 	elem "label3"
 		type = LABEL
-		pos = 112,28
+		pos = 120,0
 		size = 135x20
-		anchor1 = 30,8
-		anchor2 = 66,13
+		anchor1 = 32,0
+		anchor2 = 68,6
 		font-family = ""
 		font-size = 0
 		font-style = "bold"
