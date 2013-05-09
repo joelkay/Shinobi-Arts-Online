@@ -2,6 +2,17 @@ world
 	hub="JeanSqribe.ShinobiArtsOnlineBuild"
 
 buildable
+	DEFAULT
+		denseobj
+			name = "dense"
+			icon ='denseobj.dmi'
+			icon_state ="default"//visible state
+			build=/buildable/DEFAULT/denseobj
+			density=1
+
+
+
+buildable
 	parent_type = /obj
 	var/build
 	var/clicked

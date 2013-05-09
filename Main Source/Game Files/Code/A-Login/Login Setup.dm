@@ -47,7 +47,7 @@ mob
 			"})
 			src.slotmode="create"
 			setup()
-			if(!fromdelete)previews()
+			previews()
 
 
 		Loadchars()
@@ -61,7 +61,7 @@ mob
 			"})
 			src.slotmode="load"
 			setup()
-			if(!fromdelete)previews()
+			previews()
 
 
 
@@ -76,7 +76,7 @@ mob
 			"})
 			src.slotmode="delete"
 			setup()
-			if(!fromdelete)previews()
+			previews()
 
 
 

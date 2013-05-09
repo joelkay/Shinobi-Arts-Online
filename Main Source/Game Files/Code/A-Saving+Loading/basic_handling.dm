@@ -12,11 +12,15 @@ mob
 
 
 var/list/Ghosts = list()
-
+var/cansave=1
 proc
 	Save_Mob(mob/M,var/num=0)
 		set background=1
 		if(!M.client)return
+
+		if(!cansave)
+			if(debug)world<<"This character can not save."
+			return
 
 		M.totaltime+=M.logintime//update it
 

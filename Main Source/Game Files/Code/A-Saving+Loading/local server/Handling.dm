@@ -38,40 +38,55 @@ mob
 			if(x==1)
 				var/confirmDelete=input("Are you sure you want to delete \'[src.slot1char]\'?","Login > Delete > [src.slot1char]")in list("Yes","No")
 				if(confirmDelete == "Yes")
-					if(fdel("Savefiles/[src.key]/1/"))
-						//nameslist.Remove(src.slot1char)
-						for(var/mob/M in src.previews)
-							if(M.name==src.slot1char)
-								del(M)
-						winset(src,null,{"
-						Login.button25.text = "Empty";
-						default.menu= null
-						"})
-						Apopup(src,"\'[src.slot1char]\' has been succesfully deleted..")
-						src.slot1char=null
-						var/savefile/F=new("Savefiles/[src.key]/previews/settings.sav")
-						F["slot1char"]<<src.slot1char
-						winset(src,"previewscreen1","image=''");
+					if(Delete(src,src.slot1char,1))//sends a query to delete the user from the db
+						if(fdel("Savefiles/[src.key]/1/"))
+							var/oldchar=src.slot1char
+							src.slot1char=null
+							var/savefile/F=new("Savefiles/[src.key]/previews/settings.sav")
+							F["slot1char"]<<src.slot1char
 
+							for(var/mob/M in src.previews)
+								if(M.name==src.slot1char)
+									del(M)
+							winset(src,null,{"
+							Login.button25.text = "Empty";
+							default.menu= null
+							"})
+							winset(src,"previewscreen1","image=''");
+							Apopup(src,"\'[oldchar]\' has been succesfully deleted..")
+
+
+
+
+					else
+						Apopup(src,"Error no connection to the server..")
 
 
 
 			if(x==2)
 				var/confirmDelete=input("Are you sure you want to delete \'[src.slot2char]\'?","Login > Delete > [src.slot2char]")in list("Yes","No")
 				if(confirmDelete == "Yes")
-					if(fdel("Savefiles/[src.key]/2/"))//
-						for(var/mob/M in src.previews)
-							if(M.name==src.slot2char)
-								del(M)
-						winset(src,null,{"
-						Login.button26.text = "Empty";
-						default.menu= null
-						"})
-						Apopup(src,"\'[src.slot2char]\' has been succesfully deleted..")
-						src.slot2char=null
-						var/savefile/F=new("Savefiles/[src.key]/previews/settings.sav")
-						F["slot2char"]<<src.slot2char
-						winset(src,"previewscreen2","image=''");
+					if(Delete(src,src.slot2char,2))
+						if(fdel("Savefiles/[src.key]/2/"))//
+							var/oldchar=src.slot2char
+							src.slot2char=null
+							var/savefile/F=new("Savefiles/[src.key]/previews/settings.sav")
+							F["slot2char"]<<src.slot2char
+
+							for(var/mob/M in src.previews)
+								if(M.name==src.slot2char)
+									del(M)
+							winset(src,null,{"
+							Login.button26.text = "Empty";
+							default.menu= null
+							"})
+							winset(src,"previewscreen2","image=''");
+							Apopup(src,"\'[oldchar]\' has been succesfully deleted..")
+
+
+
+					else
+						Apopup(src,"Error no connection to the server..")
 
 
 
@@ -79,22 +94,31 @@ mob
 			if(x==3)
 				var/confirmDelete=input("Are you sure you want to delete \'[src.slot3char]\'?","Login > Delete > [src.slot3char]")in list("Yes","No")
 				if(confirmDelete == "Yes")
-					if(fdel("Savefiles/[src.key]/3/"))
-						for(var/mob/M in src.previews)
-							if(M.name==src.slot3char)
-								del(M)
-						winset(src,null,{"
-						Login.button27.text = "Empty";
-						default.menu= null
-						"})
-						Apopup(src,"\'[src.slot3char]\' has been succesfully deleted..")
-						src.slot3char=null
-						var/savefile/F=new("Savefiles/[src.key]/previews/settings.sav")
-						F["slot3char"]<<src.slot3char
-						winset(src,"previewscreen3","image=''");
+					if(Delete(src,src.slot3char,3))
+						if(fdel("Savefiles/[src.key]/3/"))
+							var/oldchar=src.slot3char
+							src.slot3char=null
+							var/savefile/F=new("Savefiles/[src.key]/previews/settings.sav")
+							F["slot3char"]<<src.slot3char
 
-			spawn() previews()
-			fromdelete=1
+							for(var/mob/M in src.previews)
+								if(M.name==src.slot3char)
+									del(M)
+							winset(src,null,{"
+							Login.button27.text = "Empty";
+							default.menu= null
+							"})
+							winset(src,"previewscreen3","image=''");
+							Apopup(src,"\'[oldchar]\' has been succesfully deleted..")
+
+
+
+					else
+						Apopup(src,"Error no connection to the server..")
+
+
+
+
 
 
 
@@ -123,8 +147,6 @@ mob
 			default.main.left = "map";
 			default.belowchatchild.left = "belowchat";
 			default.cpanel-button.command="Cpanel";
-			default.xlog.text = "Logout";
-			default.xlog.command = "ExiT";
 			default.xlog.background-color = "green";
 			default.menu= null
 			"})

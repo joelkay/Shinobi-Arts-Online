@@ -423,16 +423,19 @@ proc
 					for(var/D in row_data)
 						switch(D)
 							if("slot1char")
-								M.slot1char=row_data[D]
-								if(debug) M<<"slot1char: [row_data[D]]"
+								if(row_data[D]!="NULL")
+									M.slot1char=row_data[D]
+									if(debug) M<<"slot1char: [row_data[D]]"
 
 							if("slot2char")
-								M.slot2char=row_data[D]
-								if(debug) M<<"slot2char: [row_data[D]]"
+								if(row_data[D]!="NULL")
+									M.slot2char=row_data[D]
+									if(debug) M<<"slot2char: [row_data[D]]"
 
 							if("slot3char")
-								M.slot3char=row_data[D]
-								if(debug) M<<"slot3char: [row_data[D]]"
+								if(row_data[D]!="NULL")
+									M.slot3char=row_data[D]
+									if(debug) M<<"slot3char: [row_data[D]]"
 				return 1//success
 
 			else

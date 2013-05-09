@@ -36,12 +36,6 @@ buildable
 			icon ='grass.dmi'
 			build=/buildable/DEFAULT/grass
 
-		denseobj
-			name = "dense"
-			icon ='denseobj.dmi'
-			build=/buildable/DEFAULT/denseobj
-			density=1
-
 
 //SOUND SET
 	HIDEOUT

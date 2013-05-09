@@ -212,6 +212,7 @@ mob/proc/Sqlupdate(var/ex,var/wy,var/zd)
 	set background=1
 
 	CheckTime(src)
+	cansave=1//reset this for non corrupt saves.
 
 	if(src.sqlversion)//if connected and retrieved info
 		if(timesaved>sqlversion)//if nothing really happened. carry on with the local file
@@ -226,8 +227,17 @@ mob/proc/Sqlupdate(var/ex,var/wy,var/zd)
 
 
 	else//no connection, just let them carry on
-		alert(src,"Warning, failed connection to server, your savefile will not be uploaded when you save.")
-		if(last_x)Move(locate(last_x, last_y, last_z)) // locates you to your last map location
+		alert(src,"Warning, failed connection to server, If you choose to play this savefile locally it will not be able to upload to the server.")
+		var/confirmResolve=input("The savefile :[src.name], will be saved only to this server if you play it locally, Continue?","Offline Mode:[src.name]")in list("Yes","No")
+		if(confirmResolve == "Yes")
+			if(last_x)Move(locate(last_x, last_y, last_z)) // locates you to your last map location
+			cansql=0
+			gitx=1//corrupted file, dont generate new hashes for them anymore?
+			Save_Mob(src,1)//save the fact its corrupt to the local server
+
+		if(confirmResolve == "No")
+			alert(src,"This character has been put into preview mode It will not save online or offline")
+			cansave=0
 
 /*
 mob
