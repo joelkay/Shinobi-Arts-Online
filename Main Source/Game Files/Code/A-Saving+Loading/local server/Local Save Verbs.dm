@@ -16,25 +16,8 @@ mob
 
 
 
-mob/Owner
+mob/Host
 	verb
-		Host_Data_Server()
-			set category = "Saves"
-			if(!world.port)
-				var/portnumber = input("Host Data server on what port?") as num|null
-				world.OpenPort(portnumber)
-				src<<"Data server now hosting on [world.port]</font>."
-			else
-				src<<"<font color = red>Data server is already hosting on port [world.port]!</font>."
-
-		Stop_Hosting_Data_Server()
-			set category = "Saves"
-			if(world.port)
-				world.OpenPort("none")
-				src<<"Data server has stopped hosting."
-			else
-				src<<"<font color = red>Data server is already not hosting!</font>."
-
 		Delete_Savefile()
 			set category = "Saves"
 			var/filelist = flist("Savefiles/")
@@ -114,6 +97,32 @@ body
 					src<<"\[[time2text(,"Month DD, YYYY hh:mm:ss")]\] All backup files have been loaded!."
 				else
 					return
+
+
+
+
+mob/Owner
+	verb
+		Host_Data_Server()
+			set category = "Saves"
+			if(!world.port)
+				var/portnumber = input("Host Data server on what port?") as num|null
+				world.OpenPort(portnumber)
+				src<<"Data server now hosting on [world.port]</font>."
+			else
+				src<<"<font color = red>Data server is already hosting on port [world.port]!</font>."
+
+		Stop_Hosting_Data_Server()
+			set category = "Saves"
+			if(world.port)
+				world.OpenPort("none")
+				src<<"Data server has stopped hosting."
+			else
+				src<<"<font color = red>Data server is already not hosting!</font>."
+
+
+
+
 		De_Bug_Saves()
 			set category= "Saves"
 			if(!debugmode)
