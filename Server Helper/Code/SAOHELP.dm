@@ -7,7 +7,7 @@ world
 	loop_checks = 1 //dont ever touch this <-lol -.- they were right T_T
 
 
-var/list/Allowed = list("Rapmaster","Sasuke9109","Danny112")
+var/list/Allowed = list("Rapmaster","Jean Sqribe","Tayuya1")
 
 ///////////SAO Admins/////////////////
 var/debugmode=0//to find bugs.
@@ -29,12 +29,11 @@ mob
 				//if(M == src) continue
 				//M << "\[[time2text(,"Month DD, YYYY hh:mm:ss")]\] [src.key] Has logged into data Server"
 
-			src<<"<center><font size = 3><font color = blue><b>Welcome to The Server Helper!</b></font></font></center>"
+			src<<"<center><font size = 3><font color = blue><b>Welcome to The Server Helper: [src.name]!</b></font></font></center>"
 
 
-/*
+
 		else
 			src<<"<center>Unauthorised access</center>"
 			sleep(20)
 			del (src)
-*/
