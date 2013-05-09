@@ -1,23 +1,23 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: Code\Load and Save.dm;Code\Swap Maps Handling\cover map.dm
-LAST_COMPILE_VERSION: 499.1182
+WINDOW: Build Icons\added\autocoder\autocoder.dm
 PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild_rsc.zip
+LAST_COMPILE_VERSION: 499.1182
 PACKAGE_DME_DEMO: 
 PACKAGE_DME_CLEANCHECK: OFF
-PACKAGE_TYPE: 0
-PACKAGE_DMB_HUB: 
 PACKAGE_RSC_CLEANCHECK: OFF
+PACKAGE_DMB_HUB: 
+PACKAGE_TYPE: 0
 PACKAGE_DMB_CLEANCHECK: OFF
 PACKAGE_DME_START: 
-DIR: Code Code\Swap Maps Handling 
+DIR: Build Icons\added\autocoder Code 
 PACKAGE_DME_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild_src.zip
-FILE: Code\Swap Maps Handling\cover map.dm
+FILE: Build Icons\added\autocoder\autocoder.dm
 PACKAGE_DME_INFO: 
-LAST_COMPILE_TIME: 1368061112
 PACKAGE_DMB_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild.zip
-AUTO_FILE_DIR: ON
+LAST_COMPILE_TIME: 1368063483
 PACKAGE_DMB_INFO: 
+AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

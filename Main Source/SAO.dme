@@ -287,7 +287,7 @@
 #include "Game Files\Map Maker\Build Icons\Obj Codes\MOUNTAINS32.dm"
 #include "Game Files\Map Maker\Build Icons\Obj Codes\SNOW.dm"
 #include "Game Files\Map Maker\Build Icons\Obj Codes\TREESNEW.dm"
-#include "Game Files\Map Maker\Code\SAO Build.dm"
+#include "Game Files\Map Maker\Code\SAO Build(Game).dm"
 #include "Game Files\Map Maker\Code\SAO I-Build.dm"
 #include "Game Files\SharedLibraries\flaticon.dm"
 #include "Game Files\Skin\grid.dm"

@@ -31,7 +31,7 @@
 #include "Code\Load and Save.dm"
 #include "Code\Login.dm"
 #include "Code\MapView.dm"
-#include "Code\SAO Build.dm"
+#include "Code\SAO Build(Map Maker).dm"
 #include "Code\SAO I-Build.dm"
 #include "Code\SmoothMove.dm"
 #include "Code\Turf click.dm"
