@@ -3,7 +3,6 @@
 MAP_ICON_TYPE: 0
 WINDOW: z-DEPENDENCIES\MAIN.dm;cutscene[icons]\iruka.dmi;scenes\tutorial scene.dm;scenes\tutorial 2.dm
 LAST_COMPILE_VERSION: 499.1182
-DIR: cutscene[icons] scenes z-DEPENDENCIES z-DEPENDENCIES\concrete 
 FILE: scenes\tutorial 2.dm
 LAST_COMPILE_TIME: 1367959299
 AUTO_FILE_DIR: ON

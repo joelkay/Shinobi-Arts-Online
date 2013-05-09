@@ -1,7 +1,7 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: Code\Load and Save.dm
+WINDOW: Code\Load and Save.dm;Code\Swap Maps Handling\cover map.dm
 LAST_COMPILE_VERSION: 499.1182
 PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild_rsc.zip
 PACKAGE_DME_DEMO: 
@@ -11,11 +11,11 @@ PACKAGE_DMB_HUB:
 PACKAGE_RSC_CLEANCHECK: OFF
 PACKAGE_DMB_CLEANCHECK: OFF
 PACKAGE_DME_START: 
-DIR: Code Code\Player Houses 
+DIR: Code Code\Swap Maps Handling 
 PACKAGE_DME_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild_src.zip
-FILE: Code\Load and Save.dm
+FILE: Code\Swap Maps Handling\cover map.dm
 PACKAGE_DME_INFO: 
-LAST_COMPILE_TIME: 1367971328
+LAST_COMPILE_TIME: 1368061112
 PACKAGE_DMB_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild.zip
 AUTO_FILE_DIR: ON
 PACKAGE_DMB_INFO: 
