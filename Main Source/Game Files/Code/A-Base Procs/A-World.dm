@@ -23,14 +23,27 @@ world
 	Reboot()
 		..()
 
+
+
 world
 	New()
 		..()
 		world.name = "Shinobi Arts Online"
-		world.status = {"<font color="blue"><b>Hosted by:[HostMSG],Version:[version_display]</b></font>"}
+		world.statusupdate()
 		spawn()
 			econom()
 			autoreeb()
+
+
+
+	proc
+		statusupdate()
+			var/bool="No"//to show if the server accepts multikey
+			if(multi_ip)bool="Yes"
+			if(HostMSG=="SAO Cloud")
+				world.status = {"<font color="blue"><b>Hosted by:[HostMSG],Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</b></font>"}
+			else
+				world.status = {"<font color="blue">Hosted by:[HostMSG],Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</font>"}
 
 ///HOST VARZ///
 
@@ -42,7 +55,7 @@ var						//-- Universal Variables
 	tmp/list/Guys =list()			//-- Number of Players	(Default = 0.)
 	tmp/People
 	Open = 1			//-- Server is Open		(1 = Yes, 0 = No)			//-- Cuss Filters		(1 = On, 0 = Off)
-	maxpeeps = 20		//-- Maximum Players	(Default = 20 players.)
+	maxpeeps = 50		//-- Maximum Players	(Default = 20 players.)
 	gonnadie = 0
 var/list/SOS = list("") //-- SOS List
 

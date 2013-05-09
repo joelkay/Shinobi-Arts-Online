@@ -24,6 +24,7 @@ mob/proc/InitiateHost()
 
 
 mob/Host/verb
+	/*
 	MySQL_Server()
 		set category = "Host"
 		set name = "MySQL_Server"
@@ -34,7 +35,7 @@ mob/Host/verb
 		else
 			Apopup(src,"The server adress has already been configured : Remote Server!")
 
-
+	*/ // dont need this anymore now
 	Shutdown_Server()
 		set category = "Host"
 		set name = "Shutdown Server"
@@ -79,8 +80,10 @@ mob/Host/verb
 		set category="Host"
 		set name = "Configure Server"
 		set desc = "Allows you to change the server's settings."
-		var/list/options = list("Change World Name","Change Host Name","Set Player Limit","Open/Lock Server","Configure Auto-Save Time","Turn on Same Compulter Multi-Ip")//,"Change Server Password")
+		var/list/options = list("Change Host Name","Set Player Limit","Open/Lock Server","Turn on Same Compulter Multi-Ip")//,"Change Server Password")
 		switch(input("What limits would you like to configure?","Configure Server") as null|anything in options)
+			/* //disabled for now
+
 			if("Change World Name")
 				var/name = input("What would you like to set the world's name to?","Configure Server","[world.name]") as null|text
 				if(!name)
@@ -88,34 +91,45 @@ mob/Host/verb
 				else
 					world.name = name
 
+			*/
 			if("Change Host Name")
 				var/name = input("What would you like to set the host's name to? Note that this does not change who is hosting.","Configure Server","[HostMSG]") as null|text
+				if(name=="SAO Cloud")// Copyright (c)
+					alert("This name is restricted for the official servers, choose another")
+					return
 				if(!name)
 					return 0
 				else
 					HostMSG = name
+					world.statusupdate()
 
 			if("Set Player Limit")
 				var/n = input(src,"What would you like to set the maximum number of connections to?","Configure Server",maxpeeps) as null|num
 				if(n == null)
 					return 0
-				if(n >= 999999)
-					n = 999999
-				if(People > n)
+				if(n >= 100)
+					n = 100
+				if(players.len > n)
 					alert(src,"There are too many players connected at the moment to adjust this setting.","Configure Server")
 					return 0
 				maxpeeps = n
 				world<<"<font color=#FFFFC0>The maximum number of connections has been set to [maxpeeps] people. currently [players.len] people are logged in.."
+				world.statusupdate()
+
+
 			if("Open/Lock Server")
 				switch(alert("Would you like to open or lock the server?","Configure Server","Open","Lock","Cancel"))
 					if("Open")
 						Open=1
 						world<<"<font color=#FFFFC0>The server is now accepting new connections.."
+						world.statusupdate()
 					if("Lock")
 						Open=0
 						world<<"<font color=#FFFFC0>The server is no longer accepting new connections.."
+						world.statusupdate()
 					if("Cancel")
 						return 0
+			/*
 			if("Configure Auto-Save Time")
 				switch(alert("You are about to change auto save time for this server?","Continue","Yes","No"))
 					if("Yes")
@@ -131,15 +145,17 @@ mob/Host/verb
 							src<<"World save time has been changed to every [time] minutes."
 					if("No")
 						return 0
-
+			*/ //already autosaves on logout now
 
 			if("Turn on Same Compulter Multi-Ip")
 				if(!multi_ip)
 					multi_ip=1
 					world<<"<font color=#FFFFC0>The server is now accepting same computer multi connections.."
+					world.statusupdate()
 				else
 					multi_ip=0
 					world<<"<font color=#FFFFC0>The server is no longer accepting same computer multi connections.."
+					world.statusupdate()
 
 
 

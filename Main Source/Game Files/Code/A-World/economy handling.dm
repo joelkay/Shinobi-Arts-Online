@@ -15,6 +15,7 @@ proc
 		set background=1
 		while(1)
 			sleep(LAGDELAY)
+			world.statusupdate()//update world stats
 			if(Leafeconomp>=50)
 				Leafeconomp=50
 			if(Leafeconomm<=-50)

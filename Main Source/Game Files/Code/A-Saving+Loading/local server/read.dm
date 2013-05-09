@@ -226,8 +226,8 @@ mob/proc/Sqlupdate(var/ex,var/wy,var/zd)
 
 
 
-	else//no connection, just let them carry on
-		alert(src,"Warning, failed connection to server, If you choose to play this savefile locally it will not be able to upload to the server.")
+	else//no connection or no savefile on the server? just let them carry on with local saves if they wna play offline.
+		alert(src,"Warning, we couldnt grab your savefile from the server, If you choose to play this savefile locally it will not be able to upload to the server.")
 		var/confirmResolve=input("The savefile :[src.name], will be saved only to this server if you play it locally, Continue?","Offline Mode:[src.name]")in list("Yes","No")
 		if(confirmResolve == "Yes")
 			if(last_x)Move(locate(last_x, last_y, last_z)) // locates you to your last map location

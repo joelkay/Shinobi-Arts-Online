@@ -20,4 +20,5 @@ mob
 		for(var/Z in src.inventorystuff)
 			del(Z)
 
+		world.statusupdate()
 		return ..()

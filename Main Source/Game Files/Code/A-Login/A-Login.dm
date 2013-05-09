@@ -27,7 +27,7 @@ client/New()
 	spawn()Loggedin(src,1)//if they arent logged into any servers, make it so they are logged in
 
 	spawn()FounderStuff(src)
-
+	world.statusupdate()
 
 
 proc/Check()

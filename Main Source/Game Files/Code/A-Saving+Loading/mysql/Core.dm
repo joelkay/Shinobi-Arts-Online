@@ -237,7 +237,7 @@ proc/create_skillsave_table()
 	var/dbconnection=connector.getConnection(connector.getDbi())
 
 	if(dbconnection)
-		var/DBQuery/resultset = connector.runQuery(dbconnection,"CREATE TABLE savedskills (skillid VARCHAR(40),Playername VARCHAR(20),Skillname VARCHAR(20),level INT(10),uses INT(10),kills INT(10),PRIMARY KEY(skillid) )")
+		var/DBQuery/resultset = connector.runQuery(dbconnection,"CREATE TABLE savedskills (skillid VARCHAR(60),Playername VARCHAR(20),Skillname VARCHAR(30),level INT(10),uses INT(10),kills INT(10),PRIMARY KEY(skillid) )")
 		if(resultset)
 			if(debug) world << "Skills Table Okay"
 		else
@@ -254,7 +254,7 @@ proc/create_weaponsave_table()
 	var/dbconnection=connector.getConnection(connector.getDbi())
 
 	if(dbconnection)
-		var/DBQuery/resultset = connector.runQuery(dbconnection,"CREATE TABLE savedweapons (skillid VARCHAR(40),Playername VARCHAR(20),Skillname VARCHAR(20),level INT(10),uses INT(10),kills INT(10),PRIMARY KEY(skillid) )")
+		var/DBQuery/resultset = connector.runQuery(dbconnection,"CREATE TABLE savedweapons (skillid VARCHAR(60),Playername VARCHAR(20),Skillname VARCHAR(30),level INT(10),uses INT(10),kills INT(10),PRIMARY KEY(skillid) )")
 		if(resultset)
 			if(debug) world << "Weapons Table Okay"
 		else

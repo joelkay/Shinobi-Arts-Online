@@ -1,23 +1,23 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: Game Files\Code\blankpage.dm;Game Files\Code\A-Saving+Loading\local server\read.dm;Game Files\Code\A-Saving+Loading\basic_handling.dm;Game Files\Code\A-Saving+Loading\local server\Handling.dm;Game Files\Code\A-Saving+Loading\local server\Local Save Verbs.dm
-PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO SOURCE\SAO_rsc.zip
+WINDOW: Game Files\Code\blankpage.dm;Game Files\Code\A-Base Procs\A-World.dm;Game Files\Code\A-Login\A-Login.dm;Game Files\Code\A-Login\A-Logout.dm
 LAST_COMPILE_VERSION: 499.1183
+PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO SOURCE\SAO_rsc.zip
 PACKAGE_DME_DEMO: 
 PACKAGE_DME_CLEANCHECK: OFF
-PACKAGE_RSC_CLEANCHECK: OFF
-PACKAGE_DMB_HUB: 
 PACKAGE_TYPE: 0
+PACKAGE_DMB_HUB: 
+PACKAGE_RSC_CLEANCHECK: OFF
 PACKAGE_DMB_CLEANCHECK: OFF
 PACKAGE_DME_START: 
-DIR: Game Files Game Files\Code Game Files\Code\A-Login Game Files\Code\A-Saving+Loading Game Files\Code\A-Saving+Loading\local server Game Files\Code\A-Saving+Loading\mysql Game Files\Map Maker Game Files\Map Maker\Build Icons Game Files\Map Maker\Code 
+DIR: Game Files Game Files\Code Game Files\Code\A-Base Procs Game Files\Code\A-Login 
 PACKAGE_DME_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO SOURCE\SAO_src.zip
-FILE: Game Files\Code\A-Saving+Loading\local server\read.dm
+FILE: Game Files\Code\A-Login\A-Logout.dm
 PACKAGE_DME_INFO: 
-PACKAGE_DMB_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO SOURCE\SAO.zip
-LAST_COMPILE_TIME: 1368119025
-PACKAGE_DMB_INFO: libmysql.dll, map_Maps/
+LAST_COMPILE_TIME: 1368125984
+PACKAGE_DMB_NAME: C:\Users\Joelie\Dropbox\Public\SAO\SAO.zip
 AUTO_FILE_DIR: ON
+PACKAGE_DMB_INFO: libmysql.dll , map_Maps/
 */
 // END_INTERNALS
