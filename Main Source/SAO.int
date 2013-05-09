@@ -2,22 +2,22 @@
 /*
 MAP_ICON_TYPE: 0
 WINDOW: Game Files\Code\blankpage.dm;Game Files\Code\A-Base Procs\A-World.dm;Game Files\Code\A-Login\A-Login.dm;Game Files\Code\A-Login\A-Logout.dm
-LAST_COMPILE_VERSION: 499.1183
 PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO SOURCE\SAO_rsc.zip
+LAST_COMPILE_VERSION: 499.1183
 PACKAGE_DME_DEMO: 
 PACKAGE_DME_CLEANCHECK: OFF
-PACKAGE_TYPE: 0
-PACKAGE_DMB_HUB: 
 PACKAGE_RSC_CLEANCHECK: OFF
+PACKAGE_DMB_HUB: 
+PACKAGE_TYPE: 0
 PACKAGE_DMB_CLEANCHECK: OFF
 PACKAGE_DME_START: 
-DIR: Game Files Game Files\Code Game Files\Code\A-Base Procs Game Files\Code\A-Login 
+DIR: Game Files\Code\A-Base Procs Game Files\Code\A-Login Lib 
 PACKAGE_DME_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO SOURCE\SAO_src.zip
 FILE: Game Files\Code\A-Login\A-Logout.dm
 PACKAGE_DME_INFO: 
-LAST_COMPILE_TIME: 1368125984
 PACKAGE_DMB_NAME: C:\Users\Joelie\Dropbox\Public\SAO\SAO.zip
-AUTO_FILE_DIR: ON
+LAST_COMPILE_TIME: 1368125984
 PACKAGE_DMB_INFO: libmysql.dll , map_Maps/
+AUTO_FILE_DIR: ON
 */
 // END_INTERNALS
