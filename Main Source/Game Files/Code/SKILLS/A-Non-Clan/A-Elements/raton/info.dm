@@ -11,6 +11,7 @@ Skill
 		sealtime=4
 		sindex="Chidori_Blade"
 		procedure="Raton"
+		copy=1//can sharingan copy it
 
 	Chidori
 		name="Chidori"
@@ -22,6 +23,7 @@ Skill
 		sealtime=3
 		sindex="Chidori"
 		procedure="Raton"
+		copy=1//can sharingan copy it
 
 	Chidori_Nagashi
 		name="Chidori Nagashi"
@@ -32,6 +34,7 @@ Skill
 		maxcooldown=40
 		sindex="Chidori_Nagashi"
 		procedure="Raton"
+		copy=1//can sharingan copy it
 
 	Raikiri
 		name="Raikiri"
@@ -42,3 +45,4 @@ Skill
 		maxcooldown=300
 		sindex="Raikiri"
 		procedure="Raton"
+		copy=1//can sharingan copy it

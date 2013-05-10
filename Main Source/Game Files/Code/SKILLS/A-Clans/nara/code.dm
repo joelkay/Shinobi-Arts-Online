@@ -4,12 +4,10 @@ mob
 //////////////////////NARA//////////////////
 
 			if("Shadow_possesion")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				var/mob/M=src.targeted
 				if(!M)
 					src << output("[src]: Target someone first...", "combatlog")
+					ReturnPrice("Shadow_possesion")
 					return
 
 				if(M in range(50,src))
@@ -26,6 +24,7 @@ mob
 
 				else
 					src << output("[src]: Target not in range...", "combatlog")
+					ReturnPrice("Shadow_possesion")
 					return
 
 
@@ -73,9 +72,6 @@ mob
 
 
 			if("Shadow_NeckBind")
-
-				src.doing=0
-				src.hsealvalue=1//slep 0.1 seconds
 				var/mob/M=src.targeted
 				if(M.trapper==src&&M in view(src.loc))
 					src << output("[src]: Shadown NeckBind", "combatlog")
@@ -90,8 +86,6 @@ mob
 
 
 			if("Shadow_Needles")
-				src.doing=0
-				src.hsealvalue=3//slep 3 seconds
 				var/mob/M=src.targeted
 				if(M.trapper==src&&M in view(src.loc))
 					src << output("[src]: Shadown Needles", "combatlog")

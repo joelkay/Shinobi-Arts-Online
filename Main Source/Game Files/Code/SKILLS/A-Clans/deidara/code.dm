@@ -4,8 +4,6 @@ mob
 
 ///////////////DEIDARA///////////////////////////
 			if("Clay_clone")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Clay-clone", "combatlog")
 				src.KillShadow_Clone()
 				var/mob/NPC/CShadow_Clone/A = new /mob/NPC/CShadow_Clone
@@ -25,8 +23,6 @@ mob
 
 
 			if("Explode_bird")
-				src.hsealvalue=2//slep 0.1 seconds
-				src.seals()
 				var/mob/S=src.targeted
 				if(!S)
 					src<<output("You need to target someone first..", "combatlog")
@@ -42,8 +38,6 @@ mob
 
 
 			if("Explode_spider")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Explode_spider", "combatlog")
 				src<<output("Target someone then press L to make spiders follow them. They detonate on impact", "combatlog")
 				var/obj/Explodespider/B=new(0)
@@ -55,8 +49,6 @@ mob
 
 
 			if("Multiple_bird")
-				src.hsealvalue=3//slep 3 seconds
-				src.seals()
 				src << output("[src]: Multiple_bird", "combatlog")
 				var/mob/M=src.targeted
 				if(M)
@@ -72,8 +64,6 @@ mob
 
 
 			if("C3")
-				src.hsealvalue=3//slep 3 seconds
-				src.seals()
 				src << output("[src]: C3 press L to blow up the clay or wait 5 seconds", "combatlog")//
 				var/obj/C3/A = new /obj/C3(locate(src.x, src.y, src.z))//
 				A.owner=src
@@ -86,7 +76,6 @@ mob
 
 
 			if("Flying_Bird")
-				src.hsealvalue=3//slep 3 seconds
 				//src.hemisphere(2)//second altitude
 				if(!invisibility)
 					src << output("[src]: You Begin Flying", "combatlog")//

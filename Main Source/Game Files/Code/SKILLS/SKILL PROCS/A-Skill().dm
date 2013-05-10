@@ -25,8 +25,17 @@ mob
 			src<<"Non pk zone"
 			return
 
-		spawn()src.seals()//stop spam bro
-		if(!bypass)src.Skills(S)//for damages that get stronger with level.
+
+		if(S.copy)//much better copy
+			spawn()//do this so uchihas can know what jutsu your using before you use it
+				for(var/mob/M in range(10,src))
+					if(debug) sharicopy(M,S)//so I can test it ^_^
+					if(!M==src)//so you dont copy your own ish
+						spawn() sharicopy(M,S)
+
+
+		if(src.seals(S))//do seals first. currently all skills sealtime is set to 0, will balance out later
+			if(!bypass)src.Skills(S)//for damages that get stronger with level.
 
 
 
@@ -34,10 +43,14 @@ mob
 
 
 
-	proc/seals(src.hsealvalue)
+
+
+	proc/seals(Skill/S)
 		src.icon_state="jutsu exicute"//since they do seals already
-		spawn(src.hsealvalue)
-			src.icon_state=""//since they do seals already
+		var/sleeptime=S.sealtime*10//so that we can use nice numbers when specifying in the skill stuff
+		sleep(sleeptime)
+		src.icon_state=""//since they do seals already
+		return 1
 
 
 
@@ -130,7 +143,7 @@ mob
 				if(src.Clan=="Kaguya")src.Skillkaguya(S.sindex)//if kaguya
 
 			if("Jashin")
-				if(src.Clan=="Jashin")src.Skilljashin(S.sindex)//if kaguya
+				if(src.Clan=="Jashin")src.Skilljashin(S.sindex)//if jashin
 
 			if("Weapon")
 				src.Skillweapon(S.sindex)//if weapon

@@ -4,13 +4,6 @@ mob
 
 /////////////////////////////DOTON/////////////////
 			if("Chamber_of_Nothingness")
-				rem="Chamber_of_Nothingness"//shari_copy
-				nem=500//cost of Chamber_of_Nothingness
-				dem=50
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=20//slep 2 seconds
-				src.seals()
 				var/mob/A=src.targeted
 				if(!A in view(src))
 					return
@@ -39,19 +32,12 @@ mob
 
 
 			if("Chamber_Leech")
-				rem="Chamber_Leech"//shari_copy
-				nem=500//cost of Chamber_of_Nothingness
-				dem=60
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=30//slep 30 seconds
 				var/mob/A=src.targeted
 				if(A==src||A=="")
 					return
 				if(A&&!A.indot||!src.canleech)
 					src<<output("You have to target a person in a doton cage to leech", "combatlog")
 					return
-				src.seals()
 				src.newleech=1
 				src << output("[src]: Chamber_Leech", "combatlog")
 				src.dir=EAST
@@ -64,13 +50,6 @@ mob
 
 
 			if("Doton_River")
-				rem="Doton_River"//shari_copy
-				nem=250//cost of Chamber_of_Nothingness
-				dem=30
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=30//slep 3 seconds
-				src.seals()
 				src << output("[src]: Doton_River", "combatlog")
 				var/mob/M=src.targeted
 				if(M)
@@ -79,13 +58,6 @@ mob
 
 
 			if("Doton_MudBullets")
-				rem="Doton_MudBullets"//shari_copy
-				nem=350//cost of Chamber_of_Nothingness
-				dem=80
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=30//slep 3 seconds
-				src.seals()
 				var/mob/M=src.targeted
 				if(M)
 					src.Facedir(M)//face M

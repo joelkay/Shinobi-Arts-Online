@@ -9,6 +9,7 @@ Skill
 		maxcooldown=10
 		sindex="KageShadow_Clone"
 		procedure="Kagebunshin"
+		copy=1//can sharingan copy it
 
 	TajuuKageShadow_Clone
 		name="TajuuKageShadow_Clone"
@@ -19,3 +20,4 @@ Skill
 		maxcooldown=10
 		sindex="TajuuKageShadow_Clone"
 		procedure="Kagebunshin"
+		copy=1//can sharingan copy it

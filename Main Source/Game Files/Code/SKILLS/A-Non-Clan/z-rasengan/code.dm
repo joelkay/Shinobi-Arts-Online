@@ -5,13 +5,6 @@ mob
 			//rasengans
 
 			if("Rasengan")
-				rem="Rasengan"//shari_copy
-				nem=300//cost of Chamber_of_Nothingness
-				dem=100
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=5//slep 4 seconds
-				//src.seals()
 				if(src.chidorion||src.drillon)
 					src << output("[src]: You can't stack skills!", "combatlog")
 					return
@@ -40,14 +33,6 @@ mob
 
 
 			if("Oodama_Rasengan")
-
-				rem="Oodama_Rasengan"//shari_copy
-				nem=600//cost of Chamber_of_Nothingness
-				dem=300
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Oodama_Rasengan!", "combatlog")
 				src << output("[src] quickly attack an opponent with A !", "combatlog")
 				src.overlays+='rasengano.dmi'

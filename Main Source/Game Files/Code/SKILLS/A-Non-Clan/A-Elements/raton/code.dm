@@ -4,14 +4,6 @@ mob
 
 ////////////////////////RATON//////////
 			if("Chidori_Blade")
-
-				rem="Chidori_Blade"//shari_copy
-				nem=500//cost of Fireblast
-				dem=200
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=40//slep 4 seconds
-				src.seals()
 				src << output("[src]: Raton-Sword Assasination Technique", "combatlog")
 				src.icon_state=""
 				src.overlays+='flickraton.dmi'
@@ -28,14 +20,7 @@ mob
 					src.canmove=1
 					src.overlays-='ratonswordoverlay.dmi'
 
-			if("Chidori")//lol advanced shizle
-
-				rem="Chidori"//shari_copy
-				nem=500//cost of chidori
-				dem=200
-				////////////////////////////////////////////
-				src.hsealvalue=5//slep 4 seconds
-				src.seals()
+			if("Chidori")
 				if(src.rasenganon||src.drillon)
 					src << output("[src]: You can't stack skills!", "combatlog")
 					return
@@ -68,17 +53,7 @@ mob
 
 
 
-			if("Raikiri")//lol advanced shizle
-
-				rem="Raikiri"//shari_copy
-				nem=500//cost of raikiri
-				dem=300
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=50//slep 4 seconds
-				if(src.Clan=="Uchiha")
-					src.hsealvalue=src.chidorivalue//slep 4 seconds
-				src.seals()
+			if("Raikiri")
 				src.overlays -= 'raikiri.dmi'
 				var/mob/M=src.targeted
 				if(M in view())//make sure nigga is in range
@@ -96,14 +71,7 @@ mob
 				src.overlays-='raikiri.dmi'
 
 
-			if("Chidori_Nagashi")//lol advanced shizle
-				rem="Chidori_Nagashi"//shari_copy
-				nem=300//cost of nagashi
-				dem=80
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
+			if("Chidori_Nagashi")
 				src << output("[src]: Chidori_Nagashi", "combatlog")
 				var/mob/M=src.targeted
 				if(M)

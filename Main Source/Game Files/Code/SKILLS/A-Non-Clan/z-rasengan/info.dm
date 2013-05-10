@@ -9,6 +9,7 @@ Skill
 		maxcooldown=60
 		sindex="Rasengan"
 		procedure="Rasengan"
+		copy=1//can sharingan copy it
 
 	Oodama_Rasengan
 		name="Oodama_Rasengan"
@@ -19,3 +20,4 @@ Skill
 		maxcooldown=80
 		sindex="Oodama_Rasengan"
 		procedure="Rasengan"
+		copy=1//can sharingan copy it

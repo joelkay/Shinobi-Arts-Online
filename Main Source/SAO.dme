@@ -51,6 +51,7 @@
 #define FILE_DIR "Game Files/Code/Mouse Handling/mouse[icons]"
 #define FILE_DIR "Game Files/Code/SKILLS"
 #define FILE_DIR "Game Files/Code/SKILLS/A-Clans"
+#define FILE_DIR "Game Files/Code/SKILLS/A-Clans/akimichi"
 #define FILE_DIR "Game Files/Code/SKILLS/A-Clans/deidara"
 #define FILE_DIR "Game Files/Code/SKILLS/A-Clans/gaara"
 #define FILE_DIR "Game Files/Code/SKILLS/A-Clans/haku"

@@ -10,6 +10,8 @@ Skill
 		maxcooldown=60
 		sindex="Suiton_Dragon"
 		procedure="Suiton"
+		copy=1//can sharingan copy it
+		sealtime=2//2 secs
 
 	Suiton_Wave
 		name="Suiton_Wave"
@@ -20,6 +22,7 @@ Skill
 		maxcooldown=40
 		sindex="Suiton_Wave"
 		procedure="Suiton"
+		copy=1//can sharingan copy it
 
 	Suiton_Shark
 		name="Suiton_Shark"
@@ -30,6 +33,7 @@ Skill
 		maxcooldown=50
 		sindex="Suiton_Shark"
 		procedure="Suiton"
+		copy=1//can sharingan copy it
 
 	Suiton_GiantWave
 		name="Suiton_GiantWave"
@@ -40,3 +44,4 @@ Skill
 		maxcooldown=80
 		sindex="Suiton_GiantWave"
 		procedure="Suiton"
+		copy=1//can sharingan copy it

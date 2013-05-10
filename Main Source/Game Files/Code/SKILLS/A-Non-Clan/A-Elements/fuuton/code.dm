@@ -4,14 +4,6 @@ mob
 
 //////////////////FUUTON//////////////////////
 			if("Fuuton_Sweep")
-
-				rem="Fuuton_Sweep"//shari_copy
-				nem=250//cost of Chamber_of_Nothingness
-				dem=20
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=20//slep 2 seconds
-				src.seals()
 				src << output("[src]: Fuuton_Sweep", "combatlog")
 				var/mob/M=src.targeted
 				if(M)
@@ -19,14 +11,6 @@ mob
 				new/obj/FuutonS(src.loc,src.dir,src)
 
 			if("Fuuton_Blast")
-
-				rem="Fuuton_Blast"//shari_copy
-				nem=350//cost of Chamber_of_Nothingness
-				dem=80
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=20//slep 2 seconds
-				src.seals()
 				var/mob/M=src.targeted
 				if(M)
 					src.Facedir(M)//face M
@@ -146,14 +130,6 @@ mob
 				return
 
 			if("Fuuton_Tornado")
-
-				rem="Fuuton_Tornado"//shari_copy
-				nem=250//cost of Chamber_of_Nothingness
-				dem=30
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=30//slep 3 seconds
-				src.seals()
 				src << output("[src]: Fuuton_Tornado", "combatlog")
 				var/mob/M=src.targeted
 				if(M)
@@ -162,14 +138,6 @@ mob
 
 
 			if("Fuuton_Slice")
-
-				rem="Fuuton_Slice"//shari_copy
-				nem=250//cost of Chamber_of_Nothingness
-				dem=30
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=30//slep 3 seconds
-				src.seals()
 				src << output("[src]: Fuuton_Slice", "combatlog")
 				var/mob/M=src.targeted
 				if(M)

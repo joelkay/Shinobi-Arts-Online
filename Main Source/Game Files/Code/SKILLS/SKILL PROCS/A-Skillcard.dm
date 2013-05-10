@@ -19,7 +19,7 @@ Skill
 	var
 		chakracost=0//chakra cost
 		sindex=""//skill it performs
-		sealtime=0//time to perform
+		sealtime=1//time to perform
 		supplies=0//supplies it takes
 		tmp/clicked=0
 		tmp/cooldown=0//temp/dynamic cooldown
@@ -33,6 +33,7 @@ Skill
 		nextlevel=10//uses left till next level...default of 10 at start.
 		rank="D"//rank
 		procedure=""//this is the proc it runs under E.g katon skills run under "Katon"
+		copy=0//this shows which skills can be copied by sharingan
 
 
 	mouse_drag_pointer ='drag.dmi'

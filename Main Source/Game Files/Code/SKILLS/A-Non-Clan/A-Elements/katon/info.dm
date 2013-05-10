@@ -10,6 +10,7 @@ Skill
 		sealtime=5
 		sindex="Fireblast"
 		procedure="Katon"
+		copy=1//can sharingan copy it
 
 	Multiple_FirePoenix
 		name="Multiple Fire Poenix"
@@ -20,6 +21,7 @@ Skill
 		maxcooldown=35
 		sindex="Multiple_FirePoenix"
 		procedure="Katon"
+		copy=1//can sharingan copy it
 
 
 	Mystic_Fire_Dragon
@@ -31,6 +33,7 @@ Skill
 		maxcooldown=30//30
 		sindex="Mystic_Fire_Dragon"
 		procedure="Katon"
+		copy=1//can sharingan copy it
 
 	Goukakyuu
 		name="Goukakyuu"
@@ -41,6 +44,7 @@ Skill
 		maxcooldown=30
 		sindex="Goukakyuu"
 		procedure="Katon"//naturally
+		copy=1//can sharingan copy it
 
 
 

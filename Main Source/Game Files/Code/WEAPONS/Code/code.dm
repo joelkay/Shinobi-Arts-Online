@@ -3,9 +3,7 @@ mob
 		switch(w)
 
 /////////////////////////WEPS///////////////////////////
-			if("Sword")//lol advanced shizle
-
-				src.hsealvalue=1//slep 0.1 seconds
+			if("Sword")
 				if(!src.sworded)
 					src.overlays+='sword.dmi'
 					src.sworded=1
@@ -20,8 +18,6 @@ mob
 					return
 
 			if("Kunai")
-
-				src.hsealvalue=1//slep 0.1 seconds
 				src << output("[src]: throws a Kunai..", "combatlog")
 				var/Weapon/Kunai/D = new/Weapon/Kunai
 				var/mob/M=src.targeted
@@ -36,8 +32,6 @@ mob
 				del(D)
 
 			if("Shuriken")
-
-				src.hsealvalue=1//slep 0.1 seconds
 				src << output("[src]: throws a ahuriken..", "combatlog")
 				var/Weapon/Shuriken/D = new/Weapon/Shuriken//make hit objects for this e.t.c
 				var/Weapon/Shuriken/E = new/Weapon/Shuriken
@@ -65,9 +59,7 @@ mob
 				sleep(50)
 				del(D)
 
-			if("KSword")//lol advanced shizle
-
-				src.hsealvalue=1//slep 0.1 seconds
+			if("KSword")
 				if(!src.sworded)
 					src.overlays+='KSword.dmi'
 					src.sworded=1

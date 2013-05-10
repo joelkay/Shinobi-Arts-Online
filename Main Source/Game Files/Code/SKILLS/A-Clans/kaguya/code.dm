@@ -5,9 +5,6 @@ mob
 ////////////////////KAGUYA///////////////////////////////
 
 			if("Bone_Drill")
-
-				src.hsealvalue=20//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Bone_Drill!", "combatlog")
 				src << output("[src] quickly attack an opponent with A !", "combatlog")
 				src.overlays+='drill.dmi'
@@ -17,9 +14,6 @@ mob
 				src.overlays-='drill.dmi'
 
 			if("Bone_Bullets")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Bone_Bullets..", "combatlog")
 				var/obj/Bbullet/D=new/obj/Bbullet
 				var/mob/M=src.targeted
@@ -33,9 +27,6 @@ mob
 				del(D)
 
 			if("Bone_Sword")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: pulls out a sword from his body..", "combatlog")
 				src<<output("<font color=blue>The Bone Sword is in your Skills Inventory.</font>..", "combatlog")
 				src.contents += new/Weapon/KSword
@@ -61,9 +52,6 @@ mob
 				return
 
 			if("Bone_Armour")
-
-				src.hsealvalue=5//slep 0.1 seconds
-				src.seals()
 				src << output("Bones erupt from [src]'s body..", "combatlog")
 				src.overlays+='activate.dmi'
 				src.canceled=0//can cancel.
@@ -92,9 +80,6 @@ mob
 
 
 			if("Bone_ArmourCancel")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(!src.canceled)
 					src << output("[src] Cancels Bone Armour body..", "combatlog")
 					src.overlays-='activate.dmi'
@@ -109,9 +94,6 @@ mob
 					return
 
 			if("Sawarabi")
-
-				src.hsealvalue=40//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Sawarabi..", "combatlog")
 				Execution(/obj/Sawa,5,700,src)
 

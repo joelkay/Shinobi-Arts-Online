@@ -6,9 +6,6 @@ mob
 
 /////////////HAKU////////////////////////////////////
 			if("ice_needles")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				var/list/tiles=list()
 				for(var/obj/WATER/F in range(10,src))
 					tiles.Add(F)
@@ -44,9 +41,6 @@ mob
 
 
 			if("ice_mirrors")
-
-				src.hsealvalue=2//slep 0.1 seconds
-				src.seals()
 				var/list/tiles=list()
 				for(var/obj/WATER/F in range(10,src))
 					tiles.Add(F)
@@ -72,9 +66,6 @@ mob
 
 
 			if("ice_freeze")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				var/list/tiles=list()
 				for(var/obj/WATER/F in range(5,src))
 					tiles.Add(F)

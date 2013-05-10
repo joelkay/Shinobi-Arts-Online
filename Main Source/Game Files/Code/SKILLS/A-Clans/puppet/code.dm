@@ -5,9 +5,6 @@ mob
 /////////////////Puppet///////////////////////////////
 
 			if("puppet1")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src.delpups()
 				var/mob/puppet1/P = new/mob/puppet1
 				flick('smoke2.dmi',P)
@@ -19,9 +16,6 @@ mob
 				src << output("<font color = blue>Press I to controll puppet 1. pressing I again will return ccontrol to yourself. Also pressing L will delete puppets.</FONT>", "combatlog")
 
 			if("puppet2")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src.delpups2()
 				var/mob/puppet2/P = new/mob/puppet2
 				flick('smoke2.dmi',P)
@@ -34,9 +28,6 @@ mob
 
 
 			if("puppet3")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src.delpups3()
 				var/mob/puppet3/P = new/mob/puppet3
 				flick('smoke2.dmi',P)
@@ -51,9 +42,6 @@ mob
 
 
 			if("Puppet_Knives")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(src.puppet1)
 					for(var/mob/puppet1/P in world)
 						if(P.owner==src)
@@ -109,9 +97,6 @@ mob
 					return
 
 			if("Puppet_Transformation_Technique")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(src.puppet1)
 					for(var/mob/puppet1/P in view(src))
 						if(P.owner==src)
@@ -171,9 +156,6 @@ mob
 
 
 			if("Puppet_Shield")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(src.puppet2)
 					for(var/mob/puppet2/P in view(src))
 						if(P.owner==src)
@@ -189,9 +171,6 @@ mob
 					src<<output("You must be in controll of puppet 2..", "combatlog")
 
 			if("Puppet_Crush")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(src.puppet3)
 					for(var/mob/puppet3/P in view(src))
 						if(P.owner==src)
@@ -206,9 +185,6 @@ mob
 
 
 			if("Poison_Bomb")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(src.puppet1)
 					for(var/mob/puppet1/P in view(src))
 						if(P.owner==src)

@@ -4,14 +4,7 @@ mob
 /////////////////////Suiton/////////////////////
 
 			if("Suiton_Wave")
-
-				rem="Suiton_Wave"//shari_copy
-				nem=150//cost of Chamber_of_Nothingness
-				dem=40
-				sharicopy()
-				////////////////////////////////////////////
-				src.hsealvalue=20//slep 2 seconds
-				src.seals()
+				src.canmove=0
 				src.icon_state="blow"
 				src << output("[src]: Suiton_Wave", "combatlog")
 				var/mob/M=src.targeted
@@ -31,8 +24,9 @@ mob
 						walk(A,src.dir,2)
 						walk(B,src.dir,2)
 						walk(C,src.dir,2)
-					spawn(60)//6 seconds
+					spawn(15)// 1.5 secs
 						src.icon_state=""
+						src.canmove=1
 
 					return
 				if(src.dir == SOUTH)
@@ -49,8 +43,9 @@ mob
 						walk(A,src.dir,2)
 						walk(B,src.dir,2)
 						walk(C,src.dir,2)
-					spawn(60)//6 seconds
+					spawn(15)// 1.5 secs
 						src.icon_state=""
+						src.canmove=1
 
 				if(src.dir == WEST)
 					var/obj/SuitonW/one/A = new /obj/SuitonW/one(locate(src.x, src.y, src.z))
@@ -66,8 +61,9 @@ mob
 						walk(A,src.dir,2)
 						walk(B,src.dir,2)
 						walk(C,src.dir,2)
-					spawn(60)//6 seconds
+					spawn(15)// 1.5 secs
 						src.icon_state=""
+						src.canmove=1
 
 				if(src.dir == EAST)
 					var/obj/SuitonW/one/A = new /obj/SuitonW/one(locate(src.x, src.y, src.z))
@@ -83,22 +79,17 @@ mob
 						walk(A,src.dir,2)
 						walk(B,src.dir,2)
 						walk(C,src.dir,2)
-					spawn(60)//6 seconds
+
+					spawn(15)// 1.5 secs
 						src.icon_state=""
+						src.canmove=1
 
 			if("Suiton_GiantWave")
-
-				rem="Suiton_Wave"//shari_copy
-				nem=350//cost of Chamber_of_Nothingness
-				dem=80
-				sharicopy()
-				////////////////////////////////////////////
-				src.hsealvalue=20//slep 2 seconds
-				src.seals()
 				var/mob/M=src.targeted
 				if(M)
 					src.Facedir(M)//face M
 				src << output("[src]: Suiton_GiantWave", "combatlog")
+				src.canmove=0
 				src.icon_state="blow"
 				if(src.dir == NORTH)
 					var/obj/SuitonGW/A = new /obj/SuitonGW(locate(src.x, src.y, src.z))
@@ -128,17 +119,19 @@ mob
 					G.dir = NORTH
 					H.dir = NORTH
 					I.dir = NORTH
-					walk(A,src.dir,2)
-					walk(B,src.dir,2)
-					walk(C,src.dir,2)
-					walk(D,src.dir,2)
-					walk(E,src.dir,2)
-					walk(F,src.dir,2)
-					walk(G,src.dir,2)
-					walk(H,src.dir,2)
-					walk(I,src.dir,2)
-					sleep(60)
-					src.icon_state=""
+					spawn()
+						walk(A,src.dir,2)
+						walk(B,src.dir,2)
+						walk(C,src.dir,2)
+						walk(D,src.dir,2)
+						walk(E,src.dir,2)
+						walk(F,src.dir,2)
+						walk(G,src.dir,2)
+						walk(H,src.dir,2)
+						walk(I,src.dir,2)
+					spawn(15)
+						src.icon_state=""
+						src.canmove=1
 
 				if(src.dir == SOUTH)
 					var/obj/SuitonGW/A = new /obj/SuitonGW(locate(src.x, src.y, src.z))
@@ -168,17 +161,20 @@ mob
 					G.dir = SOUTH
 					H.dir = SOUTH
 					I.dir = SOUTH
-					walk(A,src.dir,2)
-					walk(B,src.dir,2)
-					walk(C,src.dir,2)
-					walk(D,src.dir,2)
-					walk(E,src.dir,2)
-					walk(F,src.dir,2)
-					walk(G,src.dir,2)
-					walk(H,src.dir,2)
-					walk(I,src.dir,2)
-					sleep(60)
-					src.icon_state=""
+					spawn()
+						walk(A,src.dir,2)
+						walk(B,src.dir,2)
+						walk(C,src.dir,2)
+						walk(D,src.dir,2)
+						walk(E,src.dir,2)
+						walk(F,src.dir,2)
+						walk(G,src.dir,2)
+						walk(H,src.dir,2)
+						walk(I,src.dir,2)
+
+					spawn(15)
+						src.icon_state=""
+						src.canmove=1
 
 				if(src.dir == WEST)
 					var/obj/SuitonGW/A = new /obj/SuitonGW(locate(src.x, src.y, src.z))
@@ -208,17 +204,20 @@ mob
 					G.dir = WEST
 					H.dir = WEST
 					I.dir = WEST
-					walk(A,src.dir,2)
-					walk(B,src.dir,2)
-					walk(C,src.dir,2)
-					walk(D,src.dir,2)
-					walk(E,src.dir,2)
-					walk(F,src.dir,2)
-					walk(G,src.dir,2)
-					walk(H,src.dir,2)
-					walk(I,src.dir,2)
-					sleep(60)
-					src.icon_state=""
+					spawn()
+						walk(A,src.dir,2)
+						walk(B,src.dir,2)
+						walk(C,src.dir,2)
+						walk(D,src.dir,2)
+						walk(E,src.dir,2)
+						walk(F,src.dir,2)
+						walk(G,src.dir,2)
+						walk(H,src.dir,2)
+						walk(I,src.dir,2)
+
+					spawn(15)
+						src.icon_state=""
+						src.canmove=1
 
 				if(src.dir == EAST)
 					var/obj/SuitonGW/A = new /obj/SuitonGW(locate(src.x, src.y, src.z))
@@ -248,28 +247,24 @@ mob
 					G.dir = EAST
 					H.dir = EAST
 					I.dir = EAST
-					walk(A,src.dir,2)
-					walk(B,src.dir,2)
-					walk(C,src.dir,2)
-					walk(D,src.dir,2)
-					walk(E,src.dir,2)
-					walk(F,src.dir,2)
-					walk(G,src.dir,2)
-					walk(H,src.dir,2)
-					walk(I,src.dir,2)
-					sleep(60)
-					src.icon_state=""
+					spawn()
+						walk(A,src.dir,2)
+						walk(B,src.dir,2)
+						walk(C,src.dir,2)
+						walk(D,src.dir,2)
+						walk(E,src.dir,2)
+						walk(F,src.dir,2)
+						walk(G,src.dir,2)
+						walk(H,src.dir,2)
+						walk(I,src.dir,2)
+
+					spawn(15)
+						src.icon_state=""
+						src.canmove=1
 
 
 			if("Suiton_Dragon")
-
-				rem="Suiton_Dragon"//shari_copy
-				nem=350//cost of Chamber_of_Nothingness
-				dem=60
-				sharicopy()
 				////////////////////////////////////////////
-				src.hsealvalue=20//slep 2 seconds
-				src.seals()
 				if(!src.inwater)
 					src << output("You must be in water..", "combatlog")
 					ReturnPrice("Suiton_Dragon")//proc to make it so you can use the skill again
@@ -295,13 +290,6 @@ mob
 					walk_towards(A,M,2)
 
 			if("Suiton_Shark")
-				rem="Suiton_Shark"//shari_copy
-				nem=350//cost of Chamber_of_Nothingness
-				dem=50
-				sharicopy()
-				////////////////////////////////////////////
-				src.hsealvalue=20//slep 2 seconds
-				src.seals()
 				var/mob/S=src.targeted
 				if(!S)
 					src << output("You need to target someone first..", "combatlog")

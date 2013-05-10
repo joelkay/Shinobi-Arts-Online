@@ -1,21 +1,21 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: Game Files\Code\SKILLS\SKILL PROCS\A-Skillcard.dm;Game Files\Code\SKILLS\SKILL PROCS\A-Skill().dm
+WINDOW: Game Files\Code\SKILLS\SKILL PROCS\A-Skill().dm;Game Files\Code\SKILLS\A-Clans\uchiha\code.dm
 LAST_COMPILE_VERSION: 499.1183
-PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO SOURCE\SAO_rsc.zip
+PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\Public\SAO\SAO_rsc.zip
 PACKAGE_DME_DEMO: 
 PACKAGE_DME_CLEANCHECK: OFF
-PACKAGE_TYPE: 0
+PACKAGE_TYPE: 2
 PACKAGE_DMB_HUB: 
 PACKAGE_RSC_CLEANCHECK: OFF
 PACKAGE_DMB_CLEANCHECK: OFF
 PACKAGE_DME_START: 
-DIR: Game Files Game Files\Code Game Files\Code\B-AI System Game Files\Code\B-AI System\AI Old Game Files\Code\C-Teams Game Files\Code\HUD Game Files\Code\HUD\epic macro barr Game Files\Code\SKILLS Game Files\Code\SKILLS\A-Clans Game Files\Code\SKILLS\A-Clans\nara Game Files\Code\SKILLS\A-Clans\uchiha Game Files\Code\SKILLS\A-Non-Clan Game Files\Code\SKILLS\A-Non-Clan\C-Basic Game Files\Code\SKILLS\SKILL PROCS 
+DIR: Game Files Game Files\Code Game Files\Code\SKILLS Game Files\Code\SKILLS\A-Clans Game Files\Code\SKILLS\A-Clans\uchiha Game Files\Code\SKILLS\SKILL PROCS 
 PACKAGE_DME_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO SOURCE\SAO_src.zip
-FILE: Game Files\Code\SKILLS\SKILL PROCS\A-Skill().dm
+FILE: Game Files\Code\SKILLS\A-Clans\uchiha\code.dm
 PACKAGE_DME_INFO: 
-LAST_COMPILE_TIME: 1368148900
+LAST_COMPILE_TIME: 1368159900
 PACKAGE_DMB_NAME: C:\Users\Joelie\Dropbox\Public\SAO\SAO.zip
 AUTO_FILE_DIR: ON
 PACKAGE_DMB_INFO: libmysql.dll , map_Maps/

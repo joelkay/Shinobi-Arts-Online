@@ -5,9 +5,6 @@ mob
 ////////////////////////Jashin//////////////////////////////////////
 
 			if("Bloodbind")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Bloodbind..", "combatlog")
 				for(var/mob/M in get_step(src,src.dir))
 					if(M)
@@ -21,9 +18,6 @@ mob
 
 
 			if("Bloodbind_Cancel")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: You Cancel bloodbind..", "combatlog")
 				src.binded=""
 				return
@@ -31,9 +25,6 @@ mob
 
 
 			if("Jashin_circle")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Jashin circle: When you enter this circle, any damage you do to yourself is done the enemy in bloodbind", "combatlog")
 				if(src.binded)
 					src << output("[src]: Jashin circle: you curently have [src.binded] in bloodbind", "combatlog")
@@ -55,9 +46,6 @@ mob
 
 
 			if("Self_Harm")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(src.incircle&&src.binded)
 					var/mob/D=src.binded
 					src << output("[src]:Self-Harm ", "combatlog")
@@ -75,8 +63,6 @@ mob
 
 
 			if("Self_Heal")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(!src.binded)
 					if(src.life>=100)
 						src<<output("Your at full life..", "combatlog")
@@ -91,9 +77,6 @@ mob
 
 
 			if("Immortal")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(src.canimmortal)
 					if(src.inmortal)
 						return

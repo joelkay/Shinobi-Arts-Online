@@ -6,8 +6,6 @@ mob
 
 			if("Byakugan")
 				src << output("[src]: Byakugan", "combatlog")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src.strengthplus+=10
 				src.client.screen+=new/obj/Byakuugan
 				//src.overlays+='byakuganthing.dmi'
@@ -27,8 +25,6 @@ mob
 						src.strengthplus=0
 
 			if("Kaiten")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Kaiten", "combatlog")
 				src.protected=1
 				src.doing=1//cant do jutsus
@@ -59,8 +55,6 @@ mob
 
 
 			if("Jyuuken")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(!src.jyuuken)
 					src << output("[src]: You are now using jyuuken, you have higher strength and now your punches cause damage to life", "combatlog")
 					src.jyuuken=1
@@ -72,11 +66,10 @@ mob
 
 
 			if("sixtyfour_palms")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				var/mob/S=src.targeted
 				if(!S)
 					src<<output("You need to target someone first..", "combatlog")
+					ReturnPrice("sixtyfour_palms")
 					return
 				src << output("[src]: Hakkeshou: 64 palms", "combatlog")
 				var/obj/trigram/x=new/obj/trigram

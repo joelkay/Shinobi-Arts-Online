@@ -69,4 +69,5 @@ Skill
 		maxcooldown=30
 		sindex="Lotus"
 		procedure="Gates"
+		copy=1//can sharingan copy it
 

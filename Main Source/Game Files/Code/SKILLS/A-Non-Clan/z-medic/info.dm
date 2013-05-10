@@ -9,6 +9,7 @@ Skill
 		maxcooldown=4
 		sindex="Medic"
 		procedure="Medic"
+		copy=1//can sharingan copy it
 
 	Mystic_Palm
 		name="Mystic_Palm"
@@ -19,6 +20,7 @@ Skill
 		maxcooldown=5
 		sindex="Mystic_Palm"
 		procedure="Medic"
+		copy=1//can sharingan copy it
 
 	Cancel_MysticPalm
 		name="Cancel_MysticPalm"
@@ -30,6 +32,7 @@ Skill
 		sindex="Cancel_MysticPalm"
 		procedure="Medic"
 
+
 	Chakra_Enforced_Punch
 		name="Chakra_Enforced_Punch"
 		icon='skills.dmi'
@@ -39,6 +42,7 @@ Skill
 		maxcooldown=10
 		sindex="Chakra_Enforced_Punch"
 		procedure="Medic"
+		copy=1//can sharingan copy it
 
 	Rebirth
 		name="Rebirth"
@@ -49,3 +53,4 @@ Skill
 		maxcooldown=350
 		sindex="Rebirth"
 		procedure="Medic"
+

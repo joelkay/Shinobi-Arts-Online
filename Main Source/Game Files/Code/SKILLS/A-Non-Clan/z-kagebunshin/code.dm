@@ -4,14 +4,7 @@ mob
 
 /////////////////////KAGE BUNSHIN/////////////////
 
-			if("KageShadow_Clone")//lol advanced shizle
-				rem="KageShadow_Clone"//shari_copy
-				nem=200//cost of Chamber_of_Nothingness
-				dem=80
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
+			if("KageShadow_Clone")
 				src << output("[src]: Kage Shadow_Clone no-Jutsu! press L to revert back to yourself", "combatlog")
 				src.KillShadow_Clone()
 				var/mob/NPC/KShadow_Clone/A = new /mob/NPC/KShadow_Clone
@@ -27,15 +20,7 @@ mob
 				src.kagebunshd = 1
 				src.client.eye = A
 
-			if("TajuuKageShadow_Clone")//lol advanced shizle
-
-				rem="TajuuKageShadow_Clone"//shari_copy
-				nem=100//cost of Chamber_of_Nothingness
-				dem=200
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
+			if("TajuuKageShadow_Clone")
 				src.KillShadow_Clone()
 				src << output("[src]: Tajuu Kage Shadow_Clone no-Jutsu! press L to deactivate kage Shadow_Clones. Press F to make them attack your target..", "combatlog")
 				if(src.chakra<=2000)//five

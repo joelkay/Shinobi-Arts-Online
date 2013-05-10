@@ -5,14 +5,6 @@ mob
 
 			/*
 			if("Fireblast")//grand Fireblast example, do if(2) if (3) for skillcards and edit those skillcards sindex value to 2 and 3
-				src.Fireblastu++
-				rem="Fireblast"//shari_copy
-				nem=150//cost of Fireblast
-				dem=100
-				sharicopy()
-				////////////////////////////////////////////
-				src.hsealvalue=20//sleep 2 seconds
-				src.seals()
 				view() << output("[src]: Katon-GrandFireblast no-Jutsu!", "combatlog")
 				src.icon_state="blow"
 				src.overlays+='breathfire.dmi'
@@ -38,14 +30,6 @@ mob
 
 				*/
 			if("Fireblast")
-
-				rem="Fireblast"//shari_copy
-				nem=150//cost of Fireblast
-				dem=100
-				sharicopy()
-				////////////////////////////////////////////
-				src.hsealvalue=20//sleep 2 seconds
-				src.seals()
 				view() << output("[src]: Katon-Fireblast no-Jutsu!", "combatlog")
 				src.icon_state="blow"
 				src.overlays+='createfire.dmi'
@@ -83,14 +67,6 @@ mob
 
 
 			if("Multiple_FirePoenix")// housenka
-
-				rem="Multiple_FirePoenix"//shari_copy
-				nem=350//cost of Fireblast
-				dem=205
-				sharicopy()
-				////////////////////////////////////////////
-				src.hsealvalue=3//slep 3 seconds
-				src.seals()
 				src.icon_state="blow"
 				src << output("[src]: Multiple_FirePoenix", "combatlog")
 				var/mob/M=src.targeted
@@ -107,14 +83,6 @@ mob
 
 
 			if("Mystic_Fire_Dragon")
-
-				rem="Mystic_Fire_Dragon"//shari_copy
-				nem=400//cost of Chamber_of_Nothingness
-				dem=30
-				sharicopy()
-				////////////////////////////////////////////
-				src.hsealvalue=20//slep 3 seconds
-				src.seals()
 				src << output("[src]: Mystic_Fire_Dragon", "combatlog")
 				var/mob/M=src.targeted
 				if(M)

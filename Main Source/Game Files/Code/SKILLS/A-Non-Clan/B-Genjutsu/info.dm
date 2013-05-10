@@ -12,6 +12,7 @@ Skill
 		maxcooldown=40
 		sindex="Sleepgen"
 		procedure="Genjutsu"
+		copy=1//can sharingan copy it
 
 /*
 	Darkness_Gen
@@ -22,5 +23,6 @@ Skill
 		cooldown=3
 		sindex=3
 		procedure="Genjutsu"
+		copy=1//can sharingan copy it
 
 */

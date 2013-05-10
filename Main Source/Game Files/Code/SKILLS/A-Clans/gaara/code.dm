@@ -5,8 +5,6 @@ mob
 ///////////////GAARA//////////////////////////////////
 
 			if("Sand_shield")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Sand shield", "combatlog")
 				for(var/obj/SandM/A in view())
 					if(A&&A.owner==src)
@@ -59,8 +57,6 @@ mob
 						src<<output("No sand in your location..", "combatlog")
 
 			if("Sand_control")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: You start to control the Sand around you..", "combatlog")
 				src.overlays+='sand control.dmi'
 				var/obj/SandM/X=new/obj/SandM
@@ -68,7 +64,6 @@ mob
 				X.owner=src
 
 			if("Sand_cancel")
-				src.hsealvalue=1//slep 0.1 seconds
 				src.overlays-='sand control.dmi'
 				for(var/obj/SandM/A in world)
 					if(A.owner==src)
@@ -78,8 +73,6 @@ mob
 
 
 			if("Sand_shuriken")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Sand shuriken..", "combatlog")
 				for(var/obj/SandM/A in view())
 					if(A&&A.owner==src)
@@ -122,8 +115,6 @@ mob
 
 
 			if("Desert_coffin")
-				src.hsealvalue=4//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Desert_Coffin..", "combatlog")
 				for(var/obj/SandM/A in view())
 					if(A&&A.owner==src)
@@ -140,8 +131,6 @@ mob
 
 
 			if("Sand_spike")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Sand spike..", "combatlog")
 				Execution(/obj/Sandspike,2,500,src)
 

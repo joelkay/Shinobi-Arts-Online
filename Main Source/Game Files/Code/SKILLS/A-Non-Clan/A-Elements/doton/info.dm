@@ -9,6 +9,7 @@ Skill
 		maxcooldown=50
 		sindex="Chamber_of_Nothingness"
 		procedure="Doton"
+		copy=1//can sharingan copy it
 
 	Chamber_Leech
 		name="Chamber_Leech"
@@ -19,6 +20,7 @@ Skill
 		maxcooldown=60
 		sindex="Chamber_Leech"
 		procedure="Doton"
+		copy=1//can sharingan copy it
 
 	Doton_River
 		name="Doton_River"
@@ -29,6 +31,7 @@ Skill
 		maxcooldown=30
 		sindex="Doton_River"
 		procedure="Doton"
+		copy=1//can sharingan copy it
 
 	Doton_MudBullets
 		name="Doton_MudBullets"
@@ -39,3 +42,4 @@ Skill
 		maxcooldown=80
 		sindex="Doton_MudBullets"
 		procedure="Doton"
+		copy=1//can sharingan copy it

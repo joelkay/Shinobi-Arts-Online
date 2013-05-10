@@ -10,6 +10,8 @@ Skill
 		sealtime=0
 		sindex="Shadow_Clone"
 		procedure="Basic"
+		copy=1//can sharingan copy it
+
 
 	Transformation_Technique
 		name="Transformation Technique"
@@ -21,6 +23,7 @@ Skill
 		sealtime=0
 		sindex="Transformation_Technique"
 		procedure="Basic"
+		copy=1//can sharingan copy it
 
 	Body_Replacement_Technique
 		name="Body Replacement Technique"
@@ -32,6 +35,7 @@ Skill
 		sealtime=0
 		sindex="Body_Replacement_Technique"
 		procedure="Basic"
+		copy=1//can sharingan copy it
 
 	Body_Flicker
 		name="Body Flicker"
@@ -43,3 +47,4 @@ Skill
 		sealtime=0
 		sindex="Body_Flicker"
 		procedure="Basic"
+		copy=1//can sharingan copy it

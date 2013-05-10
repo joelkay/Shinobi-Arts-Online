@@ -5,9 +5,6 @@ mob
 //////////////////GATES///////////////////////////////////////////////////////////////
 
 			if("Gate1")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(!src.cangate)
 					return
 				view() << output("[src] activates the first gate", "combatlog")
@@ -41,9 +38,6 @@ mob
 				src.cangate=1
 
 			if("Gate2")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(!src.cangate2)
 					return
 				view() << output("[src] activates the second gate", "combatlog")
@@ -78,9 +72,6 @@ mob
 				src.cangate2=1
 
 			if("Gate3")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(!src.cangate3)
 					return
 				view() << output("[src] activates the third gate", "combatlog")
@@ -117,9 +108,6 @@ mob
 				src.cangate3=1
 
 			if("Gate4")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(!src.cangate4)
 					return
 				view() << output("[src] activates the fourth gate", "combatlog")
@@ -159,9 +147,6 @@ mob
 				src.cangate4=1
 
 			if("Gate5")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				if(!src.cangate5)
 					return
 				view() << output("[src] activates the last gate", "combatlog")
@@ -196,9 +181,6 @@ mob
 				src.cangate5=1
 
 			if("GateCancel")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				view() << output("[src] cancels out the gates", "combatlog")
 				src.icon_state=""
 				src.overlays-='gate1.dmi'
@@ -219,12 +201,6 @@ mob
 
 
 			if("Lotus")
-
-				rem="Lotus"//shari_copy
-				nem=200//cost of Chamber_of_Nothingness
-				sharicopy(src)
-				//////////////////////////////////////////////////////////
-				src.seals()
 				src << output("[src] loosens his bandages and prepares for a high flying taijutsu move", "combatlog")
 				src.overlays+='goalioncombo.dmi'
 				sleep(20)//2 secs to get

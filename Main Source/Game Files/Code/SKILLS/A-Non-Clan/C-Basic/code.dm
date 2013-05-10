@@ -3,9 +3,8 @@ mob
 		switch(b)
 
 ///////////////BASE///////////////////////////
-			if("Body_Replacement_Technique")//lol advanced shizle
+			if("Body_Replacement_Technique")
 				src << output("[src]: Body_Replacement_Technique no-Jutsu!", "combatlog")
-				src.hsealvalue=1//slep 0.1 seconds
 				src.kawax=0//map change makes these 0
 				src.kaway=0
 				src<<output("You have set your Body_Replacement_Technique location. when you are attacked, you will return to this location this jutsu lasts 150 seconds..", "combatlog")
@@ -25,9 +24,7 @@ mob
 				return
 
 
-			if("Body_Flicker")//lol advanced shizle
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
+			if("Body_Flicker")
 				if(src.inshunsh)return
 				var/mob/M=src.targeted
 
@@ -40,10 +37,7 @@ mob
 				src<<output("You begin to dash at high speed", "combatlog")
 
 
-			if("Transformation_Technique")//lol advanced shizle
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
+			if("Transformation_Technique")
 				var/t=src.icon
 				o = src.overlays.Copy()
 				var/mob/M=src.targeted
@@ -62,11 +56,8 @@ mob
 				src<<output("Press L to revert to yourself", "combatlog")
 
 
-			if("Shadow_Clone")//lol advanced shizle
-
+			if("Shadow_Clone")
 				src << output("[src]: Shadow_Clone no-Jutsu!", "combatlog")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src.KillShadow_Clone()
 				var/mob/NPC/Shadow_Clone/A = new /mob/NPC/Shadow_Clone
 				A.icon=src.icon

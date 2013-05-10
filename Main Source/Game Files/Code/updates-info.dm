@@ -1,5 +1,5 @@
-var/version="0.2"
-var/version_display=0.2
+var/version="0.3"
+var/version_display=0.3
 
 
 var/Main = {"
@@ -17,14 +17,18 @@ var/Main = {"
 
 	<br>
 	<font color = green><center>Updates</center><br>
+	- <font color = blue>0.3-</font><font color = green><b>Massive skill system rework, optimised some skills to run faster.<br>
+	- <font color = blue>0.3-</font><font color = green><b>Uchiha Clan has recieved improvements(Mangekyou!, Sharingan Copy).<br>
+	- <font color = blue>0.3-</font><font color = green><b>Save System changes, can now Delete characters.<br>
 
-	- <font color = blue>0.2-</font><font color = green><b>Save System changes, skill levels are now saved(Remote Saving).<br>
-	- <font color = blue>0.2-</font><font color = green><b>Haku and water moves are fixed.<br>
-	- <font color = blue>0.2-</font><font color = green><b>C3 disable untill rework.<br>
-	- <font color = blue>0.2-</font><font color = green><b>Old saves being wiped since they are incopatible, all characters that log in before version 1 are given founder status.<br>
-	- <font color = blue>0.2-</font><font color = green><b>If a skill fails to execute, it is put off cooldown and you get your chakra back.<br>
-	- <font color = blue>0.2-</font><font color = green><b>Added Hyuuga Radar for byakuugan.<br>
-	- <font color = blue>0.2-</font><font color = green><b>Lowered Kaiten duration.(Hyuuga)<br>
+
+	- <font color = gray>0.2-</font><font color = green><b>Save System changes, skill levels are now saved(Remote Saving).<br>
+	- <font color = gray>0.2-</font><font color = green><b>Haku and water moves are fixed.<br>
+	- <font color = gray>0.2-</font><font color = green><b>C3 disable untill rework.<br>
+	- <font color = gray>0.2-</font><font color = green><b>Old saves being wiped since they are incopatible, all characters that log in before version 1 are given founder status.<br>
+	- <font color = gray>0.2-</font><font color = green><b>If a skill fails to execute, it is put off cooldown and you get your chakra back.<br>
+	- <font color = gray>0.2-</font><font color = green><b>Added Hyuuga Radar for byakuugan.<br>
+	- <font color = gray>0.2-</font><font color = green><b>Lowered Kaiten duration.(Hyuuga)<br>
 
 	- <font color = gray>0.1-</font><font color = green><b>Game has gone under redevolpment, look forward to many changes!.<br>
 	</font>

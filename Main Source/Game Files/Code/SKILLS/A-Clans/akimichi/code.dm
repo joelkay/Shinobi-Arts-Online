@@ -6,8 +6,6 @@ mob
 
 			if("Spinach_pill")
 
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 			//	src.overlays+='akipilla.dmi'
 				src << output("[src]: You gained a strength and health boost be carefull it lasts 50 seconds..", "combatlog")
 				src.strengthplus+=30
@@ -22,9 +20,6 @@ mob
 				return
 
 			if("Curry_pill")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 			//	src.overlays+='akipillb.dmi'
 				src << output("[src]: You gained a high strength and health boost be carefull it lasts 50 seconds..", "combatlog")
 				src.strengthplus+=60
@@ -39,8 +34,6 @@ mob
 				return
 
 			if("Chilli_pill")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				//src.overlays+=new/obj/butterflywings
 				//spawn(50)
 				//	src.overlays-=new/obj/butterflywings
@@ -58,8 +51,6 @@ mob
 				return
 
 			if("Sizeup")
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Sizeup..", "combatlog")
 				src<<output("Skill not yet fixed..", "combatlog")
 
@@ -73,9 +64,6 @@ mob
 
 
 			if("Meattank")
-
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
 				src << output("[src]: Meattank..", "combatlog")
 				var/obj/meattank/A=new/obj/meattank
 				src.inmeat=1

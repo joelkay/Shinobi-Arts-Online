@@ -4,14 +4,7 @@ mob
 
 //////////////////////////GENJUTSU//////////////////
 
-			if("Sleepgen")//lol advanced shizle
-				rem="Sleepgen"//shari_copy
-				nem=600//cost of nagashi
-				dem=70//cooldown
-				sharicopy(src)
-				////////////////////////////////////////////
-				src.hsealvalue=1//slep 0.1 seconds
-				src.seals()
+			if("Sleepgen")
 				src << output("[src]: Sleep Genjutsu", "combatlog")
 				var/mob/M=src.targeted
 				var/intone=(src.dexteritymain+200)/10
