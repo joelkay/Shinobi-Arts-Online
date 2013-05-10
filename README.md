@@ -13,7 +13,4 @@ Core Libraries for SAO
 
 -Nickr5: http://www.byond.com/developer/Nickr5/n_Log
 
-Optional(will be used later, but not in game right now)
-
--Forum Account: http://www.byond.com/developer/Forum_account/HandyStuff
 
