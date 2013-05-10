@@ -17,7 +17,7 @@ mob
 					src.client.eye=src
 					src.canmove=1
 					src<<"Run out of chakra for shadow imitation"
-					src.Skills("Shadow_possesion_Cancel")
+					src.Skills("Nara","Shadow_possesion_Cancel")
 					return
 			else
 				src.canregen=1

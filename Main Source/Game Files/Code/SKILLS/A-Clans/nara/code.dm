@@ -111,6 +111,6 @@ mob
 						M.overlays-=bind2
 						M.canmove=1
 						src.canmove=1
-						src.Skills("Shadow_possesion_Cancel")
+						src.Skills("Nara","Shadow_possesion_Cancel")
 						return
 

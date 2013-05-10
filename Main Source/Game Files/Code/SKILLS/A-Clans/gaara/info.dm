@@ -1,0 +1,61 @@
+Skill
+	////Gaara///
+	Sand_shield
+		name="Sand_shield"
+		icon='skills.dmi'
+		icon_state="Sand_shield"
+		chakracost=450
+		cooldown=60
+		maxcooldown=60
+		sindex="Sand_shield"
+		procedure="Gaara"
+
+	Sand_control
+		name="Sand_control"
+		icon='skills.dmi'
+		icon_state="Sand_control"
+		chakracost=40
+		cooldown=40
+		maxcooldown=40
+		sindex="Sand_control"
+		procedure="Gaara"
+
+	Sand_cancel
+		name="Sand_cancel"
+		icon='skills.dmi'
+		icon_state="Sand_cancel"
+		chakracost=0
+		cooldown=1
+		maxcooldown=1
+		sindex="Sand_cancel"
+		procedure="Gaara"
+
+	Sand_shuriken
+		name="Sand_shuriken"
+		icon='skills.dmi'
+		icon_state="Sand_shuriken"
+		chakracost=140
+		cooldown=40
+		maxcooldown=40
+		sindex="Sand_shuriken"
+		procedure="Gaara"
+
+	Sand_spike
+		name="Sand_spike"
+		icon='skills.dmi'
+		icon_state="Sand_spike"
+		chakracost=80
+		cooldown=40
+		maxcooldown=40
+		sindex="Sand_spike"
+		procedure="Gaara"
+
+	Desert_coffin
+		name="Desert_coffin"
+		icon='skills.dmi'
+		icon_state="Desert_coffin"
+		chakracost=350
+		cooldown=480
+		maxcooldown=80
+		sindex="Desert_coffin"
+		procedure="Gaara"

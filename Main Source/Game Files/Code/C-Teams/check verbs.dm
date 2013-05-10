@@ -60,8 +60,7 @@ mob
 mob
 	proc
 		generate3()
-			if(!Teams)//if no teams list is found
-				Teams = list()//generate a new one for the world
+			if(!Teams.len)//if no teams list is found
 				var/A={"
 				<font color=green>
 				<center>No Files Found<br/>

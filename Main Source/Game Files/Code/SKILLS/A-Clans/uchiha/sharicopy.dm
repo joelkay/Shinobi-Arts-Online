@@ -56,7 +56,7 @@ mob
 				src.Sharinganc()
 				if(can)
 					src.chakra-=src.copiedchakracost
-					src.Skills("[rem]")
+					src.Skills("[rem]")//will need a rework due to procedure stuff
 					cem=1
 					sleep(src.copiedcooldown)
 					cem=0

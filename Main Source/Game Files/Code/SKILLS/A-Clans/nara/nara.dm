@@ -209,7 +209,7 @@ mob
 			set hidden=1
 			if(src.shadow)
 				src<<"Shadow manipulation has ended.."
-				src.Skills("Shadow_possesion_Cancel")
+				src.Skills("Nara","Shadow_possesion_Cancel")
 				src.controlled=null
 				src.client.eye=src
 				src.shadow=0

@@ -15,7 +15,7 @@ mob
 		var/image/I = image('selected.dmi',src,"",999) // create a new target on the source.
 		usr<<I // make it so only u can see the target
 		usr.targeted=src // make your target variable source name.
-		usr<<"<FONT COLOR = #CCCC99>Targetting [src] Health:[src.health]/[src.max_health] Chakra:[src.chakra]/[src.max_chakra] Life:[src.life]/100</FONT>" /// a verb to see who your targetting.
+		usr<<"<FONT COLOR = #CCCC99>Targetting [src] Health:[round(src.health)]/[src.max_health] Chakra:[round(src.chakra)]/[src.max_chakra] Life:[round(src.life)]/100</FONT>" /// a verb to see who your targetting.
 		if(usr==src) return
 		spawn() usr.enemybars()
 
@@ -35,8 +35,8 @@ mob
 			src<<I // make it so only u can see the target
 			src.targeted=M // make your target variable source name.
 			if(!M) return//stop dem errorZ
-			src<<"<FONT COLOR = red>Targetting [M] Health:[M.health]/[M.max_health] Chakra:[M.chakra]/[M.max_chakra] Life:[M.life]/100</FONT>" /// a verb to see who your targetting.
-			src.enemybars()
+			src<<"<FONT COLOR = red>Targetting [M] Health:[round(M.health)]/[M.max_health] Chakra:[round(M.chakra)]/[M.max_chakra] Life:[round(M.life)]/100</FONT>" /// a verb to see who your targetting.
+			spawn() src.enemybars()
 
 
 proc/cMob(atom/source,maxdist)

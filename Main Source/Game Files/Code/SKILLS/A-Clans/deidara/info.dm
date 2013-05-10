@@ -1,0 +1,60 @@
+Skill
+		////Deidara///
+	Clay_clone
+		name="Clay_clone"
+		icon='skills.dmi'
+		icon_state="Clay_clone"
+		chakracost=250
+		cooldown=20
+		maxcooldown=20
+		sindex="Clay_clone"
+		procedure="Deidara"
+
+	Explode_spider
+		name="Explode_spider"
+		icon='skills.dmi'
+		icon_state="Explode_spider"
+		chakracost=100
+		cooldown=10
+		maxcooldown=10
+		sindex="Explode_spider"
+		procedure="Deidara"
+
+	Explode_bird
+		name="Explode_bird"
+		icon='skills.dmi'
+		icon_state="Explode_bird"
+		chakracost=200
+		cooldown=30
+		maxcooldown=30
+		sindex="Explode_bird"
+		procedure="Deidara"
+
+	Multiple_bird
+		name="Multiple_bird"
+		icon='skills.dmi'
+		icon_state="Multiple_bird"
+		chakracost=300
+		cooldown=40
+		maxcooldown=40
+		sindex="Multiple_bird"
+		procedure="Deidara"
+
+	Flying_Bird
+		name="Flying_Bird"
+		icon='skills.dmi'
+		icon_state="Flying_Bird"
+		chakracost=80
+		cooldown=5
+		maxcooldown=5
+		sindex="Flying_Bird"
+		procedure="Deidara"
+	C3
+		name="C3"
+		icon='skills.dmi'
+		icon_state="C3"
+		chakracost=800
+		cooldown=30
+		maxcooldown=30
+		sindex="C3"
+		procedure="Deidara"

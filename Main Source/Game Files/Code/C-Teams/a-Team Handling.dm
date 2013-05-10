@@ -1,7 +1,7 @@
 var/list/Teams = list()
 world
 	New()
-		Teams=new
+		Teams=new/list()
 		Load_Teams()
 		..()
 
