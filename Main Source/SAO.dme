@@ -329,6 +329,7 @@
 #include "Game Files\Map Maker\Code\SAO Build(Game).dm"
 #include "Game Files\Map Maker\Code\SAO I-Build.dm"
 #include "Game Files\SharedLibraries\flaticon.dm"
+#include "Game Files\SharedLibraries\Text Handling.dm"
 #include "Game Files\Skin\grid.dm"
 #include "Game Files\Skin\new.dmf"
 // END_INCLUDE

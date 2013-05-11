@@ -281,7 +281,7 @@ window "C-panel"
 	elem "C-panel"
 		type = MAIN
 		pos = 0,358
-		size = 368x384
+		size = 368x417
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -317,6 +317,34 @@ window "C-panel"
 		macro = ""
 		menu = ""
 		on-close = ""
+	elem "button53"
+		type = BUTTON
+		pos = 0,283
+		size = 48x29
+		anchor1 = 0,0
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = "bold"
+		text-color = #000000
+		background-color = #008080
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "is-checked"
+		on-size = ""
+		text = "verbs"
+		image = ""
+		command = "verbz2"
+		is-flat = false
+		stretch = false
+		is-checked = false
+		group = ""
+		button-type = pushbutton
 	elem "statsafds"
 		type = BUTTON
 		pos = 0,152
@@ -347,7 +375,7 @@ window "C-panel"
 		button-type = pushbutton
 	elem "spectate-button"
 		type = BUTTON
-		pos = 0,317
+		pos = 0,350
 		size = 48x29
 		anchor1 = 0,100
 		anchor2 = none
@@ -375,7 +403,7 @@ window "C-panel"
 		button-type = pushbutton
 	elem "unspectate-button"
 		type = BUTTON
-		pos = 0,351
+		pos = 0,384
 		size = 48x29
 		anchor1 = 0,100
 		anchor2 = none
@@ -431,7 +459,7 @@ window "C-panel"
 		button-type = pushbutton
 	elem "cpanel-botchild"
 		type = CHILD
-		pos = 50,272
+		pos = 50,305
 		size = 316x112
 		anchor1 = 0,100
 		anchor2 = 100,100
@@ -457,7 +485,7 @@ window "C-panel"
 		lock = none
 	elem "war-button"
 		type = BUTTON
-		pos = 0,283
+		pos = 0,316
 		size = 48x29
 		anchor1 = 0,100
 		anchor2 = none
@@ -704,7 +732,7 @@ window "C-panel"
 	elem "cpanel-mainchild"
 		type = CHILD
 		pos = 50,16
-		size = 316x256
+		size = 316x289
 		anchor1 = 0,0
 		anchor2 = 100,100
 		font-family = ""
@@ -755,11 +783,12 @@ window "C-panel"
 		is-checked = false
 		group = ""
 		button-type = pushbutton
+
 window "Cpanel-verbs"
 	elem "Cpanel-verbs"
 		type = MAIN
 		pos = 0,358
-		size = 316x368
+		size = 273x368
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -795,34 +824,6 @@ window "Cpanel-verbs"
 		macro = "macro"
 		menu = "menu1"
 		on-close = ""
-	elem "button52"
-		type = BUTTON
-		pos = 0,336
-		size = 320x32
-		anchor1 = 0,91
-		anchor2 = 100,100
-		font-family = ""
-		font-size = 0
-		font-style = "bold"
-		text-color = #000000
-		background-color = #910000
-		is-visible = false
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = none
-		drop-zone = false
-		right-click = false
-		saved-params = "is-checked"
-		on-size = ""
-		text = "Admin"
-		image = ""
-		command = ""
-		is-flat = false
-		stretch = false
-		is-checked = false
-		group = ""
-		button-type = pushbutton
 	elem "labelverbs"
 		type = LABEL
 		pos = 8,8
@@ -849,45 +850,17 @@ window "Cpanel-verbs"
 		keep-aspect = false
 		align = center
 		text-wrap = false
-	elem "button71"
-		type = BUTTON
-		pos = 216,187
-		size = 58x53
-		anchor1 = 68,51
-		anchor2 = 87,65
-		font-family = ""
-		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
-		is-visible = true
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = line
-		drop-zone = false
-		right-click = false
-		saved-params = "is-checked"
-		on-size = ""
-		text = "Close Panel"
-		image = ""
-		command = "panel quit"
-		is-flat = true
-		stretch = false
-		is-checked = false
-		group = ""
-		button-type = pushbutton
 	elem "button67"
 		type = BUTTON
-		pos = 6,32
-		size = 58x53
+		pos = 6,48
+		size = 58x37
 		anchor1 = 2,9
 		anchor2 = 20,23
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -907,15 +880,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button70"
 		type = BUTTON
-		pos = 216,112
-		size = 58x53
+		pos = 200,147
+		size = 58x37
 		anchor1 = 68,30
 		anchor2 = 87,45
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -935,15 +908,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button69"
 		type = BUTTON
-		pos = 216,32
-		size = 58x53
+		pos = 200,48
+		size = 58x37
 		anchor1 = 68,9
 		anchor2 = 87,23
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -963,15 +936,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button68"
 		type = BUTTON
-		pos = 144,32
-		size = 58x53
+		pos = 136,48
+		size = 58x37
 		anchor1 = 46,9
 		anchor2 = 64,23
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -991,15 +964,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button66"
 		type = BUTTON
-		pos = 72,32
-		size = 58x53
+		pos = 72,48
+		size = 58x37
 		anchor1 = 23,9
 		anchor2 = 41,23
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -1019,15 +992,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button65"
 		type = BUTTON
-		pos = 4,184
-		size = 58x53
+		pos = 6,243
+		size = 58x37
 		anchor1 = 1,50
 		anchor2 = 20,64
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -1047,15 +1020,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button64"
 		type = BUTTON
-		pos = 144,187
-		size = 58x53
+		pos = 138,243
+		size = 58x37
 		anchor1 = 46,51
 		anchor2 = 64,65
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -1075,15 +1048,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button63"
 		type = BUTTON
-		pos = 74,184
-		size = 58x53
+		pos = 72,243
+		size = 58x37
 		anchor1 = 23,50
 		anchor2 = 42,64
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -1103,15 +1076,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button62"
 		type = BUTTON
-		pos = 2,248
-		size = 58x53
+		pos = 202,243
+		size = 58x37
 		anchor1 = 1,67
 		anchor2 = 19,82
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -1131,15 +1104,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button61"
 		type = BUTTON
-		pos = 74,104
-		size = 57x53
+		pos = 72,147
+		size = 58x37
 		anchor1 = 23,28
 		anchor2 = 41,43
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -1159,15 +1132,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button60"
 		type = BUTTON
-		pos = 145,107
-		size = 57x53
+		pos = 136,147
+		size = 58x37
 		anchor1 = 46,29
 		anchor2 = 64,43
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -1187,15 +1160,15 @@ window "Cpanel-verbs"
 		button-type = pushbutton
 	elem "button59"
 		type = BUTTON
-		pos = 5,104
-		size = 57x53
+		pos = 5,147
+		size = 58x37
 		anchor1 = 2,28
 		anchor2 = 20,43
 		font-family = ""
 		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
+		font-style = "bold"
+		text-color = #008000
+		background-color = #1b1b1b
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -1209,6 +1182,34 @@ window "Cpanel-verbs"
 		image = ""
 		command = "panel inventory"
 		is-flat = true
+		stretch = false
+		is-checked = false
+		group = ""
+		button-type = pushbutton
+	elem "button52"
+		type = BUTTON
+		pos = 0,336
+		size = 277x32
+		anchor1 = 0,91
+		anchor2 = 100,100
+		font-family = ""
+		font-size = 0
+		font-style = "bold"
+		text-color = #910000
+		background-color = #1b1b1b
+		is-visible = false
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "is-checked"
+		on-size = ""
+		text = "Admin"
+		image = ""
+		command = ""
+		is-flat = false
 		stretch = false
 		is-checked = false
 		group = ""
@@ -5631,9 +5632,9 @@ window "default"
 		on-close = ""
 	elem "main"
 		type = CHILD
-		pos = -8,16
-		size = 768x584
-		anchor1 = 0,3
+		pos = -8,8
+		size = 768x592
+		anchor1 = 0,1
 		anchor2 = 79,100
 		font-family = ""
 		font-size = 0
@@ -7962,5 +7963,4 @@ window "sayinput"
 		multi-line = false
 		is-password = false
 		no-command = false
-
 

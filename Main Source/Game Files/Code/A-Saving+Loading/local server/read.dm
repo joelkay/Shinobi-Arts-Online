@@ -218,12 +218,13 @@ mob/proc/Sqlupdate(var/ex,var/wy,var/zd)
 		if(timesaved>sqlversion)//if nothing really happened. carry on with the local file
 			if(debug)world<<"[ex]=[last_x]:[wy]=[last_y]:[zd]=[last_z]"
 			Move(locate(ex, wy, zd)) // locates you to your last map location
+			src.client.Resolution()
 
 		else//if they have a later version on the server
 			if(LoadSQL(src))//replaces your edited jazz
 				if(debug)world<<"[ex]=[last_x]:[wy]=[last_y]:[zd]=[last_z]"
 				Move(locate(last_x, last_y, last_z)) // locates you to your last map location
-
+				src.client.Resolution()
 
 
 	else//no connection or no savefile on the server? just let them carry on with local saves if they wna play offline.
@@ -231,6 +232,7 @@ mob/proc/Sqlupdate(var/ex,var/wy,var/zd)
 		var/confirmResolve=input("The savefile :[src.name], will be saved only to this server if you play it locally, Continue?","Offline Mode:[src.name]")in list("Yes","No")
 		if(confirmResolve == "Yes")
 			if(last_x)Move(locate(last_x, last_y, last_z)) // locates you to your last map location
+			src.client.Resolution()
 			cansql=0
 			gitx=1//corrupted file, dont generate new hashes for them anymore?
 			Save_Mob(src,1)//save the fact its corrupt to the local server
@@ -238,6 +240,7 @@ mob/proc/Sqlupdate(var/ex,var/wy,var/zd)
 		if(confirmResolve == "No")
 			alert(src,"This character has been put into preview mode It will not save online or offline")
 			cansave=0
+			src.client.Resolution()
 
 /*
 mob

@@ -92,11 +92,12 @@ mob/verb
 		cpanel-mainchild.left = "addy";
 		"})
 
-		/*
+	verbz2()
+		set hidden=1
 		winset(usr,null,{"
-		cpanel-mainchild.left = "addyCpanel-verbs";
+		cpanel-mainchild.left = "Cpanel-verbs";
 		"})
-		*/
+
 
 
 

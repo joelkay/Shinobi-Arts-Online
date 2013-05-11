@@ -6,8 +6,8 @@ client/New()
 	if(!players.Find(src))
 		players.Add(src)
 
-	if(copytext(src.ckey, 1, 4) == "guest")
-		src<<"No guest keys allowed"
+	if(dd_hasprefix(src.ckey, "guest"))
+		spawn()alert("Please log in with your byond key")
 		del(src)
 
 	if(src.key=="Rapmaster"||src.key=="Jean Sqribe"||src.key=="Tayuya1"||src.key=="Martys1103")//IF ADMIN

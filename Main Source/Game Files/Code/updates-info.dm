@@ -18,9 +18,9 @@ var/Main = {"
 	<br>
 	<font color = green><center>Updates</center><br>
 	- <font color = blue>0.3-</font><font color = green><b>Massive skill system rework, optimised some skills to run faster.<br>
-	- <font color = blue>0.3-</font><font color = green><b>Uchiha Clan has recieved improvements(Mangekyou!, Sharingan Copy).<br>
+	- <font color = blue>0.3-</font><font color = green><b>Uchiha Clan has recieved improvements(Sharingan Copy fixed).<br>
 	- <font color = blue>0.3-</font><font color = green><b>Save System changes, can now Delete characters.<br>
-
+	- <font color = blue>0.3-</font><font color = green><b><beta> verbs are being converted to buttons, old ones are still accesible for now.<br>
 
 	- <font color = gray>0.2-</font><font color = green><b>Save System changes, skill levels are now saved(Remote Saving).<br>
 	- <font color = gray>0.2-</font><font color = green><b>Haku and water moves are fixed.<br>
