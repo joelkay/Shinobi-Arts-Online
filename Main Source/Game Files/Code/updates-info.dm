@@ -13,8 +13,6 @@ var/Main = {"
 
 	<hr><font face = courier>
 
-	<a href="http://shinobi-arts-online.wikia.com">To find out more about this game and upcoming features, click this link to the wiki</font></a><br>
-
 	<br>
 	<font color = green><center>Updates</center><br>
 	- <font color = blue>0.3-</font><font color = green><b>Massive skill system rework, optimised some skills to run faster.<br>
