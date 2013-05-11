@@ -124,10 +124,14 @@ mob
 					if(!src in D.handler)
 						D.handler.Add(src)
 					if(debug) src<<"[src.map.x1+32],[src.map.y1+2],[src.map.z1]"
+					src.Savedx = src.x	  //We save the players X position into a variable
+					src.Savedy = src.y	  //We save the players Y position into a variable
+					src.Savedz = src.z	  //We save the players Z position into a variable
 					src.loc = locate(src.map.x1+32,src.map.y1+2,src.map.z1)
 					src.location = "[src]'s house"
 					src.toggle()//show map
 					AreaUpdate()
+					D.handler.Add(src)//add em back to list
 					//since its already named if in the list
 					//D.name="house[src.name],[loadedmaps]"
 					D.inuse=1

@@ -1,7 +1,6 @@
 var/swapmaps=1
 area
-	var/number
-	var/swap=0
+	var/number=0
 	blackolay
 		layer=FLOAT_LAYER
 		name="SAO"
@@ -11,9 +10,10 @@ area
 			var/num=swapmaps++
 			name="SwapMap:[num]"
 			number=num
-			swap=1
+
 
 proc/AreaUpdate()
+	set background=1
 	for(var/area/blackolay/A in world)
 		if(A.contents.len<=0)
 			swapmaps--
@@ -80,7 +80,7 @@ mob
 				A = A.loc
 			if(A)
 				//src<<"youre in [A]" for bug testing purposes
-				return A.swap
+				return A.number
 
 		uncovermap()
 			var/d=checkarea()
