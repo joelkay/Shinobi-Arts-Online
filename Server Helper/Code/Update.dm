@@ -4,6 +4,7 @@ var/autotime=600//auto saves every 6 mnutes
 var/date = "Sunday,November 07,2010"//last update
 var/cpu=0
 var/uptime=0
+var/maptime=0
 var						//-- Universal Variables
 	creation = "unknown"		//-- Server Birth
 	Host = "unknown"	//-- The Host			(Default = "unknown".)
@@ -27,8 +28,8 @@ proc
 		if(!p) return // if world not up
 		var/a = world.Export("[addr]:[port]#version",null,1)
 		version=a
-		var/b = world.Export("[addr]:[port]#autotime",null,1)
-		autotime=b
+		var/b = world.Export("[addr]:[port]#maptime",null,1)
+		maptime=b
 		var/d = world.Export("[addr]:[port]#creation",null,1)
 		creation=d
 		var/e = world.Export("[addr]:[port]#Host",null,1)
@@ -69,8 +70,7 @@ mob
 		stat("Lag Rate:","[cpu]")
 		stat("")
 		stat("-=Server Auto Save Settings=-")
-		var/a=autotime/100
-		stat("Auto save:","every:[a] minutes")
+		stat("Map delete:","every:[maptime] minutes")
 		stat("")
 		stat("-=Server Settings=-")
 		if(Open == 1)

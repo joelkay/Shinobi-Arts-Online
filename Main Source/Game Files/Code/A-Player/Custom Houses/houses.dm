@@ -30,7 +30,7 @@ mob/proc
 mob
 	proc
 		testhouse()
-			src.Createmap()
+			src.Allocate_House()
 
 mob
 	var
@@ -50,29 +50,24 @@ mob
 		Createmap()
 			set background=1
 			if(src.location) return//can only do it in real world.
+			var/swapmap/Map
+			Map=SwapMaps_Find("Maps/playerhouses/[src.ckey]")
+			if(Map)//If a map is found...
+				Map = SwapMaps_CreateFromTemplate("Maps/playerhouses/[src.ckey]")	  //create it
 
-			src.map = SwapMaps_Load("Maps/playerhouses/[src.ckey]")	  //We check to see if there is a map already made
-
-			if(src.map)	  //If a map is found...
-				maps_created.Add(src.map)
+				maps_created.Add(Map)
 				src.Savedx = src.x	  //We save the players X position into a variable
 				src.Savedy = src.y	  //We save the players Y position into a variable
 				src.Savedz = src.z	  //We save the players Z position into a variable
 
-				covermap(src.map)//cover the area
+				covermap(Map)//cover the area
 			/*
 				var/turf/House/Po = new/turf/House(src.loc)	  //We place the house turf at the players location
 				Po.owner = src	  //Set the house's owner to the player
 				Po.name = "[src]'s House"	//Change the houses name so everyone knows who it belongs to
 			*/
-				if(debug) world<<"[src.map.x1+32],[src.map.y1+2],[src.map.z1]"
-				src.loc = locate(src.map.x1+32,src.map.y1+2,src.map.z1)	  //We teleport the player to the house
-				src.toggle()//show map
-				src.client.eye=src
-			//	src.verbs -= /mob/verb/Claim_Land	//Lastly we get rid of this verb
-				src.location = "[src]'s house"
-
 				src<<"Map Loaded.."
+				return Map
 
 			else
 				src<<"Generating your player house with a custom template.."
@@ -80,25 +75,51 @@ mob
 				src.Savedy = src.y	  //We save the players Y position into a variable
 				src.Savedz = src.z	  //We save the players Z position into a variable
 
-				src.map = new("Maps/playerhouses/[src.ckey]",40,40,1)	//If there isn't a map we create a new one that is 60x60 tiles
+				Map = new("Maps/playerhouses/[src.ckey]",40,40,1)	//If there isn't a map we create a new one that is 60x60 tiles
 
-				src.map.BuildFilledRectangle(locate(map.x1+26,map.y1+1,map.z1),\
-				                         locate(map.x1+38,map.y1+15,map.z1),\
+				Map.BuildFilledRectangle(locate(Map.x1+26,Map.y1+1,Map.z1),\
+				                         locate(Map.x1+38,Map.y1+15,Map.z1),\
 				                         /turf/Tile)	//We build a filled rectangle from 26,1 to 38,15
 
-				src.map.BuildRectangle(locate(map.x1+25,map.y1,map.z1),\
-				                   locate(map.x1+39,map.y1+14,map.z1),\
+				Map.BuildRectangle(locate(Map.x1+25,Map.y1,Map.z1),\
+				                   locate(Map.x1+39,Map.y1+14,Map.z1),\
 				                   /turf/Wall)	  //We build a rectangle from 25,0 to 39,14
 
-				new/turf/Ladder(locate(src.map.x1+32,src.map.y1+1,src.map.z1))
+				new/turf/Ladder(locate(Map.x1+32,Map.y1+1,Map.z1))
 
-				covermap(src.map)//cover the area
-				if(debug) world<<"[src.map.x1+32],[src.map.y1+2],[src.map.z1]"
-				src.loc = locate(src.map.x1+32,src.map.y1+2,src.map.z1)
-				src.location = "[src]'s house"
-				src.toggle()//show map
+				covermap(Map)//cover the area
 
-				spawn() src.savemap()
+				return Map
+
+
+
+mob/proc
+	ExitMap()
+		var/mob/M=src
+		M.loc = locate(M.Savedx,M.Savedy,M.Savedz)	 //We teleport them to their saved location
+		M.location = null
+		spawn() src.savemap()
+		var/d=M.checkarea2()//incase they dont get teled
+		if(d)//if it returns a swap map
+			if(debug)alert("Failed tele")
+			M.Respawn()//respawn if they didnt
+			if(mapsets.len)
+				for(var/Map/D in mapsets)	//first check if a map is available
+				//if(D.inuse)continue
+					if(D.houseowner==src.key)
+						D.handler.Remove(src)//free the map for deleting
+						D.inuse=0
+
+		else
+			if(mapsets.len)
+				for(var/Map/D in mapsets)	//first check if a map is available
+				//if(D.inuse)continue
+					if(D.houseowner==src.key)
+						D.handler.Remove(src)//free the map for deleting
+						D.inuse=0
+
+
+
 
 
 
@@ -119,8 +140,8 @@ turf
 
 		Enter(mob/M)
 			if(ismob(M) && M.client)	//If a mon entered the ladder and is a player
-				M.loc = locate(M.Savedx,M.Savedy,M.Savedz)	 //We teleport them to their saved location
-				M.location = null
+				M.ExitMap()
+
 
 
 	densevoid

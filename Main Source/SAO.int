@@ -1,0 +1,19 @@
+// BEGIN_INTERNALS
+/*
+MAP_ICON_TYPE: 0
+WINDOW: Game Files\Code\A-Player\Custom Houses\houses.dm;Game Files\Code\Swap Maps Handling\Map Handler.dm;Game Files\Code\Cutscenes\scenes\zcompletescenes.dm;Game Files\Code\Cutscenes\scenes\scenes.dm
+PACKAGE_RSC_NAME: C:\Users\Joelie\Documents\GitHub\Shinobi-Arts-Online\Main Source\SAO_rsc.zip
+LAST_COMPILE_VERSION: 499.1183
+PACKAGE_DME_DEMO: 
+PACKAGE_TYPE: 0
+PACKAGE_DME_START: 
+DIR: Game Files Game Files\Code Game Files\Code\A-Admin Game Files\Code\A-Base Procs Game Files\Code\A-Player Game Files\Code\A-Player\Cpanel Game Files\Code\A-Player\Custom Houses Game Files\Code\A-World Game Files\Code\Cutscenes Game Files\Code\Cutscenes\scenes Game Files\Code\Swap Maps Handling 
+PACKAGE_DME_NAME: C:\Users\Joelie\Documents\GitHub\Shinobi-Arts-Online\Main Source\SAO_src.zip
+FILE: Game Files\Code\Cutscenes\scenes\zcompletescenes.dm
+PACKAGE_DME_INFO: 
+PACKAGE_DMB_NAME: C:\Users\Joelie\Dropbox\Public\SAO\SAO.zip
+LAST_COMPILE_TIME: 1368262934
+AUTO_FILE_DIR: ON
+PACKAGE_DMB_INFO: libmysql.dll , map_Maps/
+*/
+// END_INTERNALS

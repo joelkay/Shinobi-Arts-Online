@@ -1,68 +1,106 @@
 var/loadedmaps=1
 var/list/mapsets=list()
+var/MAPTIME=10//this var specifies how long the Map deleter waits before deleting maps
 Map
-	var/name
-	var/time=2
-	var/inuse=0
-	var/ready=1
-	var/uses=0
-	var/list/handler=list()
-	var/swapmap/mapsa
-	var/swapmap/mapsb
-	var/swapmap/mapsc
+	var/name//maps name
+	var/time//time before it gets deleted
+	var/inuse=0//shows if the map is in use
+	var/ready=1// shows if its ready, idk if this is used
+	var/uses=0// number of uses the map has had
+	var/setnum//this is the set the map contains
+	var/houseowner//this var is for maps that have houses
+	var/list/handler=list()//list of people in the map
+	var/swapmap/mapsa//map a  it contains
+	var/swapmap/mapsb//map b  it contains
+	var/swapmap/mapsc//map c  it contains
 
 	New(mob/h)
-		time=30//last 15 minutes before maps get phased out
+		time=MAPTIME//last 10 minutes before maps get phased out
 		spawn(5) countdown()
 		mapsets.Add(src)
 
 	proc
-		standby()
+		standby()//shows map is ready; for maps that dont allow instancing. Dungeons maybe? :)
 			set background=1
 			ready=1
+			inuse=0
 			uses++
 
-
-	proc
-		Generate(mob/M)
-			src.mapsa = SwapMaps_CreateFromTemplate("Maps/field")	 //load the scene map
-			covermap(src.mapsa)
-			spawn() Generateb(M)
-
-		Generateb(mob/M)
-			src.mapsb = SwapMaps_CreateFromTemplate("Maps/dungeon")	 //load the next scene map
-			covermap(src.mapsb)
-			spawn() Generatec(M)
-
-		Generatec(mob/M)
-			src.mapsc = SwapMaps_CreateFromTemplate("Maps/Dungeon2")	 //load the next scene map
-			covermap(src.mapsc)
-			if(M)
-				M.map=src.mapsa
-				M.map2=src.mapsb
-				M.map3=src.mapsc
-				M.mapset=src
-				src.handler.Add(M)
-			src.name="set[loadedmaps]"
-			src.inuse=1
-			loadedmaps++
-
-
-
-	proc
-		countdown()
+		countdown()//the map deleter oh ohh
 			set background=1
 			while(time&&handler.len)
-				sleep(600)
+				sleep(600)//one minute
 				time--
+			if(!time)
+				purge()
 
-			if(!time||!handler.len)
+
+		purge()
+			set background=1
+			if(!time&&!handler.len)
 				mapsa.Del()
 				mapsb.Del()
 				mapsc.Del()
 				world.cleanup()
 				loadedmaps--
-			mapsets.Remove(src)
+				mapsets.Remove(src)
+
+			else
+				time=MAPTIME//well start again
+				countdown()
+
+
+	proc
+		Generate(mob/M,var/num)// so allocating a map with just Allocate_Maps()gives the default stuff
+			//Allocate_Maps(2)//gives us next map e,t.c
+			switch(num)
+				if(1)//allowing expansion for new cutscenes
+					src.mapsa = SwapMaps_CreateFromTemplate("Maps/field")	 //load the scene map
+					covermap(src.mapsa)
+					spawn() Generateb(M,num)
+
+				//if(2)
+				//	src.mapsa = SwapMaps_CreateFromTemplate("Maps/blah")	 //load the scene map
+				//	covermap(src.mapsa)
+				//	spawn() Generateb(M,num)
+
+
+		Generateb(mob/M,var/num)
+			switch(num)
+				if(1)//allowing expansion for new cutscenes
+					src.mapsb = SwapMaps_CreateFromTemplate("Maps/dungeon")	 //load the next scene map
+					covermap(src.mapsb)
+					spawn() Generatec(M,num)
+
+				//if(2)
+				//	src.mapsa = SwapMaps_CreateFromTemplate("Maps/blah")	 //load the scene map
+				//	covermap(src.mapsa)
+				//	spawn() Generateb(M,num)
+
+
+
+		Generatec(mob/M,var/num)
+			switch(num)
+				if(1)//allowing expansion for new cutscenes
+					src.mapsc = SwapMaps_CreateFromTemplate("Maps/Dungeon2")	 //load the next scene map
+					covermap(src.mapsc)
+
+				//if(2)//allowing expansion for new cutscenes
+				//	src.mapsc = SwapMaps_CreateFromTemplate("Maps/blah")	 //load the next scene map
+				//	covermap(src.mapsc)
+
+
+
+			if(M)//if they are there
+				M.map=src.mapsa//hand out the fresh maps
+				M.map2=src.mapsb//hand out the fresh maps
+				M.map3=src.mapsc//hand out the fresh maps
+				src.handler.Add(M)//add them to the list
+			src.name="set:[num],[loadedmaps]"//name our map
+			M.mapset=src.name//for deleting later
+			src.inuse=1//make it in use
+			loadedmaps++//so we can keep track of the sets generated
+
 
 
 
@@ -72,13 +110,93 @@ mob/var/mapset
 
 mob
 	proc
-		Allocate_Maps()
+		Allocate_House()
+			var/available_map
+			if(mapsets.len)
+				for(var/Map/D in mapsets)	//first check if a map is available
+					//if(D.inuse)continue
+					if(D.houseowner==src.key)available_map=D//xD
+
+				if(available_map)//if its in game already
+					var/Map/D=available_map
+					src.map = D.mapsa
+					D.houseowner=src.key
+					if(!src in D.handler)
+						D.handler.Add(src)
+					if(debug) src<<"[src.map.x1+32],[src.map.y1+2],[src.map.z1]"
+					src.loc = locate(src.map.x1+32,src.map.y1+2,src.map.z1)
+					src.location = "[src]'s house"
+					src.toggle()//show map
+					AreaUpdate()
+					//since its already named if in the list
+					//D.name="house[src.name],[loadedmaps]"
+					D.inuse=1
+					D.uses++
+					src<<"Map Loaded.."
+
+
+				else//make a new one for them
+					var/Map/D = new/Map
+					var/loop=0
+					D.mapsa = src.Createmap()//load the house map
+					LOOP
+					if(D.mapsa)
+						D.houseowner=src.key
+						D.handler.Add(src)
+						src.map=D.mapsa
+						if(debug) src<<"[src.map.x1+32],[src.map.y1+2],[src.map.z1]"
+						src.loc = locate(src.map.x1+32,src.map.y1+2,src.map.z1)
+						src.location = "[src]'s house"
+						src.toggle()//show map
+						AreaUpdate()
+						if(D.time<MAPTIME)
+							D.time=MAPTIME//give it more time before deletion
+						D.name="house[src.name],[loadedmaps]"
+						D.inuse=1
+						D.uses++
+					else
+						if(loop<10)//10 tries incase of lag e.e.tc
+							loop++
+							goto LOOP
+						else
+							src<<"Error1:We failed to create your map"
+
+			else//if no map handlers are in game
+				var/Map/D = new/Map
+				var/loop=0
+				D.mapsa = src.Createmap()	 //load the house map
+				LOOP
+				if(D.mapsa)
+					D.houseowner=src.key
+					D.handler.Add(src)
+					src.map=D.mapsa
+					if(debug) src<<"[src.map.x1+32],[src.map.y1+2],[src.map.z1]"
+					src.loc = locate(src.map.x1+32,src.map.y1+2,src.map.z1)
+					src.location = "[src]'s house"
+					src.toggle()//show map
+					AreaUpdate()
+					loadedmaps++
+					D.name="house[src.name],[loadedmaps]"
+					D.inuse=1
+					D.uses++
+
+				else
+					if(loop<10)//10 tries incase of lag e.e.tc
+						loop++
+						goto LOOP
+					else
+						src<<"Error2:We failed to create your map"
+
+
+
+
+		Allocate_Maps(var/num)//0= default maps in the cutscenes stuff
 			var/list/available_maps=list()
 
 			if(mapsets.len)
 				for(var/Map/D in mapsets)	//first check if a map is available
 					//if(D.inuse)continue
-					if(D)available_maps.Add(D)
+					if(!D.houseowner&&D.setnum==num)available_maps.Add(D)//dont give them houses
 
 				if(available_maps.len)
 					REPICK
@@ -100,14 +218,18 @@ mob
 					//if not
 					var/Map/D = new/Map
 					//alert(src,"all maps in use, generating a new map")
-					D.Generate(src)
+					if(num)//default =1
+						D.setnum=num//so it knows
+						D.Generate(src,num)
 
 
 			else
 				//if not
 				var/Map/D = new/Map
 				//alert(src,"no maps in game generating a new map")
-				D.Generate(src)
+				if(num)//default =1
+					D.setnum=num
+					D.Generate(src,num)
 
 
 
@@ -124,7 +246,8 @@ mob/Owner
 			if(!mapsets.len)
 				src<<"No Loaded maps at the moment.."
 			for(var/Map/D in mapsets)
-				src<<"[D.name],clients:[D.handler], inuse:[D.inuse], uses:[D.uses], time before deletion:[D.time]"
+				var/listclients=dd_list2text(D.handler, "; ")
+				src<<"[D.name],clients:[listclients], inuse:[D.inuse], uses:[D.uses], time before deletion:[D.time] minutes"
 
 
 

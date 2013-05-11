@@ -17,8 +17,7 @@ mob
 			stat("Lag Rate:","[world.cpu]")
 			stat("")
 			stat("-=Server Auto Save Settings=-")
-			var/a=autotime/100
-			stat("Auto save:","every:[a] minutes")
+			stat("Map Delete:","every:[MAPTIME] minutes")
 			stat("")
 			stat("-=Server Settings=-")
 			if(Open == 1)

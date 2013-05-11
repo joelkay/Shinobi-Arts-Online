@@ -25,7 +25,7 @@ mob/proc
 			src.verbs += typesof(/mob/Host/verb)
 			src.GM=1
 
-		if(src.key=="Grimzdragon"||src.key=="Martys1103")// Admin verbs
+		if(src.key=="Martys1103")// Admin verbs
 			spawn()setGM(src,1)//these keys are always GM when they log in with Admin verbs
 			src.verbs += typesof(/mob/Admin/verb)//incase the isGM fails
 			src.GM=1

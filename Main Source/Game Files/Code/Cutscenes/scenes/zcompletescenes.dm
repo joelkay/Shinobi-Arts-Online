@@ -13,29 +13,34 @@ mob
 			b=0//can play all again
 			winset(src,null,{"
 			default.cpanel-button.command="Cpanel";
-			default.xlog.text = "Logout";
-			default.xlog.command = "ExiT";
-			default.xlog.background-color = "green";
 			default.menu= null
 			"})
-			spawn(1)
-				src.Save()
+			src.finish()//map is ready for deletion
 			spawn()
 				src.showmacros()// activate macros
 				src.loadfirst()
 			inscenes=0
-			//src.finish()
+			spawn(10)
+				src<<"Saving your character for the first time."
+				src.Save()
+
+
 
 	proc
 		finish()
-			if(vis.cant_see(src.name))
-				vis.is_not_a(src.name)
-			for(var/Map/D in mapsets)
-				if(D==src.mapset)
-					D.inuse=0
-					D.ready=0
-					spawn() D.standby()
+			set background=1
+			//if(vis.cant_see(src.name))
+			//	vis.is_not_a(src.name)
+			if(mapsets.len)
+				for(var/Map/D in mapsets)	//first check if a map is available
+					if(D.name==src.mapset)
+						D.handler.Remove(src)
+						D.inuse=0
+						D.ready=0
+						spawn() D.standby()
+
 			src.mapset=""
+			src.location = null
 
 
 

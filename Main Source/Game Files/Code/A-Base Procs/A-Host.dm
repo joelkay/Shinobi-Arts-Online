@@ -80,7 +80,7 @@ mob/Host/verb
 		set category="Host"
 		set name = "Configure Server"
 		set desc = "Allows you to change the server's settings."
-		var/list/options = list("Change Host Name","Set Player Limit","Open/Lock Server","Turn on Same Compulter Multi-Ip")//,"Change Server Password")
+		var/list/options = list("Change Host Name","Set Player Limit","Configure Map-Deletion Time","Open/Lock Server","Turn on Same Compulter Multi-Ip")//,"Change Server Password")
 		switch(input("What limits would you like to configure?","Configure Server") as null|anything in options)
 			/* //disabled for now
 
@@ -129,23 +129,23 @@ mob/Host/verb
 						world.statusupdate()
 					if("Cancel")
 						return 0
-			/*
-			if("Configure Auto-Save Time")
-				switch(alert("You are about to change auto save time for this server?","Continue","Yes","No"))
+
+			if("Configure Map-Deletion Time")
+				switch(alert("You are about to change auto map deletion time for this server?","Continue","Yes","No"))
 					if("Yes")
-						var/time = input("What would you like to set the auto-save time to? Note time may not be less than 2 and more than 9.","Configure Save Time","[HostMSG]") as null|num
-						if(time<2)
+						var/time = input("What would you like to set the auto-save time to? Note time may not be less than 3 and more than 15.","Configure Deletion Time","[HostMSG]") as null|num
+						if(time<3)
 							src<<"[time] is less than 3 :(."
 							return 0
-						if(time>9)
-							src<<"[time] is greater than 9 :(."
+						if(time>15)
+							src<<"[time] is greater than 15 :(."
 							return 0
 						else
-							autotime=time*100
-							src<<"World save time has been changed to every [time] minutes."
+							MAPTIME=round(time)
+							src<<"Virtual map deletion time has been changed to every [round(time)] minutes."
 					if("No")
 						return 0
-			*/ //already autosaves on logout now
+
 
 			if("Turn on Same Compulter Multi-Ip")
 				if(!multi_ip)

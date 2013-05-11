@@ -2,7 +2,7 @@ world/Topic(Topic)//MAIN
 	..()
 	if(Topic == "ping") return 1
 	if(Topic == "version") return text2num(version)
-	if(Topic == "autotime") return autotime
+	if(Topic == "maptime") return MAPTIME
 	if(Topic == "creation") return creation
 	if(Topic == "Host") return Host
 	if(Topic == "HostMSG") return HostMSG

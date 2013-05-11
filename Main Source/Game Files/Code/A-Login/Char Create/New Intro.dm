@@ -332,7 +332,9 @@ mob
 			//world<<"[src.client.mob]"
 			//world<<"[src]"
 			spawn()Apopup(src,"please wait. loading maps")
-			src.Allocate_Maps()
+			src.Allocate_Maps(1)// so allocating a map with just Allocate_Maps(1)gives the default stuff
+			//Allocate_Maps(2)//gives us next map e,t.c
+			//check MapHandler.dm for more info
 			wait
 			if(!src.map)
 				spawn(10)
