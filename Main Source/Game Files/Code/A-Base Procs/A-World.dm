@@ -40,10 +40,14 @@ world
 		statusupdate()
 			var/bool="No"//to show if the server accepts multikey
 			if(multi_ip)bool="Yes"
-			if(HostMSG=="SAO Cloud")
+			if(HostMSG=="SAO Cloud"&&Host=="SAO Cloud")
 				world.status = {"<font color="blue"><b>Hosted by:[HostMSG],Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</b></font>"}
 			else
-				world.status = {"<font color="blue">Hosted by:[HostMSG],Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</font>"}
+				if(HostMSG!="SAO Cloud")
+					world.status = {"<font color="blue">Hosted by:[HostMSG],Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</font>"}
+				else
+					world.status = {"<font color="blue">Hosted by:Unkown,Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</font>"}
+
 
 ///HOST VARZ///
 

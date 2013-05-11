@@ -46,15 +46,19 @@ mob
 
 
 	proc/seals(Skill/S)
+		return 1
+
+		/*// it was making things buggy
 		src.icon_state="jutsu exicute"//since they do seals already
 		var/sleeptime=S.sealtime*10//so that we can use nice numbers when specifying in the skill stuff
+
 		if(sleeptime>10)//so things like shunhsin can be quick
 			spawn(sleeptime)
 				src.icon_state=""//since they do seals already
 				return 1
 		else
 			return 1
-
+		*/
 
 
 
