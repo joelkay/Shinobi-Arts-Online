@@ -129,9 +129,9 @@
 
 // BEGIN_INCLUDE
 #include <dantom\db\db.dme>
-#include <nickr5\n_log\n_Log.dme>
-#include <lummoxjr\swapmaps\SwapMaps.dme>
 #include <forum_account\visibilitygroups\visibility-groups.dme>
+#include <lummoxjr\swapmaps\SwapMaps.dme>
+#include <nickr5\n_log\n_Log.dme>
 #include "Game Files\Code\updates-info.dm"
 #include "Game Files\Code\A-Admin\Admin.dm"
 #include "Game Files\Code\A-Admin\B-ban.dm"

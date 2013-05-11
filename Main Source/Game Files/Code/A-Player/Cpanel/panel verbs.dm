@@ -7,19 +7,19 @@ mob/verb
 				src.Save()
 				Apopup(src,"Character Saved!") // tells you that you saved
 
-			if("who") // button
+			if("who")
 				src.Who()
 				winset(usr,null,{"
 				cpanel-mainchild.left = "Cpanel-pane";
 				"})
 
-			if("skills") // button
+			if("skills")
 				src.UpdateSkills()
 				winset(usr,null,{"
 				cpanel-mainchild.left = "Cpanel-skillsgrid";
 				"})
 
-			if("quests") // button
+			if("quests")
 				src.questgrid()
 				winset(usr,null,{"
 				cpanel-mainchild.left = "Cpanel-questgrid";
@@ -31,13 +31,13 @@ mob/verb
 				cpanel-mainchild.left = "Cpanel-checkmap";
 				"})
 
-			if("chatoptions") // button
+			if("chatoptions")
 				winset(usr,null,{"
 				cpanel-mainchild.left = "Cpanel-chatoptions";
 				"})
 
 
-			if("inventory") // button
+			if("inventory")
 				src.UpdateEquipment()
 				winset(usr,null,{"
 				cpanel-mainchild.left = "Cpanel-inventory";
