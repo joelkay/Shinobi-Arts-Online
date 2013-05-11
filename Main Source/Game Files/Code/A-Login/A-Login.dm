@@ -13,16 +13,18 @@ client/New()
 	if(src.key=="Rapmaster"||src.key=="Jean Sqribe"||src.key=="Tayuya1"||src.key=="Martys1103")//IF ADMIN
 		if(!address || address==world.address || address=="127.0.0.1")//IF ADMIN IS HOSTING
 			if(my_server != "localhost"&&my_database == "zadmin_sao")//dont mess with local host saves dere
-				switch(alert(src,"The server is using the database: [my_database] Would you like to use the test one?","Admin:Database","Yes","No"))
-					if("Yes")
-						my_database = "zadmin_saotest"//server test database for SAO
-						debug=1//turn debug on for testing
-					if("No")
-						debug=0//turn off debug
+				spawn()
+					switch(alert(src,"The server is using the database: [my_database] Would you like to use the test one?","Admin:Database","Yes","No"))
+						if("Yes")
+							my_database = "zadmin_saotest"//server test database for SAO
+							debug=1//turn debug on for testing
+						if("No")
+							debug=0//turn off debug
 
 	if(isLoggedin(src))//if they are logged into another server
-		alert(src,"You may only log into one server at a time")
-		spawn(20)del(src)
+		spawn(20)
+			alert(src,"You may only log into one server at a time")
+			del(src)
 
 	spawn()Loggedin(src,1)//if they arent logged into any servers, make it so they are logged in
 

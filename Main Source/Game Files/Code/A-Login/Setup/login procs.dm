@@ -76,7 +76,7 @@ client
 	New()
 		. = ..()
 		winset(src, "default", "is-maximized = true")
-		src.Resolution()
+		spawn() src.Resolution()
 
 
 
