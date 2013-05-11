@@ -237,15 +237,15 @@ mob
 	proc
 		joinchuunin()
 			winset(src,null,{"
-			war-button.text ="Join Chuunin";
+			war-button.text ="Join";
 			war-button.command ="JoinChuunin";
 			war-button.is-visible ="true";
 
-			spectate-button.text ="Spectate Chuunin";
+			spectate-button.text ="Spectate";
 			spectate-button.is-visible ="true";
 			spectate-button.command ="SpectateRound";
 
-			unspectate-button.text ="Stop Spectate";
+			unspectate-button.text ="Stop";
 			unspectate-button.is-visible ="true";
 			unspectate-button.command ="UnSpectate";;
 			"})

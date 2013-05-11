@@ -527,6 +527,7 @@ mob/hokage
 			if(M.Village == src.Village)
 				world<<"<font color = blue>[M] has been exiled from [src.Village]</font>."
 				M.Village="Missing"
+				M.faction="Missing"
 				M.missing=1
 			if(M==src)
 				M<<"Are you dumb?."

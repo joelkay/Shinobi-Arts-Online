@@ -316,6 +316,7 @@ mob
 			<tr>
 			<th>Key</th>
 			<th>Name</th>
+			<th>Level</th>
 			<th>Rank</th>
 			</tr>
 			"}
@@ -325,6 +326,7 @@ mob
 					D+={"<tr>
 			<td bgcolor=#41A317>[X.key]</td>
 			<td bgcolor=#41A317>[X.name]</td>
+			<td bgcolor=#41A317>[X.blevel]</td>
 			<td bgcolor=#41A317>[X.rank]</td>
 			</tr>"}
 
@@ -332,6 +334,7 @@ mob
 					D+={"<tr>
 			<td bgcolor=#ffd700>[X.key]</td>
 			<td bgcolor=#ffd700>[X.name]</td>
+			<td bgcolor=#ffd700>[X.blevel]</td>
 			<td bgcolor=#ffd700>[X.rank]</td>
 			</tr>"}
 
@@ -339,6 +342,7 @@ mob
 					D+={"<tr>
 			<td bgcolor=006699>[X.key]</td>
 			<td bgcolor=006699>[X.name]</td>
+			<td bgcolor=006699>[X.blevel]</td>
 			<td bgcolor=006699>[X.rank]</td>
 			</tr>"}
 
@@ -346,7 +350,8 @@ mob
 					D+={"<tr>
 			<td bgcolor=#C9C299>[X.key]</td>
 			<td bgcolor=#C9C299>[X.name]</td>
-			<td bgcolor=#C9C299>rogue</td>
+			<td bgcolor=#C9C299>[X.blevel]</td>
+			<td bgcolor=#C9C299>[X.faction]</td>
 			</tr>"}
 
 

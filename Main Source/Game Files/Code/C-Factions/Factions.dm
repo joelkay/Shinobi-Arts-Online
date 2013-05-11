@@ -27,10 +27,10 @@ mob/Admin
 			set category = "Faction"
 			src.checkedit()
 			var/mob/M=c.mob
-			if(M.Village == "Missing")
-				if(M.factionll)
-					src<<"[M] has a faction already.."
-					return
+			if(M.faction != "Missing"||M.factionll)
+				src<<"[M] has a faction already., or is not a Missing ninja"
+				return
+			else
 				var/Factionname
 				Factionname = input("Choose a name for the Group..","Group name", Factionname)
 				M.Village="[Factionname]"
@@ -39,16 +39,11 @@ mob/Admin
 				M.rank = "[M.Village]"
 				M.faction = M.Village
 				M.factionll=1
-
-				spawn() src.Save()
-
-
 				//var/obj/MizukageHat/B = new/obj/MizukageHat
 				//B.loc = M
 				M.verbs += typesof(/mob/FactionL/verb)
 				spawn() M.Save()
-			else
-				src<<"Their not Missing.."
+
 
 		RemoveFactionL(client/c in players)
 			set category = "Faction"
@@ -57,6 +52,7 @@ mob/Admin
 			M<<"You have been removed from Faction!"
 			M.rank = "Jounin"
 			M.Village = "Missing"
+			M.faction="Missing"
 			world.SetMedal("Jounin", M)
 			M.factionll=0
 			M.verbs -= typesof(/mob/FactionL/verb)

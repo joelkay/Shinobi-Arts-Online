@@ -10,15 +10,15 @@ mob
 	proc
 		jointournament()
 			winset(src,null,{"
-			war-button.text ="Join Tournament";
+			war-button.text ="Join";
 			war-button.command ="JoinTournament";
 			war-button.is-visible ="true";
 
-			spectate-button.text ="Spectate Tournament";
+			spectate-button.text ="Spectate";
 			spectate-button.is-visible ="true";
 			spectate-button.command ="SpecatateTournament";
 
-			unspectate-button.text ="Stop Spectate";
+			unspectate-button.text ="Stop";
 			unspectate-button.is-visible ="true";
 			unspectate-button.command ="UnSpectate";;
 			"})

@@ -21,8 +21,8 @@ mob
 
 		cpanelhelp()
 			set hidden=1
-			usr.CpanelHelp()
-			winset(usr,null,{"
+			src.CpanelHelp()
+			winset(src,null,{"
 			cpanel-mainchild.left = "Cpanel-pane";
 			"})
 
@@ -36,17 +36,17 @@ mob
 mob/verb
 	who()
 		set hidden=1
-		winset(usr,null,{"
+		winset(src,null,{"
 		cpanel-mainchild.left = "Cpanel-pane";
 		"})
-		usr<<browse(src.Who(),"window=Cpanel-browse")
+		src<<browse(src.Who(),"window=Cpanel-browse")
 
 
 
 	quests()
 		set hidden=1
 		src.questgrid()
-		winset(usr,null,{"
+		winset(src,null,{"
 		cpanel-mainchild.left = "Cpanel-questgrid";
 		"})
 
@@ -54,47 +54,47 @@ mob/verb
 	map()
 		set hidden=1
 		src.checkmap()
-		winset(usr,null,{"
+		winset(src,null,{"
 		cpanel-mainchild.left = "Cpanel-checkmap";
 		"})
 
 	chatoptions()
 		set hidden=1
-		winset(usr,null,{"
+		winset(src,null,{"
 		cpanel-mainchild.left = "Cpanel-chatoptions";
 		"})
 
 	jutsulist()
 		set hidden=1
 		src.JutsuCheck()
-		winset(usr,null,{"
+		winset(src,null,{"
 		stree-child1.left = "Jutsu-pane";
 		"})
 
 
 	inventory()
 		set hidden=1
-		usr.UpdateEquipment()
-		winset(usr,null,{"
+		src.UpdateEquipment()
+		winset(src,null,{"
 		cpanel-mainchild.left = "Cpanel-inventory";
 		"})
 
 	skills()
 		set hidden=1
-		usr.UpdateSkills()
-		winset(usr,null,{"
+		src.UpdateSkills()
+		winset(src,null,{"
 		cpanel-mainchild.left = "Cpanel-skillsgrid";
 		"})
 
 	verbz()
 		set hidden=1
-		winset(usr,null,{"
+		winset(src,null,{"
 		cpanel-mainchild.left = "addy";
 		"})
 
 	verbz2()
 		set hidden=1
-		winset(usr,null,{"
+		winset(src,null,{"
 		cpanel-mainchild.left = "Cpanel-verbs";
 		"})
 

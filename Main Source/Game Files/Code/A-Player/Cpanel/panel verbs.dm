@@ -8,10 +8,10 @@ mob/verb
 				Apopup(src,"Character Saved!") // tells you that you saved
 
 			if("who")
-				src.Who()
-				winset(usr,null,{"
+				winset(src,null,{"
 				cpanel-mainchild.left = "Cpanel-pane";
 				"})
+				src<<browse(src.Who(),"window=Cpanel-browse")
 
 			if("skills")
 				src.UpdateSkills()

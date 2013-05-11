@@ -40,12 +40,12 @@ world
 		statusupdate()
 			var/bool="No"//to show if the server accepts multikey
 			if(multi_ip)bool="Yes"
-			if(HostMSG=="SAO Cloud"&&Host=="SAO Cloud")
+			if(HostMSG=="SAO Cloud"&&Host=="SAO Cloud"&&world.address==my_serverip&&world.port==my_port)//making sure its local server
 				world.status = {"<font color="blue"><b>Hosted by:[HostMSG],Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</b></font>"}
 			else
-				if(HostMSG!="SAO Cloud")
+				if(HostMSG!="SAO Cloud")//players logged in will go here
 					world.status = {"<font color="blue">Hosted by:[HostMSG],Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</font>"}
-				else
+				else// worlds hosted on other linux boxes will go here, maybe make it so you can change idk
 					world.status = {"<font color="blue">Hosted by:Unkown,Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</font>"}
 
 
