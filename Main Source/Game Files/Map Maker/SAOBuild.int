@@ -1,8 +1,8 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: Build Icons\added\autocoder\autocoder.dm;Code\Build Turfs.dm;Code\SAO Build(Game).dm;SAOBUILD.dmf;Code\SAO I-Build.dm;Code\Load and Save.dm
-LAST_COMPILE_VERSION: 499.1183
+WINDOW: SharedLibraries\n_log\pif_xmlhandler\Writer.dm;SharedLibraries\n_log\n_Log.dm
+LAST_COMPILE_VERSION: 499.1184
 PACKAGE_RSC_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild_rsc.zip
 PACKAGE_DME_DEMO: 
 PACKAGE_DME_CLEANCHECK: OFF
@@ -11,11 +11,11 @@ PACKAGE_DMB_HUB:
 PACKAGE_RSC_CLEANCHECK: OFF
 PACKAGE_DMB_CLEANCHECK: OFF
 PACKAGE_DME_START: 
-DIR: Code 
+DIR: SharedLibraries SharedLibraries\db SharedLibraries\n_log SharedLibraries\swapmaps SharedLibraries\visibilitygroups 
 PACKAGE_DME_NAME: C:\Users\Joelie\Dropbox\3-Programming\SAO\SAO Build\SAOBuild_src.zip
-FILE: Code\Load and Save.dm
+FILE: SharedLibraries\n_log\n_Log.dm
 PACKAGE_DME_INFO: 
-LAST_COMPILE_TIME: 1368137002
+LAST_COMPILE_TIME: 1368986286
 PACKAGE_DMB_NAME: C:\Users\Joelie\Dropbox\Public\SAO\SAOBuild.zip
 AUTO_FILE_DIR: ON
 PACKAGE_DMB_INFO: map_Maps/

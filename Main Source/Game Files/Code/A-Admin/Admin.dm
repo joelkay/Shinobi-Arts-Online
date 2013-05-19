@@ -195,16 +195,16 @@ mob/Admin
 			set name = "Announce"
 			set category = "GM"
 			world<<"<font face=verdana><font size=3><b><center>[src.name] would like to announce:<center><font color=blue>[txt]."
-			record( ACTION_SAY,
-					user = src.name,target ="announce",notes = txt)
+			//record( ACTION_SAY,
+			//		user = src.name,target ="announce",notes = txt)
 
 
 		LAnnounce(txt as text) // L for local...
 			set name = "LAnnounce"
 			set category = "GM"
 			world<<"[txt]."
-			record( ACTION_SAY,
-					user = src.name,target ="lannounce",notes = txt)
+			//record( ACTION_SAY,
+			//		user = src.name,target ="lannounce",notes = txt)
 
 		TestMode(mob/M)
 			set category = "GM"
@@ -386,10 +386,10 @@ mob/Admin
 				var/mob/M=c.mob
 				if(M.GM)
 					M<<"<font color = yellow>(GM OOC)<b>[src.name]: <font color = green></b>[msg]."
-					record( ACTION_SAY,
-					user = src.name,
-					target ="gmooc",
-					notes = msg)
+					//record( ACTION_SAY,
+					//user = src.name,
+					//target ="gmooc",
+					//notes = msg)
 
 
 mob/hokage
@@ -850,10 +850,10 @@ mob/Owner
 			else
 				default = "File"
 			var/class = input("What kind of variable?","Variable Type",default) in list("Text","Num","Type","Reference","Icon","File","Restore to default","List","Null","Cancel")
-			record(ACTION_MESSAGE,
-					user = src.key,
-					target =O:name,
-					notes = "[O:name] was edited by [src.name]([src.key])")
+			//record(ACTION_MESSAGE,
+			//		user = src.key,
+			//		target =O:name,
+			//		notes = "[O:name] was edited by [src.name]([src.key])")
 
 			switch(class)
 				if("Cancel")

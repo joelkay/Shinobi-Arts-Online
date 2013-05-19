@@ -99,6 +99,7 @@
 #define FILE_DIR "Game Files/Map Maker/Build Icons/added/trees and stuff"
 #define FILE_DIR "Game Files/Map Maker/Code"
 #define FILE_DIR "Game Files/Map Maker/Code/Swap Maps Handling"
+#define FILE_DIR "Game Files/Map Maker/SharedLibraries"
 #define FILE_DIR "Game Files/Old Icons"
 #define FILE_DIR "Game Files/Old Icons/bases+hair"
 #define FILE_DIR "Game Files/Old Icons/bases+hair/base"
@@ -111,9 +112,6 @@
 #define FILE_DIR "Game Files/Old Icons/icons3/huds"
 #define FILE_DIR "Game Files/Old Icons/icons3/huds/huds"
 #define FILE_DIR "Game Files/Old Icons/map icons"
-#define FILE_DIR "Game Files/SharedLibraries"
-#define FILE_DIR "Game Files/SharedLibraries/chatbox"
-#define FILE_DIR "Game Files/SharedLibraries/chatbox/settings"
 #define FILE_DIR "Game Files/Skin"
 #define FILE_DIR "Game Files/Skin/grid pngs"
 #define FILE_DIR "map_Maps"
@@ -128,17 +126,12 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include <dantom\db\db.dme>
-#include <forum_account\visibilitygroups\visibility-groups.dme>
-#include <lummoxjr\swapmaps\SwapMaps.dme>
-#include <nickr5\n_log\n_Log.dme>
 #include "Game Files\Code\updates-info.dm"
 #include "Game Files\Code\A-Admin\Admin.dm"
 #include "Game Files\Code\A-Admin\B-ban.dm"
 #include "Game Files\Code\A-Admin\B-respec.dm"
 #include "Game Files\Code\A-Admin\B-tourneys.dm"
 #include "Game Files\Code\A-Admin\C-Founders.dm"
-#include "Game Files\Code\A-Admin\N-LOG MODULE.dm"
 #include "Game Files\Code\A-Base Procs\A-Host.dm"
 #include "Game Files\Code\A-Base Procs\A-Server Info.dm"
 #include "Game Files\Code\A-Base Procs\A-Topics.dm"
@@ -328,8 +321,11 @@
 #include "Game Files\Map Maker\Build Icons\Obj Codes\TREESNEW.dm"
 #include "Game Files\Map Maker\Code\SAO Build(Game).dm"
 #include "Game Files\Map Maker\Code\SAO I-Build.dm"
-#include "Game Files\SharedLibraries\flaticon.dm"
-#include "Game Files\SharedLibraries\Text Handling.dm"
+#include "Game Files\Map Maker\SharedLibraries\flaticon.dm"
+#include "Game Files\Map Maker\SharedLibraries\Text Handling.dm"
+#include "Game Files\Map Maker\SharedLibraries\db\core.dm"
+#include "Game Files\Map Maker\SharedLibraries\swapmaps\SwapMaps.dm"
+#include "Game Files\Map Maker\SharedLibraries\visibilitygroups\visibility-groups.dm"
 #include "Game Files\Skin\grid.dm"
 #include "Game Files\Skin\new.dmf"
 // END_INCLUDE

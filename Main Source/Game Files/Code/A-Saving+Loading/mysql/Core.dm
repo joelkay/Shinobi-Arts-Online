@@ -1,5 +1,6 @@
 //EXPORT GUIDE TO MYSQL SERVER
 var/debug=0// TURN THIS TO 1 TO SEE ERROR MESSAGES E.T.C
+/*
 var
 	my_serverip = "178.175.140.206"//change these when they need to change
 	my_port=2100//change these when they need to change
@@ -10,6 +11,25 @@ var// my server
 	server_port = 3306
 	my_username = "saodev"
 	my_password = "hyve9evyg"
+*/
+
+var
+	my_serverip = "69.64.62.128"//change these when they need to change
+	my_port=4200//change these when they need to change
+
+var// my server
+	my_database = "jsqribe_sao"//server database for SAO
+	my_server = "localhost"
+	server_port = 3306
+	my_username = "jsqribe"
+	my_password = "Rue4evAst"
+
+
+
+
+
+
+
 
 
 

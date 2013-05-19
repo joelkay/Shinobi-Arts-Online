@@ -3,7 +3,7 @@ Shinobi-Arts-Online
 
 Source Code for SAO
 
-Core Libraries for SAO
+Core Libraries for SAO, found under SharedLibraries folders.
 
 -Dantom DB: http://www.byond.com/developer/Dantom/DB
 

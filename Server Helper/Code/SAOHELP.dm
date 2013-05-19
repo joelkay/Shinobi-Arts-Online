@@ -24,7 +24,7 @@ var/addr="178.175.140.206"//"192.168.1.69"
 mob
 	Login()
 		..()
-		if(src.key in Allowed)
+		if(src.key in Allowed)//test
 			//for(var/mob/M in world)
 				//if(M == src) continue
 				//M << "\[[time2text(,"Month DD, YYYY hh:mm:ss")]\] [src.key] Has logged into data Server"

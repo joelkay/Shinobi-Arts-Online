@@ -563,7 +563,7 @@ window "C-panel"
 window "Cpanel-verbs"
 	elem "Cpanel-verbs"
 		type = MAIN
-		pos = 0,358
+		pos = 281,0
 		size = 273x368
 		anchor1 = none
 		anchor2 = none

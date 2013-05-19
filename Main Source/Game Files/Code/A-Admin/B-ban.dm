@@ -13,8 +13,8 @@ host
 			else
 				var/txt=input("What is the reason for Banning [M].","Ban Player")
 				world<<"<font color=blue>[M] has been banned by [src] for [txt]"
-				record( ACTION_SAY,
-					user = src,target ="Ban",notes = txt)
+				//ecord( ACTION_SAY,
+				//	user = src,target ="Ban",notes = txt)
 
 				clients.Add(M.client.address)
 				ckeys.Add(M.client.ckey)

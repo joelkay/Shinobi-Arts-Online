@@ -18,5 +18,7 @@
 #include "Code\Topic.dm"
 #include "Code\Update.dm"
 #include "Code\verbs.dm"
+#include "SharedLibraries\db\core.dm"
+#include "SharedLibraries\db\db.dm"
 // END_INCLUDE
 

@@ -1,0 +1,12 @@
+<data>
+	<a>
+		<b>
+			<c>Test</c>
+			<d foo="bar">Test2</d>
+			<e />
+		</b>
+		<f />
+		<g foo="bar">Test3</g>
+		<h foo="bar" />
+	</a>
+</data>

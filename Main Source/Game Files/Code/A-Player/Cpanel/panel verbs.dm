@@ -62,7 +62,8 @@ mob/verb
 				"})
 
 			if("testhouse")
-				src.testhouse()
+				//src.testhouse()
+				src<<"Test House is going through some udates"
 
 			if("updates")
 				src.Menu()

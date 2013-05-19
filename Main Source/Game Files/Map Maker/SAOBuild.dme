@@ -12,13 +12,13 @@
 #define FILE_DIR "Build Icons/added/trees and stuff"
 #define FILE_DIR "Code"
 #define FILE_DIR "Code/Swap Maps Handling"
+#define FILE_DIR "SharedLibraries"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include <lummoxjr\swapmaps\SwapMaps.dme>
 #include "SAOBUILD.dmf"
 #include "map.dmm"
 #include "Build Icons\Obj Codes\FLOORING.dm"
@@ -40,5 +40,6 @@
 #include "Code\Player Houses\houses.dm"
 #include "Code\Player Houses\upload.dm"
 #include "Code\Swap Maps Handling\cover map.dm"
+#include "SharedLibraries\swapmaps\SwapMaps.dm"
 // END_INCLUDE
 
