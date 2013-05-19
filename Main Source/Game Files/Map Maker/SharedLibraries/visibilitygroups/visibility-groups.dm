@@ -30,7 +30,7 @@ Visibility
 
 			if(m.client)
 				vis_players += m
-				m.client.images += image
+				//m.client.images += image
 
 	proc
 		// adds all arguments to the groups list

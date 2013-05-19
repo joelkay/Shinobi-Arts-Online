@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: z-DEPENDENCIES\MAIN.dm
+WINDOW: z-DEPENDENCIES\SharedLibraries\visibilitygroups\visibility-groups.dm
 LAST_COMPILE_VERSION: 499.1184
-DIR: map_Maps\web Lib 
-FILE: z-DEPENDENCIES\MAIN.dm
-LAST_COMPILE_TIME: 1368985162
+DIR: map_Maps\web z-DEPENDENCIES z-DEPENDENCIES\SharedLibraries z-DEPENDENCIES\SharedLibraries\[Map Maker] z-DEPENDENCIES\SharedLibraries\[Map Maker]\Build Icons z-DEPENDENCIES\SharedLibraries\visibilitygroups 
+FILE: z-DEPENDENCIES\SharedLibraries\visibilitygroups\visibility-groups.dm
+LAST_COMPILE_TIME: 1368995183
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS
