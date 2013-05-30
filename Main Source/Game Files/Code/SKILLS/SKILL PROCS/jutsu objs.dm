@@ -80,11 +80,11 @@ obj
 				if(ismob(a))
 					var/mob/M=a
 					var/mob/G=src.owner
-					if(!G)return
-					var/dmg=(G.reflexmain+G.chakraforcemain)*2
-					if(M==G)
-						return
-					AoE_Damage2(G,M,3,dmg)
+					if(M)
+						var/dmg=(G.reflexmain+G.chakraforcemain)*2
+						if(M==G)
+							return
+						AoE_Damage2(G,M,3,dmg)
 
 
 mob/var/insleep=0
@@ -881,14 +881,14 @@ obj
 			if(ismob(a))
 				if(!owner) return
 				var/mob/A=a
-				if(!A)return
-				var/dmg=(owner:reflexmain*25)
-				var/X=rand(5,20)
-				A.Dec_life(X,src.owner,"Chidori_Blade")
-				A.Dec_health(dmg,src.owner,"Chidori_Blade")
-				Blood(A.x,A.y,A.z)
-				A << output("[src.owner]'s Raton sword hit you for [dmg]!", "combatlog")
-				src.canbump=0
+				if(A&&src.owner)
+					var/dmg=(owner:reflexmain*25)
+					var/X=rand(5,20)
+					A.Dec_life(X,src.owner,"Chidori_Blade")
+					A.Dec_health(dmg,src.owner,"Chidori_Blade")
+					Blood(A.x,A.y,A.z)
+					A << output("[src.owner]'s Raton sword hit you for [dmg]!", "combatlog")
+					src.canbump=0
 				spawn(20)
 					del(src)
 			else

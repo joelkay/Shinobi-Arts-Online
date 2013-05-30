@@ -60,7 +60,7 @@ mob
 mob
 	proc
 		generate3()
-			if(!Teams.len)//if no teams list is found
+			if(Teams==null||!Teams.len)//if no teams list is found
 				var/A={"
 				<font color=green>
 				<center>No Files Found<br/>

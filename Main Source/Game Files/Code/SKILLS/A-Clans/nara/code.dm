@@ -73,6 +73,7 @@ mob
 
 			if("Shadow_NeckBind")
 				var/mob/M=src.targeted
+				if(!M||!M.trapper)return
 				if(M.trapper==src&&M in view(src.loc))
 					src << output("[src]: Shadown NeckBind", "combatlog")
 					var/damage=550+((src.chakraforcemain/3)*5)

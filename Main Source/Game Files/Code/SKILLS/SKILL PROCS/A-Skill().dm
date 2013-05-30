@@ -9,7 +9,7 @@ mob
 			return
 
 		if(src.Clan=="Nara")
-			if(S.sindex=="Shadow_possesion_Cancel"||"Shadow_NeckBind"||"Shadow_Needles")
+			if(S.sindex=="Shadow_possesion_Cancel"||S.sindex=="Shadow_NeckBind"||S.sindex=="Shadow_Needles")
 				bypass=1
 				src.Skills(S)
 

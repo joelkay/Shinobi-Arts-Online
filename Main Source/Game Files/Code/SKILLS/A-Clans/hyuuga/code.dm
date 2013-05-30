@@ -11,7 +11,7 @@ mob
 				//src.overlays+='byakuganthing.dmi'
 				src.byakuganon=1
 				src.requirements.Add("byakugan")
-				spawn()src.eyes()
+				//spawn()src.eyes() disabling for now
 				spawn()Show_Radar(src)
 				spawn(500)
 					src.byakuganon=0

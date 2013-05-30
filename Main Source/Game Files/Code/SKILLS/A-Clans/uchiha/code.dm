@@ -8,7 +8,7 @@ mob
 				src.dexterityplus+=(20*src.dexteritymain/100)
 				src.overlays+='Sharingan.dmi'
 				src.Sharinganon=1
-				src.eyes()
+				//src.eyes() disable for now
 				src.client.screen+=new/obj/Sharingana
 				spawn(10)
 					src.overlays-='Sharingan.dmi'
