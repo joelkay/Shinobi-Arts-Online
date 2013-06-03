@@ -86,6 +86,7 @@ mob/Teams
 
 		boot_member()
 			set category= "Teams"
+			if(!src.teamname) return
 			var/Team/x =new/Team
 			x.teamname=src.teamname
 			x.load()

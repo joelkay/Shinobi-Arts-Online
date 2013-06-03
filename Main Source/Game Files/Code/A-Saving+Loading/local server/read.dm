@@ -23,7 +23,6 @@ mob/proc/checklegit()
 mob
 	Read(var/savefile/F)
 		//..()
-
 		var/last_x // var defined
 		var/last_y
 		var/last_z
@@ -210,6 +209,8 @@ mob
 mob/var/sqlversion=0
 mob/proc/Sqlupdate(var/ex,var/wy,var/zd)
 	set background=1
+
+	if(!src.client)return
 
 	CheckTime(src)
 	cansave=1//reset this for non corrupt saves.

@@ -80,7 +80,7 @@ obj
 				if(ismob(a))
 					var/mob/M=a
 					var/mob/G=src.owner
-					if(M)
+					if(M&&G)
 						var/dmg=(G.reflexmain+G.chakraforcemain)*2
 						if(M==G)
 							return

@@ -1,10 +1,10 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: z-DEPENDENCIES\SharedLibraries\visibilitygroups\visibility-groups.dm
+WINDOW: z-DEPENDENCIES\SharedLibraries\visibilitygroups\visibility-groups.dm;scenes\scenes.dm;scenes\scenes2.dm
 LAST_COMPILE_VERSION: 499.1184
-DIR: map_Maps\web z-DEPENDENCIES z-DEPENDENCIES\SharedLibraries z-DEPENDENCIES\SharedLibraries\[Map Maker] z-DEPENDENCIES\SharedLibraries\[Map Maker]\Build Icons z-DEPENDENCIES\SharedLibraries\visibilitygroups 
-FILE: z-DEPENDENCIES\SharedLibraries\visibilitygroups\visibility-groups.dm
+DIR: cutscene specific proc use map_Maps\web scenes z-DEPENDENCIES\SharedLibraries z-DEPENDENCIES\SharedLibraries\visibilitygroups 
+FILE: scenes\scenes2.dm
 LAST_COMPILE_TIME: 1368995183
 AUTO_FILE_DIR: ON
 */

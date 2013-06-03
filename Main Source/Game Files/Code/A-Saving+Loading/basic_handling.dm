@@ -8,6 +8,7 @@ mob
 
 	proc
 		Save(var/num=0)//default is zero
+			if(!src.client)return
 			Save_Mob(src,num)//do a custom save
 
 
