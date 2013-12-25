@@ -5,7 +5,7 @@ world
 			world.log << text("The local server has been initiated")
 
 		else
-			my_server="178.175.140.206"
+			my_server="54.217.215.74"
 			world.log << text("The server adress has been changed to the remote value")
 
 

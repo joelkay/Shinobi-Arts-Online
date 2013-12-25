@@ -14,15 +14,15 @@ var// my server
 	my_password = "hyve9evyg"
 */
 var
-	my_serverip = "69.64.62.128"//change these when they need to change
-	my_port=4200//change these when they need to change
+	my_serverip = "54.217.215.74"//change these when they need to change
+	my_port=3306//change these when they need to change
 
 var// my server
-	my_database = "jsqribe_sao"//server database for SAO
-	my_server = "localhost"
+	my_database = "sql425488"//server database for SAO
+	my_server = "54.217.215.74"
 	server_port = 3306
-	my_username = "jsqribe"
-	my_password = "Rue4evAst"
+	my_username = "sql425488"
+	my_password = "eH7%xN8*"
 
 
 

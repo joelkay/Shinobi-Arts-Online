@@ -21,9 +21,7 @@ obj
 
 
 
-mob
-	var
-		color=rgb(0,0,0)
+//mob/var/color=rgb(0,0,0)
 
 mob/var/tmp/list/Loaded=new/list()
 mob//Mob hmmm, let me think...

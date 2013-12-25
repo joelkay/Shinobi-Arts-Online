@@ -323,6 +323,7 @@
 #include "Game Files\Map Maker\Code\SAO I-Build.dm"
 #include "Game Files\Map Maker\SharedLibraries\flaticon.dm"
 #include "Game Files\Map Maker\SharedLibraries\Text Handling.dm"
+#include "Game Files\Map Maker\SharedLibraries\db\constants.dm"
 #include "Game Files\Map Maker\SharedLibraries\db\core.dm"
 #include "Game Files\Map Maker\SharedLibraries\swapmaps\SwapMaps.dm"
 #include "Game Files\Map Maker\SharedLibraries\visibilitygroups\visibility-groups.dm"
