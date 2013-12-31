@@ -1,28 +1,28 @@
 //EXPORT GUIDE TO MYSQL SERVER
 var/debug=0// TURN THIS TO 1 TO SEE ERROR MESSAGES E.T.C
 
-/*
-var
-	my_serverip = "178.175.140.206"//change these when they need to change
-	my_port=2100//change these when they need to change
-
 var// my server
 	my_database = "zadmin_sao"//server database for SAO
-	my_server = "localhost"
+	my_server = "162.243.0.54"
 	server_port = 3306
-	my_username = "saodev"
-	my_password = "hyve9evyg"
-*/
-var
-	my_serverip = "54.217.215.74"//change these when they need to change
-	my_port=3306//change these when they need to change
+	my_username = "joelkay"
+	my_password = "manezypy2"
 
-var// my server
-	my_database = "sql425488"//server database for SAO
-	my_server = "54.217.215.74"
-	server_port = 3306
-	my_username = "sql425488"
-	my_password = "eH7%xN8*"
+
+world
+	New()
+		..()
+		if(world.address==my_serverip||world.port==my_port)//dont change the local server
+			world.log << text("The local server has been initiated")
+
+		else
+			my_server="162.243.0.54"
+			world.log << text("The server adress has been changed to the remote value")
+
+var
+	my_serverip = "162.243.0.54" //change these when they need to change
+	my_port=3307  //change these when they need to change
+
 
 
 

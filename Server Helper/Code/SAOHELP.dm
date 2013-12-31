@@ -13,7 +13,7 @@ var/list/Allowed = list("Rapmaster","Jean Sqribe","Tayuya1")
 var/debugmode=0//to find bugs.
 
 var/port=2100
-var/addr="178.175.140.206"//"192.168.1.69"
+var/addr="162.243.0.54"//"192.168.1.69"
 
 //var/addr="86.166.210.147"
 //173.212.209.172
