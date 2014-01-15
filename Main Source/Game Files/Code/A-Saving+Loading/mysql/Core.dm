@@ -18,6 +18,8 @@ world
 		else
 			my_server="162.243.0.54"
 			world.log << text("The server adress has been changed to the remote value")
+			Host = "SAO Cloud"
+			HostMSG = "SAO Cloud"
 
 var
 	my_serverip = "162.243.0.54" //change these when they need to change

@@ -11,19 +11,13 @@
 #define FILE_DIR "map_Maps"
 #define FILE_DIR "map_Maps/web"
 #define FILE_DIR "music"
-#define FILE_DIR "z-DEPENDENCIES"
-#define FILE_DIR "z-DEPENDENCIES/SharedLibraries"
-#define FILE_DIR "z-DEPENDENCIES/SharedLibraries/[Map Maker]"
-#define FILE_DIR "z-DEPENDENCIES/SharedLibraries/[Map Maker]/Build Icons"
-#define FILE_DIR "z-DEPENDENCIES/SharedLibraries/[Map Maker]/Build Icons/added"
-#define FILE_DIR "z-DEPENDENCIES/SharedLibraries/[Map Maker]/Build Icons/added/trees and stuff"
-#define FILE_DIR "z-DEPENDENCIES/SharedLibraries/Swap Maps Handling"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
+#include <jeansqribe\maptools\Map Tools\Map Tools.dme>
 #include "Skin.dmf"
 #include "cutscene specific proc use\attack and damage procs\Dec procs.dm"
 #include "handling\popups.dm"
@@ -35,21 +29,10 @@
 #include "scenes\tutorial 2.dm"
 #include "scenes\zcompletescenes.dm"
 #include "z-DEPENDENCIES\MAIN.dm"
+#include "z-DEPENDENCIES\MapMaker.dm"
 #include "z-DEPENDENCIES\concrete\dependencies.dm"
 #include "z-DEPENDENCIES\concrete\more dependency.dm"
 #include "z-DEPENDENCIES\concrete\resolution.dm"
 #include "z-DEPENDENCIES\concrete\SmoothMove.dm"
-#include "z-DEPENDENCIES\SharedLibraries\Text Handling.dm"
-#include "z-DEPENDENCIES\SharedLibraries\[Map Maker]\Map Build.dm"
-#include "z-DEPENDENCIES\SharedLibraries\[Map Maker]\Map I-Build.dm"
-#include "z-DEPENDENCIES\SharedLibraries\[Map Maker]\Build Icons\Obj Codes\FLOORING.dm"
-#include "z-DEPENDENCIES\SharedLibraries\[Map Maker]\Build Icons\Obj Codes\HIDEOUT32.dm"
-#include "z-DEPENDENCIES\SharedLibraries\[Map Maker]\Build Icons\Obj Codes\MOUNTAINS32.dm"
-#include "z-DEPENDENCIES\SharedLibraries\[Map Maker]\Build Icons\Obj Codes\SNOW.dm"
-#include "z-DEPENDENCIES\SharedLibraries\[Map Maker]\Build Icons\Obj Codes\TREESNEW.dm"
-#include "z-DEPENDENCIES\SharedLibraries\Swap Maps Handling\cover map.dm"
-#include "z-DEPENDENCIES\SharedLibraries\Swap Maps Handling\Map Handler.dm"
-#include "z-DEPENDENCIES\SharedLibraries\swapmaps\SwapMaps.dm"
-#include "z-DEPENDENCIES\SharedLibraries\visibilitygroups\visibility-groups.dm"
 // END_INCLUDE
 

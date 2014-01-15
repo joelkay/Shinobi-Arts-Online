@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: z-DEPENDENCIES\SharedLibraries\visibilitygroups\visibility-groups.dm;scenes\scenes.dm;scenes\scenes2.dm
-LAST_COMPILE_VERSION: 499.1184
-DIR: cutscene specific proc use map_Maps\web scenes z-DEPENDENCIES\SharedLibraries z-DEPENDENCIES\SharedLibraries\visibilitygroups 
-FILE: scenes\scenes2.dm
-LAST_COMPILE_TIME: 1368995183
+WINDOW: z-DEPENDENCIES\MAIN.dm;scenes\scenes.dm;z-DEPENDENCIES\concrete\more dependency.dm;C:\Documents and Settings\Jean\My Documents\BYOND\lib\jeansqribe\maptools\Map Tools\[Map Maker]\Build Icons\Obj Codes\FLOORING.dm;z-DEPENDENCIES\MapMaker.dm;z-DEPENDENCIES\concrete\dependencies.dm
+LAST_COMPILE_VERSION: 504.1225
+DIR: map_Maps\web scenes z-DEPENDENCIES z-DEPENDENCIES\concrete Lib 
+FILE: z-DEPENDENCIES\concrete\dependencies.dm
+LAST_COMPILE_TIME: 1389790141
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

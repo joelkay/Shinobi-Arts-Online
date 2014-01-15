@@ -16,7 +16,7 @@ proc
 						if(D=="loggedin")
 							var/loggedin=row_data[D]
 
-							if(debug)M<<"value: [loggedin]"
+							if(debug)M<<"login value: [loggedin]"
 
 							if(loggedin==1)
 								return 1

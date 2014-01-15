@@ -7,18 +7,19 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
+#define FILE_DIR "tempicons"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
+#include <jeansqribe\maptools\Map Tools\Map Tools.dme>
 #include "Interface.dmf"
+#include "Code\LibraryTemps.dm"
 #include "Code\SAOHELP.dm"
 #include "Code\Topic.dm"
 #include "Code\Update.dm"
 #include "Code\verbs.dm"
-#include "SharedLibraries\db\core.dm"
-#include "SharedLibraries\db\db.dm"
 // END_INCLUDE
 

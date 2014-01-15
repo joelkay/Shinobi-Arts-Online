@@ -885,7 +885,7 @@ obj
 					var/dmg=(owner:reflexmain*25)
 					var/X=rand(5,20)
 					A.Dec_life(X,src.owner,"Chidori_Blade")
-					A.Dec_health(dmg,src.owner,"Chidori_Blade")
+					if(A)A.Dec_health(dmg,src.owner,"Chidori_Blade")
 					Blood(A.x,A.y,A.z)
 					A << output("[src.owner]'s Raton sword hit you for [dmg]!", "combatlog")
 					src.canbump=0

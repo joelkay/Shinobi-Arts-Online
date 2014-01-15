@@ -1,0 +1,3245 @@
+. = object("//.0")
+.0
+	type = /swapmap
+	id = "Maps/casino"
+	z = 1
+	y = 20
+	x = 30
+	areas = list()
+	1
+		1
+			1
+				type = /turf/mapborder
+			2
+				type = /turf/mapborder
+			3
+				type = /turf/mapborder
+			4
+				type = /turf/mapborder
+			5
+				type = /turf/mapborder
+			6
+				type = /turf/mapborder
+			7
+				type = /turf/mapborder
+			8
+				type = /turf/mapborder
+			9
+				type = /turf/mapborder
+			10
+				type = /turf/mapborder
+			11
+				type = /turf/mapborder
+			12
+				type = /turf/mapborder
+			13
+				type = /turf/mapborder
+			14
+				type = /turf/mapborder
+			15
+				type = /turf/mapborder
+			16
+				type = /turf/mapborder
+			17
+				type = /turf/mapborder
+			18
+				type = /turf/mapborder
+			19
+				type = /turf/mapborder
+			20
+				type = /turf/mapborder
+			21
+				type = /turf/mapborder
+			22
+				type = /turf/mapborder
+			23
+				type = /turf/mapborder
+			24
+				type = /turf/mapborder
+			25
+				type = /turf/mapborder
+			26
+				type = /turf/mapborder
+			27
+				type = /turf/mapborder
+			28
+				type = /turf/mapborder
+			29
+				type = /turf/mapborder
+			30
+				type = /turf/mapborder
+		2
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		3
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		4
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		5
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		6
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		7
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		8
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		9
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		10
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		11
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		12
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		13
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		14
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		15
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		16
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		17
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		18
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		19
+			1
+				type = /turf/mapborder
+			2
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			3
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			4
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			5
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			6
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			7
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			8
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			9
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			10
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			11
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			12
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			13
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			14
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			15
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			16
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			17
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			18
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			19
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			20
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			21
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			22
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			23
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			24
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			25
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			26
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			27
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			28
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			29
+				type = /turf
+				contents = list(object(".0"))
+					.0
+						type = /buildable/FLOORING/tile
+						built = 1
+			30
+				type = /turf/mapborder
+		20
+			1
+				type = /turf/mapborder
+			2
+				type = /turf/mapborder
+			3
+				type = /turf/mapborder
+			4
+				type = /turf/mapborder
+			5
+				type = /turf/mapborder
+			6
+				type = /turf/mapborder
+			7
+				type = /turf/mapborder
+			8
+				type = /turf/mapborder
+			9
+				type = /turf/mapborder
+			10
+				type = /turf/mapborder
+			11
+				type = /turf/mapborder
+			12
+				type = /turf/mapborder
+			13
+				type = /turf/mapborder
+			14
+				type = /turf/mapborder
+			15
+				type = /turf/mapborder
+			16
+				type = /turf/mapborder
+			17
+				type = /turf/mapborder
+			18
+				type = /turf/mapborder
+			19
+				type = /turf/mapborder
+			20
+				type = /turf/mapborder
+			21
+				type = /turf/mapborder
+			22
+				type = /turf/mapborder
+			23
+				type = /turf/mapborder
+			24
+				type = /turf/mapborder
+			25
+				type = /turf/mapborder
+			26
+				type = /turf/mapborder
+			27
+				type = /turf/mapborder
+			28
+				type = /turf/mapborder
+			29
+				type = /turf/mapborder
+			30
+				type = /turf/mapborder

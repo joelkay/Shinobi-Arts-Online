@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: Code\Topic.dm;Code\verbs.dm;Code\Update.dm;Code\SAOHELP.dm;Interface.dmf
-LAST_COMPILE_VERSION: 501.1217
-DIR: Code SharedLibraries\db 
-FILE: Code\SAOHELP.dm
-LAST_COMPILE_TIME: 1388480558
+WINDOW: Code\Topic.dm;Code\verbs.dm;Code\Update.dm;Code\SAOHELP.dm;Interface.dmf;C:\Documents and Settings\Jean\My Documents\BYOND\lib\jeansqribe\maptools\Map Tools\Swap Maps Handling\map_locate\usage.dm;Code\LibraryTemps.dm
+LAST_COMPILE_VERSION: 504.1225
+DIR: Code External 
+FILE: Code\LibraryTemps.dm
+LAST_COMPILE_TIME: 1389790313
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

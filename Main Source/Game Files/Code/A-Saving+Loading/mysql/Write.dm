@@ -208,6 +208,9 @@ proc
 		var/SQLQuerye=null
 
 		var/list/weps=list()
+
+		if(!M)return//sanity check
+
 		for(var/Weapon/A in M.contents)
 			weps.Add(A)//give us the id's
 

@@ -34,3 +34,8 @@ mob
 		ShowView()
 			if(vis.can_see(src.name))
 				vis.is_a(src.name)
+
+
+
+
+
