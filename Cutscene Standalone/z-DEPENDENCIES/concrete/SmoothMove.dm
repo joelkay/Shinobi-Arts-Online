@@ -1,5 +1,5 @@
-//world
-//	fps=30
+world
+	fps=30
 
 proc/get_speed_delay(n)
 	if(n != 0)

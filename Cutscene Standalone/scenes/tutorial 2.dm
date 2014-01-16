@@ -1,3 +1,20 @@
+obj
+	rope
+		icon='denseobj.dmi'
+		density=1
+
+		Cross(atom/movable/a)
+			if(ismob(a))
+				var/mob/A=a
+				if(!A.tut2)
+					A.tutorial2()
+				spawn(2)
+					del(src)
+			..()
+
+
+mob/var/tut2=0
+
 mob
 	proc
 		tutorial1()
@@ -8,15 +25,73 @@ mob
 			src.dir=EAST
 			a.dir=WEST
 
-			switch(alert(src,"Right Hello there [src.name], you are probably wondering how and why you are chasing a sound jounin..","?","Yes","No"))
-				if("No")
-					alert(src,"No? hmm well anyway my name is....actually i can't tell you yet..","?")
-				if("Yes")
-					alert(src,"Well we needed a way to break the ice. Anyway my name is....actually i can't tell you yet..","?")
+			var/mob/face=new/mob
+			face.icon='irukaface.dmi'
+			var/mob/preview=new/mob
+			preview.icon='baseface.dmi'
 
-			alert(src,"But i will show you the ropes; look in that corner at the far right..","?")
+			var/iconName2 = "popup[ckey(face)]_flattened.dmi"
+			// Copy the file to the rsc manually
+			var/icon/c = fcopy_rsc(getFlatIcon(face))
+			// Send the icon to src's local cache
+			src<<browse_rsc(c, iconName2)
 
-			src<<"You found ropes."
+			var/iconName = "popup[ckey(preview)]_flattened.dmi"
+			// Copy the file to the rsc manually
+			var/icon/b = fcopy_rsc(getFlatIcon(preview))
+			// Send the icon to src's local cache
+			src<<browse_rsc(b, iconName)
+
+
+			if(Apopup(src,"Right Hello there [src.name], you are probably wondering how and why you are chasing a sound jounin..",1,face))
+				Apopup(src,"Well we needed a way to break the ice. Anyway my name is....actually i can't tell you yet..",0,face)
+
+			else
+				Apopup(src,"No? hmm well anyway my name is....actually i can't tell you yet..",0,face)
+
+			Apopup(src,"But i will show you the ropes; look in that corner at the far right..",0,face)
+
+			src.canmove=1
+
+			var/obj/rope/ra = new/obj/rope
+			var/obj/rope/rb = new/obj/rope
+			var/obj/rope/rc = new/obj/rope
+			var/obj/rope/rd = new/obj/rope
+			var/obj/rope/re = new/obj/rope
+
+			ra.loc = locate(src.map3.x1+25,src.map3.y1+7,src.map3.z1)
+			rb.loc = locate(src.map3.x1+25,src.map3.y1+8,src.map3.z1)
+			rc.loc = locate(src.map3.x1+25,src.map3.y1+9,src.map3.z1)
+			rd.loc = locate(src.map3.x1+25,src.map3.y1+10,src.map3.z1)
+			re.loc = locate(src.map3.x1+25,src.map3.y1+11,src.map3.z1)
+
+		tutorial2()
+
+			tut2=1
+			var/mob/face=new/mob
+			face.icon='irukaface.dmi'
+			var/mob/preview=new/mob
+			preview.icon='baseface.dmi'
+
+			var/iconName2 = "popup[ckey(face)]_flattened.dmi"
+			// Copy the file to the rsc manually
+			var/icon/c = fcopy_rsc(getFlatIcon(face))
+			// Send the icon to src's local cache
+			src<<browse_rsc(c, iconName2)
+
+			var/iconName = "popup[ckey(preview)]_flattened.dmi"
+			// Copy the file to the rsc manually
+			var/icon/b = fcopy_rsc(getFlatIcon(preview))
+			// Send the icon to src's local cache
+			src<<browse_rsc(b, iconName)
+
+			//var/obj/z=new/obj
+			//z.loc=locate(src.map2.x1+15,src.map2.y1+6,src.map2.z1) //camera
+			//src.client.eye=z
+			//walk_towards(z,o,3)//scenic
+
+
+			Apopup(src,"You look and see some rope.",0,preview)
 
 			src<<"Hahaha get it; i showed you the ropes, hahaha."
 			src<<"Anyway on a more serious note, let me show you the ropes ; look in that corner at the far right.."

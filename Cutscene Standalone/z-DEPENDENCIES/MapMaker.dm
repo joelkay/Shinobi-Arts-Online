@@ -13,8 +13,6 @@ mob
 	var/mapgrid
 	var/targeted
 
-proc/Apopup(var/a,var/b)
-
 
 
 buildable

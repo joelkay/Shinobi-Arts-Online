@@ -34,42 +34,90 @@ mob
 	var/tmp/sffi=0//scene fight five s.f.fi
 	proc
 		messagez(x)
+
+			var/mob/preview=new/mob
+			preview.icon='baseface.dmi'
+
+			var/iconName2 = "popup[ckey(preview)]_flattened.dmi"
+			// Copy the file to the rsc manually
+			var/icon/c = fcopy_rsc(getFlatIcon(preview))
+			// Send the icon to src's local cache
+			src<<browse_rsc(c, iconName2)
+
 			switch(x)
 				if(1)
 					if(src.messagez>0)return
 					src.messagez++
-					src<<"[src] managed to follow the ninjas into the hideout"
-					return
+					Apopup(src,"[src] managed to follow the ninjas into the hideout",0,preview)
+
 				if(2)
 					if(src.messagez>1)return
 					src.messagez++
-					src<<"[src]:I hear sounds coming from the right better investigate"
+					Apopup(src,"[src]:I hear sounds coming from the right better investigate",0,preview)
 					src.canmove=1
-					return
+
 				if(3)
 					if(src.messagez>2)return
 					src.messagez++
-					src<<"[src]:oh noes where did he go"
+					Apopup(src,"[src]:oh noes where did he go",0,preview)
 					src.canmove=1
-					return
+
 
 		dialoguez()
 			if(src.dl)return
 			src.dl=1
-			src<<"<font color =blue><font size=3>[src]: Whats going on!."
+			var/mob/preview=new/mob
+			preview.icon='baseface.dmi'
+
+			var/iconName2 = "popup[ckey(preview)]_flattened.dmi"
+			// Copy the file to the rsc manually
+			var/icon/c = fcopy_rsc(getFlatIcon(preview))
+			// Send the icon to src's local cache
+			src<<browse_rsc(c, iconName2)
+
+			Apopup(src,"[src]: Whats going on!.",0,preview)
 			src.canmove=0
 
 		dialoguez2()
 			if(src.dl)return
 			src.dl=1
-			src<<"<font color =white><font size=3>Sound Nin 2: You will not ruin our plans!."
-			src<<"<font color =green><font size=3>Kakashi: Consider them ruined!."
+
+			var/mob/soundnin=new/mob
+			soundnin.icon='soundninface.dmi'
+
+			var/mob/kakashi=new/mob
+			kakashi.icon='kakashiface.dmi'
+
+			var/iconName2 = "popup[ckey(soundnin)]_flattened.dmi"
+			// Copy the file to the rsc manually
+			var/icon/c = fcopy_rsc(getFlatIcon(soundnin))
+			// Send the icon to src's local cache
+			src<<browse_rsc(c, iconName2)
+
+			var/iconName = "popup[ckey(kakashi)]_flattened.dmi"
+			// Copy the file to the rsc manually
+			var/icon/b = fcopy_rsc(getFlatIcon(kakashi))
+			// Send the icon to src's local cache
+			src<<browse_rsc(b, iconName)
+
+			Apopup(src,"Sound Ninja: You will not ruin our plans!.",0,soundnin)
+			Apopup(src,"Kakashi: Consider them ruined",0,kakashi)
 			src.canmove=0
 
 		dialoguez3()
 			if(src.dl)return
 			src.dl=1
-			src<<"<font color =white><font size=3>Sound Nin 3: Both of you stay where you are or he dies!."
+
+			var/mob/soundnin=new/mob
+			soundnin.icon='soundninface.dmi'
+
+			var/iconName2 = "popup[ckey(soundnin)]_flattened.dmi"
+			// Copy the file to the rsc manually
+			var/icon/c = fcopy_rsc(getFlatIcon(soundnin))
+			// Send the icon to src's local cache
+			src<<browse_rsc(c, iconName2)
+
+			Apopup(src,"Sound Ninja Boss: Both of you stay where you are or he dies!",0,soundnin)
 
 
 
@@ -186,7 +234,7 @@ mob
 				m.dir=WEST
 				m.icon_state="threaten"
 				src.dialoguez3()
-				src.popup("attack")
+				popup(src,"attack")
 				sleep(30)
 
 			if(!src.firstattack)
@@ -194,7 +242,7 @@ mob
 				step(m,WEST)
 				flick("kill",m)
 				m.icon_state=""
-				src<<"<font color = red>You died a shinobi of a very young age.</font>"
+				Apopup(src,"You died a shinobi of a very young age.")
 				src.icon_state="ko"
 				sleep(20)
 				firstattack=0
@@ -203,7 +251,7 @@ mob
 
 
 			else
-				src<<"<font color = red>good.</font>"
+				Apopup(src,"good.")
 				src.scene5begin()
 				del(m)
 				del(n)

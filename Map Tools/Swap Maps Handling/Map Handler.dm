@@ -2,7 +2,7 @@ var/loadedmaps=1
 var/list/mapsets=list()
 var/MAPTIME=10//this var specifies how long the Map deleter waits before deleting maps
 Map
-	var/name//maps name
+	var/mname//maps name
 	var/time//time before it gets deleted
 	var/inuse=0//shows if the map is in use
 	var/ready=1// shows if its ready, idk if this is used
@@ -96,7 +96,7 @@ Map
 				M.map2=src.mapsb//hand out the fresh maps
 				M.map3=src.mapsc//hand out the fresh maps
 				src.handler.Add(M)//add them to the list
-			src.name="set:[num],[loadedmaps]"//name our map
+			src.mname="set:[num],[loadedmaps]"//name our map
 			M.mapset=src.name//for deleting later
 			src.inuse=1//make it in use
 			loadedmaps++//so we can keep track of the sets generated
@@ -155,7 +155,7 @@ mob
 						AreaUpdate()
 						if(D.time<MAPTIME)
 							D.time=MAPTIME//give it more time before deletion
-						D.name="house[src.name],[loadedmaps]"
+						D.mname="house[src.name],[loadedmaps]"
 						D.inuse=1
 						D.uses++
 					else
@@ -180,7 +180,7 @@ mob
 					src.toggle()//show map
 					AreaUpdate()
 					loadedmaps++
-					D.name="house[src.name],[loadedmaps]"
+					D.mname="house[src.name],[loadedmaps]"
 					D.inuse=1
 					D.uses++
 
@@ -251,7 +251,7 @@ mob/Owner
 				src<<"No Loaded maps at the moment.."
 			for(var/Map/D in mapsets)
 				var/listclients=dd_list2text(D.handler, "; ")
-				src<<"[D.name],clients:[listclients], inuse:[D.inuse], uses:[D.uses], time before deletion:[D.time] minutes"
+				src<<"[D.mname],clients:[listclients], inuse:[D.inuse], uses:[D.uses], time before deletion:[D.time] minutes"
 
 
 

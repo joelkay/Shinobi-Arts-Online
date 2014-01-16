@@ -31,8 +31,6 @@ mob
 
 			src<<"<center><font size = 3><font color = blue><b>Welcome to The Server Helper: [src.name]!</b></font></font></center>"
 
-
-
 		else
 			src<<"<center>Unauthorised access</center>"
 			sleep(20)

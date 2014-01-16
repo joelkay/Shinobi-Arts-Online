@@ -8,15 +8,9 @@ mob
 		mainscene1()
 			completedscenes=0
 			if(src.map)
-				//src.filltest()//only they can see it
-				winset(src,null,{"
-				default.main.left = "map";
-				default.bottomchild.left = "bottombars";
-				default.belowchatchild.left = "belowchat";
-				default.macro= macro
-				"})
-				src.scene1begin()
-
+				src.client.show_verb_panel = 1
+				src.align()
+				scene1begin(src)
 
 
 

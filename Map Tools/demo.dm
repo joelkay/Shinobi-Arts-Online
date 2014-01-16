@@ -1,18 +1,24 @@
 //////////////////////THIS LIBRARY HAS ALL THE SWAP MAP TOOLS + FEATURES TO BE USED IN ALL THE PROJECTS/////////////////////////////////////////////
 
-//MAP MAKER vers 0.1
+//some testing verbs
+
+mob
+	verb
+		TestPopup()
+
+			var/mob/M = new/mob
+			M.icon='title - chat.png'
+			M.name="Steve"
+
+			Apopup(src,"[M.name]",0,M)
 
 
-//SWAP HANDLING vers 0.1
 
 
-//swapmaps vers 0.1
 
 
-//Text vers 0.1
 
 
-//vis groups vers 0.1
 
 
 
@@ -36,8 +42,6 @@ mob
 	var/swapmap/map
 	var/swapmap/map2
 	var/swapmap/map3
-
-proc/Apopup(var/a,var/b)
 
 mob/proc/Createmap()
 
@@ -63,3 +67,7 @@ turf/mapborder
 	density=1
 	invisibility=101//make it invis
 	opacity=1
+
+
+
+

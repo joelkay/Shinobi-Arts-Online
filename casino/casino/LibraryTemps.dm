@@ -19,7 +19,6 @@ mob
 	var/swapmap/map2
 	var/swapmap/map3
 
-proc/Apopup(var/a,var/b)
 
 mob/proc/Createmap()
 

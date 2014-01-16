@@ -30,6 +30,14 @@ mob
 
 
 
+		PopupTests()
+			if(Apopup(src,"Test",1))
+				Apopup(src,"You chose Yes")
+			else
+				Apopup(src,"You chose No")
+
+
+
 
 
 var/tmp/connected=0

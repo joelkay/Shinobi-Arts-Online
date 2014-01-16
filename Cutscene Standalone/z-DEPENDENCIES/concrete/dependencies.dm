@@ -42,3 +42,4 @@ mob
 		if(istype(a,/obj/bump))//delete them for next scene
 			scene4begin()
 
+
