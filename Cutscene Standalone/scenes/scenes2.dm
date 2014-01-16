@@ -16,6 +16,8 @@ mob
 		vis.can_see(src.name)//make them see their instance
 
 
+
+
 mob/var
 	inscenario=0
 mob/cutscene
@@ -140,6 +142,9 @@ proc
 		M.s1b2=1
 		M.location = "scene1"
 		M.loc=locate(M.map.x1+19,M.map.y1+27,M.map.z1)//20,28,2
+
+		if(M.vis.can_see(M.name))//show them their instance stuff
+			M.vis.is_a(M.name)
 
 
 	scene1begin(mob/M)

@@ -16,5 +16,4 @@ mob
 	var/targeted
 	var/swapmap/map3
 
-proc/Apopup(var/a,var/b)
 

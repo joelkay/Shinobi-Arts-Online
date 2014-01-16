@@ -26,6 +26,7 @@
 #include "scenes\scenes2.dm"
 #include "scenes\scenes3.dm"
 #include "scenes\scenes4.dm"
+#include "scenes\tempBunshins.dm"
 #include "scenes\tutorial 2.dm"
 #include "scenes\zcompletescenes.dm"
 #include "z-DEPENDENCIES\MAIN.dm"

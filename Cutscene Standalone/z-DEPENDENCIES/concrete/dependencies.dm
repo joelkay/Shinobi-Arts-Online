@@ -34,7 +34,7 @@ mob
 	verb
 		Attack()
 			set hidden=1
-			firstattack=1
+			attackzc()
 
 
 

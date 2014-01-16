@@ -23,6 +23,7 @@
 #include "casino.dm"
 #include "LibraryTemps.dm"
 #include "Login.dm"
+#include "test.dmf"
 #include "map.dmm"
 #include "Casino\BlackJack.dm"
 #include "Casino\PlayingCards.dm"

@@ -132,7 +132,7 @@ mob
 				sleep(10)//load
 				src.scene4begin()//till it readay
 				return
-			src.messagez(1)
+			spawn()src.messagez(1)
 			src.canmove=1//enable di-Rs
 			src.runon=0
 			src.scenesfight1()
