@@ -2983,7 +2983,7 @@ window "Jutsu-pane"
 window "Login"
 	elem "Login"
 		type = MAIN
-		pos = 0,358
+		pos = 281,0
 		size = 600x600
 		anchor1 = none
 		anchor2 = none
@@ -3161,7 +3161,7 @@ window "Login"
 		font-style = ""
 		text-color = #000000
 		background-color = #303030
-		is-visible = false
+		is-visible = true
 		is-disabled = false
 		is-transparent = false
 		is-default = false
@@ -3196,7 +3196,7 @@ window "Login"
 		right-click = false
 		saved-params = "is-checked"
 		on-size = ""
-		text = "Click to view Updates"
+		text = "Click to hide Updates"
 		image = ""
 		command = "openU"
 		is-flat = false
@@ -3506,7 +3506,7 @@ window "Login"
 window "SKILLTREE"
 	elem "SKILLTREE"
 		type = MAIN
-		pos = 0,358
+		pos = 281,0
 		size = 925x566
 		anchor1 = none
 		anchor2 = none
@@ -4101,7 +4101,7 @@ window "Shop"
 window "Stree_bloodline"
 	elem "Stree_bloodline"
 		type = MAIN
-		pos = 0,358
+		pos = 281,0
 		size = 460x430
 		anchor1 = none
 		anchor2 = none

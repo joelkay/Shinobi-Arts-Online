@@ -79,14 +79,14 @@ mob
 				if(src.inwater)
 					src.canmove=0
 					src.icon_state="jutsu exicute"
-					Execution(/obj/triggerable/Nagashi,3,800,src)
+					Execution(/obj/triggerable/Nagashi,3,800,src,src)
 					spawn(30)
 						src.icon_state=""
 						src.canmove=1
 				else
 					src.canmove=0
 					src.icon_state="jutsu exicute"
-					Execution(/obj/triggerable/Nagashi,1,500,src)
+					Execution(/obj/triggerable/Nagashi,1,500,src,src)
 					spawn(30)
 						src.icon_state=""
 						src.canmove=1

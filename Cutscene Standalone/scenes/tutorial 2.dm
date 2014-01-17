@@ -210,7 +210,11 @@ mob
 
 			Apopup(src,"very good [src.name] but the journey ahead is alot harder.",0,face)
 
-			Apopup(src,"look at the red flashing image on your hud, this is.your health bar",0,face)
+			popup(src,"hud")
+
+			/////////////////////////////////////ADD MORE TUTRORIAL PARTS/////////////////////////////////
+
+			Apopup(src,"Now go join the world and explore some quests and build your character!",0,face)
 
 			/////////
 

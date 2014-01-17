@@ -12,8 +12,6 @@ mob
 		// views are the groups you can see. The vis object needs
 		// to be instantiated for this functionality to be used.
 		vis = new(src)
-		vis.is_a(src.name)//this creates double mobs?
-		vis.can_see(src.name)//make them see their instance
 
 
 
@@ -25,6 +23,7 @@ mob/cutscene
 	density=1
 	var
 		group_name = ""
+
 	New(text)
 		..()
 		group_name = text
@@ -142,9 +141,6 @@ proc
 		M.s1b2=1
 		M.location = "scene1"
 		M.loc=locate(M.map.x1+19,M.map.y1+27,M.map.z1)//20,28,2
-
-		if(M.vis.can_see(M.name))//show them their instance stuff
-			M.vis.is_a(M.name)
 
 
 	scene1begin(mob/M)

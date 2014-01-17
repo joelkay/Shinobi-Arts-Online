@@ -50,10 +50,11 @@ mob
 		Createmap()
 			set background=1
 			if(src.location) return//can only do it in real world.
-			var/swapmap/Map
-			Map=SwapMaps_Find("Maps/playerhouses/[src.ckey]")
-			if(Map)//If a map is found...
-				Map = SwapMaps_CreateFromTemplate("Maps/playerhouses/[src.ckey]")	  //create it
+
+			var/swapmap/Map=SwapMaps_Load("Maps/playerhouses/[src.ckey]")
+
+			if(Map)//If a map is found + loaded ...
+				Apopup(src,"Map Loaded..")
 
 				maps_created.Add(Map)
 				src.Savedx = src.x	  //We save the players X position into a variable
@@ -66,11 +67,10 @@ mob
 				Po.owner = src	  //Set the house's owner to the player
 				Po.name = "[src]'s House"	//Change the houses name so everyone knows who it belongs to
 			*/
-				src<<"Map Loaded.."
 				return Map
 
 			else
-				src<<"Generating your player house with a custom template.."
+				Apopup(src,"Generating your player house with a custom template..")
 				src.Savedx = src.x	  //We save the players X position into a variable
 				src.Savedy = src.y	  //We save the players Y position into a variable
 				src.Savedz = src.z	  //We save the players Z position into a variable
@@ -98,7 +98,12 @@ mob/proc
 		var/mob/M=src
 		M.loc = locate(M.Savedx,M.Savedy,M.Savedz)	 //We teleport them to their saved location
 		M.location = null
-		spawn() src.savemap()
+
+
+		//spawn() src.savemap()
+		//we will save the maps in a diff way
+
+
 		var/d=M.checkarea2()//incase they dont get teled
 		if(d)//if it returns a swap map
 			if(debug)alert("Failed tele")

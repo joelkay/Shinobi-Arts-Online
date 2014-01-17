@@ -132,5 +132,6 @@ mob
 
 			if("Sand_spike")
 				src << output("[src]: Sand spike..", "combatlog")
-				Execution(/obj/Sandspike,2,500,src)
+
+				Execution(/obj/Sandspike,2,500,src,src)
 

@@ -7,7 +7,7 @@ world
 	New()
 		swapmaps_mode=SWAPMAPS_TEXT
 		..()
-		var/z=SwapMaps_Find("Maps/[current]")
+		var/z=SwapMaps_Load("Maps/[current]")
 		if(z) return
 		else
 			Template()
@@ -52,6 +52,7 @@ turf
 	Ladder
 		icon='cutscene.dmi'
 		icon_state = "ladder"
+		layer=9999
 
 	mapborder
 		icon='turfy.dmi'

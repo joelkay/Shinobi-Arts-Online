@@ -116,11 +116,17 @@ turf
 	Ladder
 		icon='cutscene.dmi'
 		icon_state = "ladder"
+		layer=9999
 
 		Entered(mob/M)
 			if(ismob(M) && M.client)	//If a mon entered the ladder and is a player
-				alert("no world to go out in :P")
+				Apopup(M,"no world to go out in :P")
 				M.location = null
+
+		Del()
+			Apopup(usr,"thats clever, so how do you plan to go out? baka")
+			new/turf/Ladder(locate(usr.map.x1+32,usr.map.y1+1,usr.map.z1))
+
 
 	densevoid
 		density = 1

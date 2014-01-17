@@ -3,7 +3,7 @@
 client/perspective=EDGE_PERSPECTIVE
 world
 	name = "Shinobi Arts Online"
-	status = "version 1"
+	status = "version 0.3"
 	hub = "JeanSqribe.ShinobiArtsOnline"
 	hub_password = "naz4"   //password for live game authentication
 	//hub_password= "password for your game"
@@ -39,11 +39,14 @@ world
 	proc
 		statusupdate()
 			var/bool="No"//to show if the server accepts multikey
+
 			if(multi_ip)bool="Yes"
-			if(my_server=="localhost")//making sure its local server
-				multi_ip=1//local world accepts multikey by default
+
+			if(local_server)//making sure its not a private server
+				multi_ip=1//main server accepts multikey by default
 				bool="Yes"
 				world.status = {"<font color="blue"><b>Hosted by:SAO Cloud,Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</b></font>"}
+
 			else
 				if(HostMSG!="SAO Cloud")//players logged in will go here
 					world.status = {"<font color="blue">Hosted by:[HostMSG],Version:[version_display],Players:[players.len]/[maxpeeps],Accepts multikey:[bool]</font>"}

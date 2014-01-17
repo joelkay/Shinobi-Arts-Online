@@ -19,6 +19,7 @@
 // BEGIN_INCLUDE
 #include <jeansqribe\maptools\Map Tools\Map Tools.dme>
 #include "Skin.dmf"
+#include "map.dmm"
 #include "cutscene specific proc use\attack and damage procs\Dec procs.dm"
 #include "handling\popups.dm"
 #include "handling\transitions.dm"

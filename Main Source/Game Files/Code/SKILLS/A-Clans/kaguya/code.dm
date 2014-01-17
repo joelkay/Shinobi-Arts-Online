@@ -95,5 +95,5 @@ mob
 
 			if("Sawarabi")
 				src << output("[src]: Sawarabi..", "combatlog")
-				Execution(/obj/Sawa,5,700,src)
+				Execution(/obj/Sawa,5,700,src,src)
 

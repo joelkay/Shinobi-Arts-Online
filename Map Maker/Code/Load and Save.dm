@@ -78,19 +78,18 @@ mob
 	verb
 		send(mob/m in view(src),F as file)//send the map between ppls
 			set category = null
-			switch(alert(m,"[src] is trying to send you [F].  Do you accept the file?","**File Transfer**","Yes","No"))
-				if("Yes")
-					alert(src,"[m] accepted the file","**File Accepted**")
-					m<<ftp(F)
-				if("No")
-					alert(src,"[m] declined the file","**File Declined**")
+			if(Apopup(m,"[src] is trying to send you [F].  Do you accept the file?",1))
+				Apopup(src,"[m] accepted the file","**File Accepted**")
+				m<<ftp(F)
+			else
+				Apopup(src,"[m] declined the file","**File Declined**")
 
 
 		join()
 			set hidden=1
 			var/mob/m=HOST
 			if(!m)
-				alert(src,"wait for the host to get on and load a map")
+				Apopup(src,"wait for the host to get on and load a map")
 				return
 			src.map = m.map
 			src.loc = locate(m.x,m.y,m.z) //locate them.
@@ -133,13 +132,13 @@ mob
 			newname=input(src,"name","Enter a New Name for this Map.")
 			var/z=SwapMaps_Find("Maps/[newname]")
 			if(z)
-				switch(alert(src,"[newname] already exists continue.","Replace","Yes","No"))
-					if("No")
-						alert("aborted.")
-						return
-					else
-						var/x=("Maps/[newname]")
-						fdel(x)
+				if(Apopup(src,"[newname] already exists continue.",1))
+					var/x=("Maps/[newname]")
+					fdel(x)
+				else
+					Apopup(src,"aborted.")
+					return
+
 
 			var/F=("Maps/[mname]")
 			SwapMaps_DeleteFile(F)

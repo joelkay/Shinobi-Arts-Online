@@ -22,7 +22,7 @@ mob
 							thing-=2
 						if(time<10)
 							thing-=3
-						Execution3(/obj/triggerable/sleep,thing,M,time, src)
+						Execution2(/obj/triggerable/sleep,thing,M,time, src)
 
 				else
 					var/time=(intone)*4
@@ -34,5 +34,5 @@ mob
 						thing-=2
 					if(time<10)
 						thing-=3
-					Execution3(/obj/triggerable/sleep,thing,src,time, src)
+					Execution2(/obj/triggerable/sleep,thing,src,time, src)
 

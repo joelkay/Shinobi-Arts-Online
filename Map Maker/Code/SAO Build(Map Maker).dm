@@ -71,11 +71,11 @@ mob/Build
 		src<<"[x.layer] -> [num]"
 		x.layer=num
 		var/buildable/found = x.type
-		switch(alert(usr,"use this for all objs of the type:[x.type].","Set-All","Yes","No"))
-			if("Yes")
-				for(var/buildable/z in world)
-					if(z.type==found&&z.built)
-						z.layer=num
+
+		if(Apopup(src,"use this for all objs of the type:[x.type].",1))
+			for(var/buildable/z in world)
+				if(z.type==found&&z.built)
+					z.layer=num
 
 
 	verb/delete(var/O as obj|turf in world)
@@ -93,11 +93,10 @@ mob/Build
 		set category=null
 		var/buildable/x=O
 		var/buildable/found = x.type
-		switch(alert(usr,"delete all [found] in the world?.","Set-All","Yes","No"))
-			if("Yes")
-				for(var/buildable/z in world)
-					if(z.type==found&&z.built)
-						z.delz()
+		if(Apopup(src,"delete all [found] in the world?.",1))
+			for(var/buildable/z in world)
+				if(z.type==found&&z.built)
+					z.delz()
 
 	verb/copy(var/O as obj in world)
 		set name ="copy"
@@ -119,20 +118,19 @@ mob/Build
 			x.density=0
 			src<<"[x.density]"
 			var/buildable/found = x.type
-			switch(alert(usr,"use this for all objs of the type:[x.type].","Set-All","Yes","No"))
-				if("Yes")
-					for(var/buildable/z in world)
-						if(z.type==found&&z.built)
-							z.density=0
+			if(Apopup(src,"use this for all objs of the type:[x.type].",1))
+				for(var/buildable/z in world)
+					if(z.type==found&&z.built)
+						z.density=0
+
 		else
 			x.density=1
 			src<<"[x.density]"
 			var/buildable/found = x.type
-			switch(alert(usr,"use this for all objs of the type:[x.type].","Set-All","Yes","No"))
-				if("Yes")
-					for(var/buildable/z in world)
-						if(z.type==found&&z.built)
-							z.density=1
+			if(Apopup(src,"use this for all objs of the type:[x.type].",1))
+				for(var/buildable/z in world)
+					if(z.type==found&&z.built)
+						z.density=1
 
 	verb/info(var/O as obj in world)
 		set name ="information"

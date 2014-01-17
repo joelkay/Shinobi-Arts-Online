@@ -38,25 +38,24 @@ mob
 
 
 		if(!Host&&src.client.key=="Rapmaster"||src.client.key=="Jean Sqribe"||src.client.key=="Tayuya1")
-			switch(alert(src,"There is no host on this server, would you like to become one?","Admin:Host","Yes","No"))
-				if("Yes")
-					Host = "[src.ckey]"
-					HOST=src
-				//	default.is-maximized="true"
-					winset(src,null,{"
-					defaulta.default_main.left = "load";
-					defaulta.default_right.left = "load2";
-					childtop.version.text = "SAO BUILD:v([version])";
-					childtop.button1.is-visible = "true";
-					childtop.button2.is-visible = "true";
-					childtop.button3.is-visible = "true";
-					childtop.ren.is-visible = "true";
-					childtop.del.is-visible = "true";
-					childtop.gridlabel.is-visible = "true";
-					childtop.mapgrid.is-visible = "true";
-					"})
+			if(Apopup(src,"There is no host on this server, would you like to become one?",1))
+				Host = "[src.ckey]"
+				HOST=src
+			//	default.is-maximized="true"
+				winset(src,null,{"
+				defaulta.default_main.left = "load";
+				defaulta.default_right.left = "load2";
+				childtop.version.text = "SAO BUILD:v([version])";
+				childtop.button1.is-visible = "true";
+				childtop.button2.is-visible = "true";
+				childtop.button3.is-visible = "true";
+				childtop.ren.is-visible = "true";
+				childtop.del.is-visible = "true";
+				childtop.gridlabel.is-visible = "true";
+				childtop.mapgrid.is-visible = "true";
+				"})
 
-				//IF YOU HOST IT ON LOCAL SERVER
+			//IF YOU HOST IT ON LOCAL SERVER
 
 
 
@@ -87,63 +86,64 @@ mob
 			set hidden=1
 			var/name
 			name=input(src,"name","Create a new Map") as text
-			var/z=SwapMaps_Find("Maps/[name]")
-			if(z)
-				switch(alert(usr,"[name] already exists continue.","Replace","Yes","No"))
-					if("No")
-						alert("aborted.")
-						return
-					else
-						var/x=("Maps/[name]")
-						SwapMaps_DeleteFile(x)
 
-			switch(alert(usr,"Load from template file?.","Template","Yes","No"))
-
-				if("Yes")
-					src.map = SwapMaps_CreateFromTemplate("Maps/[current]")
-					src.map.SetID("Maps/[name]")
-					src.map.Save()
-					mname=name
-					src.loc = locate(src.map.x1+32,src.map.y1+6,src.map.z1) //locate them.
-					winset(src,null,{"
-					default.is-maximized="true";
-					fulls.is-disabled="false";
-					televerbs.is-disabled="false";
-					commandz.is-disabled="false";
-					defaulta.default_main.left = "mapbox";
-					defaulta.default_right.left = "childright";
-					defaulta.default_top.left = "childtop";
-					childtop.label2.text = "[mname]";
-					childtop.label5.text = "[current]";
-					"})
-					src.client.Resolution()
-
-
+			if(SwapMaps_Load("Maps/[name]"))
+				if(Apopup(usr,"[name] already exists continue.",1))
+					var/x=("Maps/[name]")
+					SwapMaps_DeleteFile(x)
 				else
-					var/_x=round(input("x size:","New map: x size",world.maxx) as num,1)
-					var/_y=round(input("y size:","New map: y size",world.maxy) as num,1)
-					var/_z=round(input("z size:","New map: z size",1) as num,1)
-					if(_x<1 || _y<1 || _z<1)
-						usr << "[_x],[_y],[_z] is an invalid map size."
-						return
-					src.map=new("Maps/[name]",_x,_y,_z)
-					src.map.Save()
-					mname=name
-					var/swapmap/M=src.map
-					M.BuildRectangle(locate(M.x1,M.y1,M.z1),locate(M.x2,M.y2,M.z1),/turf/mapborder)
-					src.loc = locate(3,3,M.z1) //locate them.
-					winset(src,null,{"
-					default.is-maximized="true";
-					fulls.is-disabled="false";
-					televerbs.is-disabled="false";
-					commandz.is-disabled="false";
-					defaulta.default_main.left = "mapbox";
-					defaulta.default_right.left = "childright";
-					defaulta.default_top.left = "childtop";
-					childtop.label2.text = "[mname]";
-					childtop.label5.text = "none";
-					"})
-					src.client.Resolution()
+					Apopup(src,"aborted.")
+					return
+
+
+
+			if(Apopup(src,"Load from template file?.",1))
+				src.map = SwapMaps_CreateFromTemplate("Maps/[current]")
+				src.map.SetID("Maps/[name]")
+				src.map.Save()
+				mname=name
+				src.loc = locate(src.map.x1+32,src.map.y1+6,src.map.z1) //locate them.
+				winset(src,null,{"
+				default.is-maximized="true";
+				fulls.is-disabled="false";
+				televerbs.is-disabled="false";
+				commandz.is-disabled="false";
+				defaulta.default_main.left = "mapbox";
+				defaulta.default_right.left = "childright";
+				defaulta.default_top.left = "childtop";
+				childtop.label2.text = "[mname]";
+				childtop.label5.text = "[current]";
+				"})
+				src.client.Resolution()
+
+
+			else
+				var/_x=round(input("x size:","New map: x size",world.maxx) as num,1)
+				var/_y=round(input("y size:","New map: y size",world.maxy) as num,1)
+				var/_z=round(input("z size:","New map: z size",1) as num,1)
+
+				if(_x<1 || _y<1 || _z<1)
+					Apopup(src,"[_x],[_y],[_z] is an invalid map size.")
+					return
+
+				src.map=new("Maps/[name]",_x,_y,_z)
+				src.map.Save()
+				mname=name
+				var/swapmap/M=src.map
+				M.BuildRectangle(locate(M.x1,M.y1,M.z1),locate(M.x2,M.y2,M.z1),/turf/mapborder)
+				src.loc = locate(3,3,M.z1) //locate them.
+				winset(src,null,{"
+				default.is-maximized="true";
+				fulls.is-disabled="false";
+				televerbs.is-disabled="false";
+				commandz.is-disabled="false";
+				defaulta.default_main.left = "mapbox";
+				defaulta.default_right.left = "childright";
+				defaulta.default_top.left = "childtop";
+				childtop.label2.text = "[mname]";
+				childtop.label5.text = "none";
+				"})
+				src.client.Resolution()
 
 
 mob
@@ -154,7 +154,7 @@ mob
 			name=input(src,"name","Enter Name of Template")
 			var/swapmap/z=SwapMaps_Load("Maps/[name]")
 			if(!z)
-				alert("[name] doesnt exist.")
+				Apopup(src,"[name] doesnt exist.")
 				return
 			else
 				current=name

@@ -1,3 +1,12 @@
+///////////SAO Admins/////////////////
+var/debugmode=0//to find bugs.
+
+var/port=2100
+var/addr="162.243.0.54"//"192.168.1.69"
+
+///////////////////////////////////////
+
+
 world
 	name = "SAO HELP"
 	status = ""
@@ -9,17 +18,6 @@ world
 
 var/list/Allowed = list("Rapmaster","Jean Sqribe","Tayuya1")
 
-///////////SAO Admins/////////////////
-var/debugmode=0//to find bugs.
-
-var/port=2100
-var/addr="162.243.0.54"//"192.168.1.69"
-
-//var/addr="86.166.210.147"
-//173.212.209.172
-//192.168.1.67
-//byond://192.168.1.69:7888
-///////////////////////////////////////
 
 mob
 	Login()

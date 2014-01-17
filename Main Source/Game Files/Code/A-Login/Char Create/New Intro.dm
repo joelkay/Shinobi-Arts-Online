@@ -300,7 +300,6 @@ mob
 						"})//turn on the cpanel
 						winset(src,null,{"
 						default.main.left = "map";;
-						default.belowchatchild.left = "belowchat";
 						default.menu= null
 						"})
 						src.scenesdone()//finish scenes

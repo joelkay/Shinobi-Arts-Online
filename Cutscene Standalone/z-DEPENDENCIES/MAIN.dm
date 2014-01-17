@@ -58,6 +58,7 @@ mob
 			src.scene4begin()
 
 
+
 		Begin3()
 			set hidden=1
 			if(scenepage)return
@@ -74,6 +75,7 @@ mob
 			inscenes=0
 			src.sight |= (SEE_MOBS|SEE_OBJS|SEE_TURFS)  // turn on several bits at once
 			scene5begin()
+
 
 
 

@@ -1,6 +1,5 @@
-var/version="0.3"
-var/version_display=0.3
-
+var/version="0.4"
+var/version_display=0.4
 
 var/Main = {"
 	<html>
@@ -15,10 +14,14 @@ var/Main = {"
 
 	<br>
 	<font color = green><center>Updates</center><br>
-	- <font color = blue>0.3-</font><font color = green><b>Massive skill system rework, optimised some skills to run faster.<br>
-	- <font color = blue>0.3-</font><font color = green><b>Uchiha Clan has recieved improvements(Sharingan Copy fixed).<br>
-	- <font color = blue>0.3-</font><font color = green><b>Save System changes, can now Delete characters.<br>
-	- <font color = blue>0.3-</font><font color = green><b><beta> verbs are being converted to buttons, old ones are still accesible for now.<br>
+	- <font color = blue>0.4-</font><font color = green><b>Chidori nagashi fix(should do damage now).<br>
+	- <font color = blue>0.4-</font><font color = green><b>Major cutscene/intro reworks.<br>
+	- <font color = blue>0.4-</font><font color = green><b><beta>player houses can now be uploaded from SAO build.<br>
+
+	- <font color = gray>0.3-</font><font color = green><b>Massive skill system rework, optimised some skills to run faster.<br>
+	- <font color = gray>0.3-</font><font color = green><b>Uchiha Clan has recieved improvements(Sharingan Copy fixed).<br>
+	- <font color = gray>0.3-</font><font color = green><b>Save System changes, can now Delete characters.<br>
+	- <font color = gray>0.3-</font><font color = green><b><beta> verbs are being converted to buttons, old ones are still accesible for now.<br>
 
 	- <font color = gray>0.2-</font><font color = green><b>Save System changes, skill levels are now saved(Remote Saving).<br>
 	- <font color = gray>0.2-</font><font color = green><b>Haku and water moves are fixed.<br>
@@ -98,7 +101,7 @@ var/htmlop = "border=0;can_close=0;can_resize=0;can_minimize=0;titlebar=0"//HTML
 mob
 	proc
 		adverts()
-			src<<"<font size=3><font color = blue><b><u><a href='http://www.shinobiartsonline.tk/'>Visit the Forum</a></font>."//forum bish
+			src<<"<font size=3><font color = blue><b><u><a href='http://shinobi-arts-online.wikia.com/wiki/Shinobi_Arts_Online_Wiki'>Visit our Wiki</a></font>."//forum bish
 			src<<"<font size=2><font color = blue><b><u><a href='http://www.byond.com/games/JeanSqribe/ShinobiArtsOnlineBuild'>Want to make some custom maps?</a></font>."
 
 			spawn(36000) adverts()//every hour

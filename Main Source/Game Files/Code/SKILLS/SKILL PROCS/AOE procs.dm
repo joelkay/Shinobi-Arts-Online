@@ -1,25 +1,15 @@
-proc/Execution(path,radius,dmg,obst,var/mob/M)// obst=location // M = src
-	for(var/turf/T in orange(radius,obst))
-		new path(T)
-	for(var/mob/X in orange(radius,obst))
-		if(X&&M)
-			AoE_Damage(M,X,radius,dmg)
-			X.PushEnemy(2,M.dir)
+proc/Execution(path,radius,dmg,obst,var/mob/M)// object: range: damage: center: caster
 
-
-proc/Execution2(path,radius,dmg,obst,var/mob/M)// M = src
 	for(var/turf/T in orange(radius,obst))
 		new path(T)
 
 	for(var/mob/X in orange(radius,obst))
 		if(X&&M)
-			AoE_Damage2(M,X,radius,dmg)
-			if(X)
-				X.PushEnemy(2,M.dir)
+			AoE_Damage(M,X,2,dmg)
 			return 1
 
 
-proc/Execution3(path,radius,obst,timeage,mob/M)// M = src
+proc/Execution2(path,radius,obst,timeage,mob/M)// object: range: center: lasting time: caster
 //	world<<"[path] [radius] [obst] [timeage] [M]"
 	for(var/turf/T in orange(radius,obst))
 		var/obj/triggerable/D = new path(T)
@@ -34,19 +24,13 @@ proc/Execution3(path,radius,obst,timeage,mob/M)// M = src
 
 
 
-proc/AoE_Damage(var/mob/A,var/mob/M,radius,dmg)// A = src, M = target
-	var/D = dmg
-	var/X = D*(radius + 1 - get_dist(A,M))
-	//Blood(M.x,M.y,M.z)
-	if(M&&A)
-		M.Dec_health(X,A,"AOE")
-
-
-proc/AoE_Damage2(mob/A,mob/M,radius,dmg)// A = src, M = target
+proc/AoE_Damage(mob/A,mob/M,push,dmg)// A = caster, M = target
 	var/D = dmg
 	var/X = D
 	if(M&&A)
 		M.Dec_health(X,A,"AOE")
+		if(M)
+			M.PushEnemy(push,A.dir)
 
 
 /*

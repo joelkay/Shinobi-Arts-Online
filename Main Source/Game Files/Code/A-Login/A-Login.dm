@@ -7,7 +7,12 @@ client/New()
 		players.Add(src)
 
 	if(dd_hasprefix(src.ckey, "guest"))
-		spawn()alert("Please log in with your byond key")
+		Apopup("Please log in with your byond key")
+		del(src)
+
+
+	if(isLoggedin(src))//if they are logged into another server
+		alert(src,"You may only log into one server at a time")
 		del(src)
 
 	if(src.key=="Rapmaster"||src.key=="Jean Sqribe"||src.key=="Tayuya1"||src.key=="Martys1103")//IF ADMIN
@@ -20,11 +25,6 @@ client/New()
 							debug=1//turn debug on for testing
 						if("No")
 							debug=0//turn off debug
-
-	if(isLoggedin(src))//if they are logged into another server
-		spawn(20)
-			alert(src,"You may only log into one server at a time")
-			del(src)
 
 	spawn()Loggedin(src,1)//if they arent logged into any servers, make it so they are logged in
 

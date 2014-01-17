@@ -18,7 +18,7 @@ obj//to place the stuff.
 			var/dmg=800+(U.chakraforcemain*10)
 
 			src.invisibility=100//dont wna see it
-			Execution2(/obj/explosion,12,dmg,src,U)
+			Execution(/obj/explosion,12,dmg,src,U)
 
 obj
 	Explodespider
@@ -42,7 +42,7 @@ obj
 		Del()
 			var/mob/G=src.owner
 			var/dmg=(G.chakraforcemain/2)+200
-			Execution2(/obj/explosion,1,dmg,src,G)
+			Execution(/obj/explosion,1,dmg,src,G)
 			..()
 
 
@@ -58,7 +58,7 @@ obj
 					var/dmg= 550+G.chakraforcemain
 					src.loc=B.loc
 					if(B)
-						Execution2(/obj/explosion,1,dmg,src,G)
+						Execution(/obj/explosion,1,dmg,src,G)
 					del(src)
 			else
 				del(src)
@@ -83,7 +83,7 @@ obj
 				flick('explosion.dmi',src)
 				var/mob/G=src.owner
 				var/dmg=200+G.chakraforcemain
-				Execution2(/obj/explosion,1,dmg,src,G)
+				Execution(/obj/explosion,1,dmg,src,G)
 			..()
 
 		Bump(atom/movable/a)
@@ -98,7 +98,7 @@ obj
 					src.xploded=1
 					var/dmg=550+G.chakraforcemain
 					if(B)
-						Execution2(/obj/explosion,1,dmg,src,G)
+						Execution(/obj/explosion,1,dmg,src,G)
 					del(src)
 			else
 				del(src)
@@ -122,7 +122,7 @@ obj
 				flick('explosion.dmi',src)
 				var/mob/G=src.owner
 				var/dmg=200+G.chakraforcemain
-				Execution2(/obj/explosion,1,dmg,src,G)
+				Execution(/obj/explosion,1,dmg,src,G)
 			..()
 
 		Bump(atom/movable/a)
@@ -138,7 +138,7 @@ obj
 					src.xploded=1
 					var/dmg=550+G.chakraforcemain
 					if(B)
-						Execution2(/obj/explosion,1,dmg,src,G)
+						Execution(/obj/explosion,1,dmg,src,G)
 
 					del(src)
 

@@ -145,9 +145,6 @@ mob
 			loaded=1
 			winset(src,null,{"
 			default.main.left = "map";
-			default.belowchatchild.left = "belowchat";
-			default.cpanel-button.command="Cpanel";
-			default.xlog.background-color = "green";
 			default.menu= null
 			"})
 

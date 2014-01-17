@@ -3,9 +3,7 @@
 var/debugmode=0//to find bugs.
 
 var/port=2100//7886
-var/addr="178.175.140.206"
-//var/addr="86.166.210.147"
-//173.212.209.172
+var/addr="162.243.0.54"
 
 //Server hosted at 192.168.1.64:6882
 ///////////////////////////////////////
@@ -68,18 +66,19 @@ mob
 mob/verb
 	Upload()
 		set hidden=1
+		savemap()
 		if(connected)
 			var/savefile/F=new("map_Maps/playerhouses/[src.ckey].txt")
 			if(!F)
-				alert("no file to upload")
+				Apopup(src,"no file to upload")
 				return
 
 			var/p = world.Export("[addr]:[port]?action=playerhouse&key=[src.ckey]",F,1)
 			if(!p)
-				alert("upload failed")
+				Apopup(src,"upload failed")
 				return // if world not up
 
-			alert("file uploaded")
+			Apopup(src,"file uploaded")
 
 
 //SERVER

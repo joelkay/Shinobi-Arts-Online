@@ -7,10 +7,13 @@ mob
 	proc
 		mainscene1()
 			completedscenes=0
+
+
 			if(src.map)
 				src.client.show_verb_panel = 1
 				src.align()
 				scene1begin(src)
+				vis.can_see(src.name)
 
 
 

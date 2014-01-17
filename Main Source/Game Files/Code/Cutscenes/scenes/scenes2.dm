@@ -12,8 +12,8 @@ mob
 		// views are the groups you can see. The vis object needs
 		// to be instantiated for this functionality to be used.
 		vis = new(src)
-		vis.is_a(src.name)//this creates double mobs?
-		vis.can_see(src.name)//make them see their instance
+
+
 
 
 mob/var
@@ -23,6 +23,7 @@ mob/cutscene
 	density=1
 	var
 		group_name = ""
+
 	New(text)
 		..()
 		group_name = text

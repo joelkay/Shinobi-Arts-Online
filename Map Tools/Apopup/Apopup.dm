@@ -1,17 +1,21 @@
 mob/var/popupvalue=0
 mob/var/popupcomplete=0//initiation purposes
-mob/var/tmp/Window/temp
+mob/var/tmp/list/temp[50]
+mob/var/tmp/windows=0
 
 
 
 mob/proc/CreatePopup(var/type,var/msg,var/mob/Face)
+
+	windows++//allow multi popups
+
 	var/client/user = src.client
 	client.UpdateResolution()
 
 	var/Window/w = new
 	w.user = user
 	w.user.UpdateResolution()
-	w.name = "Apopup"
+	w.name = "Apopup[windows]"
 	w.w="352"; w.h="150"
 	w.x="[round((w.user.scrwidth/2)-158,1)]"
 	w.y="[round((w.user.scrheight/2)-30,1)]"
@@ -27,7 +31,7 @@ mob/proc/CreatePopup(var/type,var/msg,var/mob/Face)
 	w.Create()
 	w.Update()
 
-	var/Label/H = new(client, "popup-title", "Apopup")
+	var/Label/H = new(client, "popup-title[windows]", "Apopup[windows]")
 	H.setBounds(0,0,352,16)
 	H.is_visible = "true"
 	H.background_color="#808040"
@@ -45,7 +49,7 @@ mob/proc/CreatePopup(var/type,var/msg,var/mob/Face)
 		// Send the icon to src's local cache
 		src<<browse_rsc(b, iconName)
 
-		var/Label/f = new(client, "popup-faceicon", "Apopup")
+		var/Label/f = new(client, "popup-faceicon[windows]", "Apopup[windows]")
 		f.setBounds(0,16,56,108)
 		f.is_visible = "true"
 		f.background_color="#808040"
@@ -56,7 +60,7 @@ mob/proc/CreatePopup(var/type,var/msg,var/mob/Face)
 		f.parentobj = w
 		w.Controls.Add(f)
 
-		var/Label/l = new(client, "popup-label", "Apopup")
+		var/Label/l = new(client, "popup-label[windows]", "Apopup[windows]")
 		l.setBounds(56,16,300,108)
 		l.is_visible = "true"
 		l.background_color="#808040"
@@ -70,7 +74,7 @@ mob/proc/CreatePopup(var/type,var/msg,var/mob/Face)
 
 	else
 
-		var/Label/l = new(client, "popup-label", "Apopup")
+		var/Label/l = new(client, "popup-label[windows]", "Apopup[windows]")
 		l.setBounds(0,16,352,108)
 		l.is_visible = "true"
 		l.background_color="#808040"
@@ -85,7 +89,7 @@ mob/proc/CreatePopup(var/type,var/msg,var/mob/Face)
 
 	switch(type)
 		if(1)//yes or no
-			var/Button/i = new(client, "popup-yes", "Apopup")
+			var/Button/i = new(client, "popup-yes[windows]", "Apopup[windows]")
 			i.setBounds(19,127,53,23)
 			i.is_visible = "true"
 			i.background_color="#808040"
@@ -97,7 +101,7 @@ mob/proc/CreatePopup(var/type,var/msg,var/mob/Face)
 			i.parentobj = w
 			w.Controls.Add(i)
 
-			var/Button/k = new(client, "popup-no", "Apopup")
+			var/Button/k = new(client, "popup-no[windows]", "Apopup[windows]")
 			k.setBounds(289,127,52,22)
 			k.is_visible = "true"
 			k.background_color="#808040"
@@ -111,7 +115,7 @@ mob/proc/CreatePopup(var/type,var/msg,var/mob/Face)
 
 		else
 
-			var/Button/j = new(client, "popup-ok", "Apopup")
+			var/Button/j = new(client, "popup-ok[windows]", "Apopup[windows]")
 			j.setBounds(153,127,51,23)
 			j.is_visible = "true"
 			j.background_color="#808040"
@@ -126,12 +130,7 @@ mob/proc/CreatePopup(var/type,var/msg,var/mob/Face)
 
 
 	w.Update()
-
-	src.temp=w
-
-
-
-
+	temp[windows]=w
 
 
 
@@ -144,12 +143,18 @@ mob/verb/toggleApopup()
 mob/proc/toggleApop()
 	if(!popupcomplete)//havent completed the popup yet
 		popupcomplete=1
-		if(temp)
-			temp.Remove()
+		if(windows>0)
+			var/Window/tempr = temp[windows]
+			tempr.Remove()
+			windows--
+			return
 
 	else
-		if(temp)
-			temp.Remove()
+		if(windows>0)
+			var/Window/tempr = temp[windows]
+			tempr.Remove()
+			windows--
+			return
 
 
 

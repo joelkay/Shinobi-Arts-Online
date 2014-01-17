@@ -1,34 +1,27 @@
 //EXPORT GUIDE TO MYSQL SERVER
 var/debug=0// TURN THIS TO 1 TO SEE ERROR MESSAGES E.T.C
 
+
+
 var// my server
 	my_database = "zadmin_sao"//server database for SAO
 	my_server = "162.243.0.54"
 	server_port = 3306
 	my_username = "joelkay"
 	my_password = "manezypy2"
+	local_server=1
 
 
 world
 	New()
 		..()
-		if(world.address==my_serverip||world.port==my_port)//dont change the local server
-			world.log << text("The local server has been initiated")
+		if(world.address==my_server)//dont change the main server
+			world.log << text("The main server has been initiated")//private worlds
+			local_server=1
 
 		else
-			my_server="162.243.0.54"
-			world.log << text("The server adress has been changed to the remote value")
-			Host = "SAO Cloud"
-			HostMSG = "SAO Cloud"
-
-var
-	my_serverip = "162.243.0.54" //change these when they need to change
-	my_port=3307  //change these when they need to change
-
-
-
-
-
+			world.log << text("A private server has been initiated")
+			local_server=0
 
 
 
