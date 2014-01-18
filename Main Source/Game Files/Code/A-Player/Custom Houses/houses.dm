@@ -54,6 +54,8 @@ mob
 			var/swapmap/Map=SwapMaps_Load("Maps/playerhouses/[src.ckey]")
 
 			if(Map)//If a map is found + loaded ...
+				covermap(Map)//cover the area
+
 				Apopup(src,"Map Loaded..")
 
 				maps_created.Add(Map)
@@ -61,7 +63,7 @@ mob
 				src.Savedy = src.y	  //We save the players Y position into a variable
 				src.Savedz = src.z	  //We save the players Z position into a variable
 
-				covermap(Map)//cover the area
+
 			/*
 				var/turf/House/Po = new/turf/House(src.loc)	  //We place the house turf at the players location
 				Po.owner = src	  //Set the house's owner to the player

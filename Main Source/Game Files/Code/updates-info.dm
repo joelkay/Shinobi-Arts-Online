@@ -105,3 +105,15 @@ mob
 			src<<"<font size=2><font color = blue><b><u><a href='http://www.byond.com/games/JeanSqribe/ShinobiArtsOnlineBuild'>Want to make some custom maps?</a></font>."
 
 			spawn(36000) adverts()//every hour
+
+
+		fancheck()
+			var/fans[] = Get_Fans("JeanSqribe.ShinobiArtsOnline")
+
+			if(src.key in fans)
+
+				Apopup(src,"Thank you for being a fan and supporting our game!")
+
+			else
+				Apopup(src,"Please fan our game to help bring more players!!")
+				src << link("http://www.byond.com/games/JeanSqribe/ShinobiArtsOnline")

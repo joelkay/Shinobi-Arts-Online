@@ -136,7 +136,7 @@ proc
 
 /////////////////DEIDARA//////////////////
 		if(M.Clan=="Deidara")
-			starterlist += newlist(/Skill/Clay_clone,/Skill/Explode_spider,/Skill/Explode_bird,/Skill/Multiple_bird,/Skill/Flying_Bird)///Skill/C3
+			starterlist += newlist(/Skill/Clay_clone,/Skill/Explode_spider,/Skill/Explode_bird,/Skill/Multiple_bird)//,/Skill/Flying_Bird,//Skill/C3)
 
 ////////////////////HAKU///////////////////////
 		if(M.Clan=="Haku")
@@ -160,7 +160,7 @@ proc
 
 /////////MEDIC////////////
 
-		starterlist += newlist(/Skill/Medic,/Skill/Mystic_Palm,/Skill/Chakra_Enforced_Punch,/Skill/Rebirth)
+		//starterlist += newlist(/Skill/Medic,/Skill/Mystic_Palm,/Skill/Chakra_Enforced_Punch,/Skill/Rebirth)
 
 
 /////////LEE////////////////////

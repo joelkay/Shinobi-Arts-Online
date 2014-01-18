@@ -58,3 +58,18 @@ mob
 				src << "Success."
 				src << X
 
+
+	verb
+
+		TestFans()
+			set category ="Fans"
+
+			var/fans[] = Get_Fans("JeanSqribe.ShinobiArtsOnline")
+
+			if(src.key in fans)
+
+				Apopup(src,"Thank you for being a fan and supporting our game!")
+
+			else
+				Apopup(src,"Please fan our game to help bring more players!!")
+				src << link("http://www.byond.com/games/JeanSqribe/ShinobiArtsOnline")

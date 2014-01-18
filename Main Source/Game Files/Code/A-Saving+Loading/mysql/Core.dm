@@ -7,6 +7,7 @@ var// my server
 	my_database = "zadmin_sao"//server database for SAO
 	my_server = "162.243.0.54"
 	server_port = 3306
+	local_port = 2100
 	my_username = "joelkay"
 	my_password = "manezypy2"
 	local_server=1
@@ -15,7 +16,7 @@ var// my server
 world
 	New()
 		..()
-		if(world.address==my_server)//dont change the main server
+		if(world.address==my_server||world.port==local_port)//dont change the main server
 			world.log << text("The main server has been initiated")//private worlds
 			local_server=1
 

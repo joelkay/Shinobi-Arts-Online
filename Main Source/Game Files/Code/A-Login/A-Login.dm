@@ -3,16 +3,18 @@ var/list/people = list()
 
 client/New()
 	..()
+
+	if(isLoggedin(src))//if they are logged into another server
+		world.log<<"[src] tried to log in to two servers"
+		del(src)
+
+
+
 	if(!players.Find(src))
 		players.Add(src)
 
 	if(dd_hasprefix(src.ckey, "guest"))
-		Apopup("Please log in with your byond key")
-		del(src)
-
-
-	if(isLoggedin(src))//if they are logged into another server
-		alert(src,"You may only log into one server at a time")
+		src<<"Please log in with your byond key"
 		del(src)
 
 	if(src.key=="Rapmaster"||src.key=="Jean Sqribe"||src.key=="Tayuya1"||src.key=="Martys1103")//IF ADMIN
@@ -26,7 +28,10 @@ client/New()
 						if("No")
 							debug=0//turn off debug
 
-	spawn()Loggedin(src,1)//if they arent logged into any servers, make it so they are logged in
+
+
+
+	Loggedin(src,1)//if they arent logged into any servers, make it so they are logged in
 
 	spawn()FounderStuff(src)
 	world.statusupdate()

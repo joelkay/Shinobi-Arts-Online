@@ -35,6 +35,8 @@
 #include "DynamicInterface\Experiment.dm"
 #include "DynamicInterface\Lib.dm"
 #include "FlatIcons\flaticon.dm"
+#include "HubGet\__bc.dm"
+#include "HubGet\HubGet.dm"
 #include "n_log\_documentation.dm"
 #include "n_log\n_Log.dm"
 #include "n_log\pif_xmlhandler\+Documentation.dm"

@@ -93,6 +93,8 @@ mob/proc/loader(var/num=0)
 	src.loadvalues()
 	src.delpreviews()
 
+	spawn() src.fancheck()
+
 
 
 mob/proc/loadvalues()
@@ -213,6 +215,10 @@ mob
 
 			if(src.life<=0)
 				src.Death(src)
+
+
+
+
 
 		//	spawn() src.AutoLoop()//auto save lyk
 

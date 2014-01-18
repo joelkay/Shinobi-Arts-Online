@@ -14,12 +14,13 @@ proc
 					for(var/D in row_data)
 
 						if(D=="loggedin")
-							var/loggedin=row_data[D]
+							var/loggedin=text2num(row_data[D])
 
 							if(debug)M<<"login value: [loggedin]"
 
-							if(loggedin==1)
-								return 1
+							if(loggedin>0)
+								return loggedin
+
 							else
 								return 0
 

@@ -169,9 +169,9 @@ mob
 					usr.setmed=1
 
 				///////////////////////REGENS/////////////////////////////
-				src.energyregen+=10+(src.max_energy/500)
-				src.chakraregen+=30+(src.max_chakra/400)
-				src.healthregen+=10+(src.max_health/250)
+				src.energyregen=10+(src.max_energy/500)
+				src.chakraregen=30+(src.max_chakra/400)
+				src.healthregen=10+(src.max_health/250)
 				src.maxexp()
 				//src.Save()
 				var/params
