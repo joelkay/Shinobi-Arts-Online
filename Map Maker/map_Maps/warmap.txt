@@ -37274,6 +37274,7 @@
 					.3
 						type = /buildable/TREES/bigtree2
 						built = 1
+						layer = 6
 			65
 				type = /turf
 				contents = list(object(".0"),object(".1"),object(".2"),object(".3"))
@@ -37530,6 +37531,7 @@
 					.3
 						type = /buildable/TREES/bigtree1
 						built = 1
+						layer = 6
 			82
 				type = /turf
 				contents = list(object(".0"),object(".1"),object(".2"))
@@ -39563,6 +39565,7 @@
 					.2
 						type = /buildable/TREES/bigtree2
 						built = 1
+						layer = 6
 			56
 				type = /turf
 				contents = list(object(".0"),object(".1"))
@@ -40894,6 +40897,7 @@
 					.2
 						type = /buildable/TREES/bigtree2
 						built = 1
+						layer = 6
 					.3
 						type = /buildable/DEFAULT/denseobj
 						built = 1
@@ -73730,6 +73734,7 @@
 					.2
 						type = /buildable/TREES/bigtree2
 						built = 1
+						layer = 6
 			19
 				type = /turf
 				contents = list(object(".0"),object(".1"))
@@ -81701,6 +81706,7 @@
 					.2
 						type = /buildable/TREES/bigtree2
 						built = 1
+						layer = 6
 			7
 				type = /turf
 				contents = list(object(".0"),object(".1"))
@@ -90053,6 +90059,7 @@
 					.2
 						type = /buildable/TREES/bigtree1
 						built = 1
+						layer = 6
 			27
 				type = /turf
 				contents = list(object(".0"),object(".1"))
@@ -91543,6 +91550,7 @@
 					.2
 						type = /buildable/TREES/bigtree1
 						built = 1
+						layer = 6
 			37
 				type = /turf
 				contents = list(object(".0"),object(".1"))
@@ -102509,6 +102517,7 @@
 					.2
 						type = /buildable/TREES/bigtree1
 						built = 1
+						layer = 6
 			48
 				type = /turf
 				contents = list(object(".0"),object(".1"))
@@ -103458,6 +103467,7 @@
 					.2
 						type = /buildable/TREES/bigtree1
 						built = 1
+						layer = 6
 			11
 				type = /turf
 				contents = list(object(".0"),object(".1"))
@@ -111722,6 +111732,7 @@
 					.2
 						type = /buildable/TREES/bigtree2
 						built = 1
+						layer = 6
 			10
 				type = /turf
 				contents = list(object(".0"),object(".1"))

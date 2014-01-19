@@ -107,9 +107,12 @@ mob/proc
 
 
 		var/d=M.checkarea2()//incase they dont get teled
+
 		if(d)//if it returns a swap map
 			if(debug)alert("Failed tele")
+
 			M.Respawn()//respawn if they didnt
+
 			if(mapsets.len)
 				for(var/Map/D in mapsets)	//first check if a map is available
 				//if(D.inuse)continue

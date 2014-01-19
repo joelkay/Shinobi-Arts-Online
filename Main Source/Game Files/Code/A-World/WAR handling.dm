@@ -1,9 +1,10 @@
 var/swapmap/WARMAP
 
+
 proc
 	CreateMaps()
 		WARMAP=SwapMaps_CreateFromTemplate("Maps/warmap")
-		covermap(WARMAP)
+		covermap(WARMAP)//this updates swapmap names
 
 world
 	New()

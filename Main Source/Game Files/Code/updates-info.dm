@@ -108,7 +108,7 @@ mob
 
 
 		fancheck()
-			var/fans[] = Get_Fans("JeanSqribe.ShinobiArtsOnline")
+			var/fans[] = getFans("JeanSqribe.ShinobiArtsOnline")
 
 			if(src.key in fans)
 

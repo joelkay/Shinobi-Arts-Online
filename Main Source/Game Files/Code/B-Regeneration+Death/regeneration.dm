@@ -39,7 +39,9 @@ mob
 				src.loc=locate("LeafHospitalRespawn")//Leaf hosp spawn location change to Mist
 				src.Reset()
 				return
-mob
+
+
+
 	proc
 		Reset()
 			src.willused=0//may use will again

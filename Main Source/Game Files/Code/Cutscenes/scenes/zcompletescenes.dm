@@ -3,12 +3,14 @@ mob
 		scenesdone()//delete old maps
 			src<<"You have succesfully completed character creation!"
 			src.client.eye=src
+
 			if(src.Village=="Leaf")
 				src.loc=locate("LeafAcademyEnter")//where they start -> tut room
 			if(src.Village=="Sand")
 				src.loc=locate("SandAcademyEnter")//where they start -> tut room
 			if(src.Village=="Mist")
 				src.loc=locate("MistAcademyEnter")//where they start -> tut room
+
 			completedscenes=1
 			b=0//can play all again
 			winset(src,null,{"
