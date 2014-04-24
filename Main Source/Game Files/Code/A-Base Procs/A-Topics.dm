@@ -46,7 +46,6 @@ world/Topic(Topic)//MAIN
 
 client/Topic(href)//Client Topic
 	if(href == "Credits")
-
 		usr << browse(Credits,"window=Updates;[htmlop]")//Browsing The Credits Window
 
 /*	if(href == "Updates")

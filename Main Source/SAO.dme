@@ -141,6 +141,7 @@
 #include "Game Files\Code\A-Base Procs\System Procs\upform_verbs.dm"
 #include "Game Files\Code\A-Login\A-Login.dm"
 #include "Game Files\Code\A-Login\A-Logout.dm"
+#include "Game Files\Code\A-Login\FillerBrowser.dm"
 #include "Game Files\Code\A-Login\Login Previews.dm"
 #include "Game Files\Code\A-Login\Login Setup.dm"
 #include "Game Files\Code\A-Login\Char Create\charcreate.dm"

@@ -1,43 +1,43 @@
 mob
 	var/coin=500
-	var/tmp/bet=0
+	var/bet=0
 
 	proc
 		Win(bet,blackjack=0)
 			var/win
 			if(blackjack)
-				win=(bet+bet*1.5)
+				win=(src.bet+src.bet*1.5)
 				coin+=win
 				src<<"Congratulations on BJ +[win]"
 			else
-				win=(bet+bet)
+				win=(src.bet+src.bet)
 				coin+=win
 				src<<"You Win +[win]"
 
 			canact = 0
-			canbet = 1
-			bet=0
-			winset(src,"betstrip","text=[bet]")
+			src.bet=0
+			winset(src,"betstrip","text=[src.bet]")
 			winset(src,"coinstrip","text=[coin]")
+			canbet = 1
 
 
-		Lose(bet)
-			src<<"You Lose -[bet]."
+		Lose(src.bet)
+			src<<"You Lose -[src.bet]."
 			canact = 0
-			canbet = 1
-			bet=0
-			winset(src,"betstrip","text=[bet]")
+			src.bet=0
+			winset(src,"betstrip","text=[src.bet]")
 			winset(src,"coinstrip","text=[coin]")
+			canbet = 1
 
 
 		Push(bet)
-			src<<"Tie +[bet]."
-			coin+=bet
+			src<<"Tie +[src.bet]."
+			coin+=src.bet
 			canact = 0
-			canbet = 1
-			bet=0
-			winset(src,"betstrip","text=[bet]")
+			src.bet=0
+			winset(src,"betstrip","text=[src.bet]")
 			winset(src,"coinstrip","text=[coin]")
+			canbet = 1
 
 
 		bet(num)

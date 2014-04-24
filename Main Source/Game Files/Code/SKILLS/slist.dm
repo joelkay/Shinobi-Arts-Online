@@ -101,7 +101,7 @@ proc
 
 //////KATON/////////
 
-		starterlist += newlist(/Skill/Multiple_FirePoenix,/Skill/Fireblast,/Skill/Mystic_Fire_Dragon,)
+		starterlist += newlist(/Skill/Multiple_FirePoenix,/Skill/Mystic_Fire_Dragon)//,/Skill/Fireblast --> disabled
 
 //////Suiton///////
 

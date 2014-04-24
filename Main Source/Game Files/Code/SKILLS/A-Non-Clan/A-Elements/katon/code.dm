@@ -102,23 +102,27 @@ mob
 					var/obj/Katonball/A = new /obj/Katonball(locate(src.x, src.y+1, src.z))
 					A.dir=NORTH
 					A.owner=src
+					animate(A, transform = matrix()*2, alpha = 0, time = 5)
 					walk(A,NORTH,1)
 				spawn()
 					var/obj/Katonball/D = new /obj/Katonball(locate(src.x+2, src.y+1, src.z))
 					D.dir=NORTH
 					D.owner=src
+					animate(D, transform = matrix()*2, alpha = 0, time = 5)
 					walk(D,NORTH,1)
 
 				spawn()
 					var/obj/Katonball/E = new /obj/Katonball(locate(src.x-2, src.y+1, src.z))
 					E.dir=NORTH
 					E.owner=src
+					animate(E, transform = matrix()*2, alpha = 0, time = 5)
 					walk(E,NORTH,1)
 
 				spawn()
 					var/obj/Katonball/B = new /obj/Katonball(locate(src.x-1, src.y+1, src.z))
 					B.owner=src
 					B.dir=NORTHWEST
+					animate(B, transform = matrix()*2, alpha = 0, time = 5)
 					walk(B,NORTHWEST,1)
 
 
@@ -126,6 +130,7 @@ mob
 					var/obj/Katonball/C = new /obj/Katonball(locate(src.x+1, src.y+1, src.z))
 					C.dir=NORTHEAST
 					C.owner=src
+					animate(C, transform = matrix()*2, alpha = 0, time = 5)
 					walk(C,NORTHEAST,1)
 
 
@@ -136,30 +141,35 @@ mob
 					var/obj/Katonball/A = new /obj/Katonball(locate(src.x, src.y-1, src.z))
 					A.dir=SOUTH
 					A.owner=src
+					animate(A, transform = matrix()*2, alpha = 0, time = 5)
 					walk(A,SOUTH,1)
 
 				spawn()
 					var/obj/Katonball/B = new /obj/Katonball(locate(src.x-1, src.y-1, src.z))
 					B.owner=src
 					B.dir=SOUTHWEST
+					animate(B, transform = matrix()*2, alpha = 0, time = 5)
 					walk(B,SOUTHWEST,1)
 
 				spawn()
 					var/obj/Katonball/C = new /obj/Katonball(locate(src.x+1, src.y-1, src.z))
 					C.dir=SOUTHEAST
 					C.owner=src
+					animate(C, transform = matrix()*2, alpha = 0, time = 5)
 					walk(C,SOUTHEAST,1)
 
 				spawn()
 					var/obj/Katonball/D = new /obj/Katonball(locate(src.x+2, src.y-1, src.z))
 					D.dir=SOUTH
 					D.owner=src
+					animate(D, transform = matrix()*2, alpha = 0, time = 5)
 					walk(D,SOUTH,1)
 
 				spawn()
 					var/obj/Katonball/E = new /obj/Katonball(locate(src.x-2, src.y-1, src.z))
 					E.dir=SOUTH
 					E.owner=src
+					animate(E, transform = matrix()*2, alpha = 0, time = 5)
 					walk(E,SOUTH,1)
 
 
@@ -172,30 +182,35 @@ mob
 					var/obj/Katonball/A = new /obj/Katonball(locate(src.x+1, src.y, src.z))
 					A.dir=EAST
 					A.owner=src
+					animate(A, transform = matrix()*2, alpha = 0, time = 5)
 					walk(A,EAST,1)
 
 				spawn()
 					var/obj/Katonball/B = new /obj/Katonball(locate(src.x+1, src.y+1, src.z))
 					B.owner=src
 					B.dir=NORTHEAST
+					animate(B, transform = matrix()*2, alpha = 0, time = 5)
 					walk(B,NORTHEAST,1)
 
 				spawn()
 					var/obj/Katonball/C = new /obj/Katonball(locate(src.x+1, src.y-1, src.z))
 					C.dir=SOUTHEAST
 					C.owner=src
+					animate(C, transform = matrix()*2, alpha = 0, time = 5)
 					walk(C,SOUTHEAST,1)
 
 				spawn()
 					var/obj/Katonball/D = new /obj/Katonball(locate(src.x+1, src.y+2, src.z))
 					D.dir=EAST
 					D.owner=src
+					animate(D, transform = matrix()*2, alpha = 0, time = 5)
 					walk(D,EAST,1)
 
 				spawn()
 					var/obj/Katonball/E = new /obj/Katonball(locate(src.x+1, src.y-2, src.z))
 					E.dir=EAST
 					E.owner=src
+					animate(E, transform = matrix()*2, alpha = 0, time = 5)
 					walk(E,EAST,1)
 
 
@@ -208,30 +223,35 @@ mob
 					var/obj/Katonball/A = new /obj/Katonball(locate(src.x-1, src.y, src.z))
 					A.dir=WEST
 					A.owner=src
+					animate(A, transform = matrix()*2, alpha = 0, time = 5)
 					walk(A,WEST,1)
 
 				spawn()
 					var/obj/Katonball/B = new /obj/Katonball(locate(src.x-1, src.y+1, src.z))
 					B.owner=src
 					B.dir=NORTHWEST
+					animate(B, transform = matrix()*2, alpha = 0, time = 5)
 					walk(B,NORTHWEST,1)
 
 				spawn()
 					var/obj/Katonball/C = new /obj/Katonball(locate(src.x-1, src.y-1, src.z))
 					C.dir=SOUTHEAST
 					C.owner=src
+					animate(C, transform = matrix()*2, alpha = 0, time = 5)
 					walk(C,SOUTHEAST,1)
 
 				spawn()
 					var/obj/Katonball/D = new /obj/Katonball(locate(src.x-1, src.y+2, src.z))
 					D.dir=WEST
 					D.owner=src
+					animate(D, transform = matrix()*2, alpha = 0, time = 5)
 					walk(D,WEST,1)
 
 				spawn()
 					var/obj/Katonball/E = new /obj/Katonball(locate(src.x-1, src.y-2, src.z))
 					E.dir=WEST
 					E.owner=src
+					animate(E, transform = matrix()*2, alpha = 0, time = 5)
 					walk(E,WEST,1)
 
 

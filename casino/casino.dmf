@@ -502,6 +502,32 @@ window "default"
 		macro = "macro"
 		menu = "menu"
 		on-close = ""
+	elem "command-child"
+		type = CHILD
+		pos = 0,312
+		size = 841x56
+		anchor1 = 0,62
+		anchor2 = 100,73
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = #808080
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "splitter"
+		on-size = ""
+		left = "menu"
+		right = ""
+		is-vert = false
+		splitter = 50
+		show-splitter = true
+		lock = none
 	elem "child1"
 		type = CHILD
 		pos = 0,0
@@ -530,10 +556,10 @@ window "default"
 		lock = none
 	elem "playerslash"
 		type = LABEL
-		pos = 436,184
+		pos = 436,296
 		size = 8x16
-		anchor1 = 52,35
-		anchor2 = 53,38
+		anchor1 = 52,59
+		anchor2 = 53,62
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -556,10 +582,10 @@ window "default"
 		text-wrap = false
 	elem "playerlabel"
 		type = LABEL
-		pos = 392,184
+		pos = 392,296
 		size = 32x16
-		anchor1 = 47,35
-		anchor2 = 50,38
+		anchor1 = 47,59
+		anchor2 = 50,62
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -582,10 +608,10 @@ window "default"
 		text-wrap = false
 	elem "dealerlabel"
 		type = LABEL
-		pos = 388,24
+		pos = 392,0
 		size = 44x16
-		anchor1 = 46,5
-		anchor2 = 51,8
+		anchor1 = 47,0
+		anchor2 = 52,3
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -608,10 +634,10 @@ window "default"
 		text-wrap = false
 	elem "dealerscore"
 		type = LABEL
-		pos = 432,24
+		pos = 436,0
 		size = 16x16
-		anchor1 = 51,5
-		anchor2 = 53,8
+		anchor1 = 52,0
+		anchor2 = 54,3
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -634,10 +660,10 @@ window "default"
 		text-wrap = false
 	elem "playerscore"
 		type = LABEL
-		pos = 424,184
+		pos = 424,296
 		size = 12x16
-		anchor1 = 50,35
-		anchor2 = 52,38
+		anchor1 = 50,59
+		anchor2 = 52,62
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -660,10 +686,10 @@ window "default"
 		text-wrap = false
 	elem "playerscore2"
 		type = LABEL
-		pos = 444,184
+		pos = 444,296
 		size = 12x16
-		anchor1 = 53,35
-		anchor2 = 54,38
+		anchor1 = 53,59
+		anchor2 = 54,62
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -684,32 +710,6 @@ window "default"
 		keep-aspect = false
 		align = left
 		text-wrap = false
-	elem "command-child"
-		type = CHILD
-		pos = 0,312
-		size = 841x56
-		anchor1 = 0,62
-		anchor2 = 100,73
-		font-family = ""
-		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = none
-		is-visible = true
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = none
-		drop-zone = false
-		right-click = false
-		saved-params = "splitter"
-		on-size = ""
-		left = "menu"
-		right = ""
-		is-vert = false
-		splitter = 50
-		show-splitter = true
-		lock = none
 	elem "input1"
 		type = INPUT
 		pos = 0,472

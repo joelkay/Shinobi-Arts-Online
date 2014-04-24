@@ -2916,7 +2916,7 @@ window "Cpanel-stats"
 window "Jutsu-pane"
 	elem "Jutsu-pane"
 		type = MAIN
-		pos = 0,358
+		pos = 372,0
 		size = 500x400
 		anchor1 = none
 		anchor2 = none
@@ -2983,7 +2983,7 @@ window "Jutsu-pane"
 window "Login"
 	elem "Login"
 		type = MAIN
-		pos = 281,0
+		pos = 372,0
 		size = 600x600
 		anchor1 = none
 		anchor2 = none
@@ -3022,10 +3022,10 @@ window "Login"
 		on-close = ""
 	elem "previewscreen3"
 		type = LABEL
-		pos = 344,432
+		pos = 250,349
 		size = 64x64
-		anchor1 = 57,72
-		anchor2 = 68,83
+		anchor1 = 42,58
+		anchor2 = 52,69
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -3048,10 +3048,10 @@ window "Login"
 		text-wrap = false
 	elem "previewscreen2"
 		type = LABEL
-		pos = 256,432
+		pos = 162,349
 		size = 64x64
-		anchor1 = 43,72
-		anchor2 = 53,83
+		anchor1 = 27,58
+		anchor2 = 38,69
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -3074,10 +3074,10 @@ window "Login"
 		text-wrap = false
 	elem "previewscreen1"
 		type = LABEL
-		pos = 160,432
+		pos = 66,349
 		size = 64x64
-		anchor1 = 27,72
-		anchor2 = 37,83
+		anchor1 = 11,58
+		anchor2 = 22,69
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -3096,32 +3096,6 @@ window "Login"
 		image = ""
 		image-mode = stretch
 		keep-aspect = true
-		align = center
-		text-wrap = false
-	elem "supdate3"
-		type = LABEL
-		pos = 592,24
-		size = 1x272
-		anchor1 = 99,4
-		anchor2 = 99,49
-		font-family = ""
-		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = #004080
-		is-visible = false
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = none
-		drop-zone = false
-		right-click = false
-		saved-params = ""
-		on-size = ""
-		text = ""
-		image = ""
-		image-mode = center
-		keep-aspect = false
 		align = center
 		text-wrap = false
 	elem "supdate1"
@@ -3150,66 +3124,12 @@ window "Login"
 		keep-aspect = false
 		align = center
 		text-wrap = false
-	elem "supdate"
-		type = CHILD
-		pos = 8,40
-		size = 584x256
-		anchor1 = 1,7
-		anchor2 = 99,49
-		font-family = ""
-		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = #303030
-		is-visible = true
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = none
-		drop-zone = false
-		right-click = false
-		saved-params = "splitter"
-		on-size = ""
-		left = "Updates"
-		right = ""
-		is-vert = false
-		splitter = 50
-		show-splitter = true
-		lock = none
-	elem "button8"
-		type = BUTTON
-		pos = 200,19
-		size = 169x21
-		anchor1 = 33,3
-		anchor2 = 62,7
-		font-family = ""
-		font-size = 0
-		font-style = "bold"
-		text-color = #004080
-		background-color = #000000
-		is-visible = true
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = none
-		drop-zone = false
-		right-click = false
-		saved-params = "is-checked"
-		on-size = ""
-		text = "Click to hide Updates"
-		image = ""
-		command = "openU"
-		is-flat = false
-		stretch = false
-		is-checked = false
-		group = ""
-		button-type = pushbutton
 	elem "button27"
 		type = BUTTON
-		pos = 343,499
+		pos = 249,416
 		size = 63x20
-		anchor1 = 57,83
-		anchor2 = 68,87
+		anchor1 = 42,69
+		anchor2 = 52,73
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -3234,10 +3154,10 @@ window "Login"
 		button-type = pushbutton
 	elem "button26"
 		type = BUTTON
-		pos = 254,499
+		pos = 160,416
 		size = 64x20
-		anchor1 = 42,83
-		anchor2 = 53,87
+		anchor1 = 27,69
+		anchor2 = 37,73
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -3262,10 +3182,10 @@ window "Login"
 		button-type = pushbutton
 	elem "button25"
 		type = BUTTON
-		pos = 161,501
+		pos = 67,418
 		size = 64x20
-		anchor1 = 27,84
-		anchor2 = 38,87
+		anchor1 = 11,70
+		anchor2 = 22,73
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -3290,10 +3210,10 @@ window "Login"
 		button-type = pushbutton
 	elem "button22"
 		type = BUTTON
-		pos = 397,342
+		pos = 307,203
 		size = 19x21
-		anchor1 = 66,57
-		anchor2 = 69,61
+		anchor1 = 51,34
+		anchor2 = 54,37
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -3318,10 +3238,10 @@ window "Login"
 		button-type = pushbutton
 	elem "button21"
 		type = BUTTON
-		pos = 277,342
+		pos = 187,203
 		size = 19x21
-		anchor1 = 46,57
-		anchor2 = 49,61
+		anchor1 = 31,34
+		anchor2 = 34,37
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -3346,10 +3266,10 @@ window "Login"
 		button-type = pushbutton
 	elem "button7"
 		type = BUTTON
-		pos = 165,342
+		pos = 75,203
 		size = 19x21
-		anchor1 = 28,57
-		anchor2 = 31,61
+		anchor1 = 13,34
+		anchor2 = 16,37
 		font-family = ""
 		font-size = 0
 		font-style = ""
@@ -3374,10 +3294,10 @@ window "Login"
 		button-type = pushbutton
 	elem "label20"
 		type = LABEL
-		pos = 358,323
+		pos = 268,184
 		size = 124x21
-		anchor1 = 60,54
-		anchor2 = 80,57
+		anchor1 = 45,31
+		anchor2 = 65,34
 		font-family = ""
 		font-size = 0
 		font-style = "bold"
@@ -3400,10 +3320,10 @@ window "Login"
 		text-wrap = false
 	elem "label19"
 		type = LABEL
-		pos = 248,323
+		pos = 158,184
 		size = 110x21
-		anchor1 = 41,54
-		anchor2 = 60,57
+		anchor1 = 26,31
+		anchor2 = 45,34
 		font-family = ""
 		font-size = 0
 		font-style = "bold"
@@ -3426,10 +3346,10 @@ window "Login"
 		text-wrap = false
 	elem "label17"
 		type = LABEL
-		pos = 104,323
+		pos = 14,184
 		size = 144x21
-		anchor1 = 17,54
-		anchor2 = 41,57
+		anchor1 = 2,31
+		anchor2 = 26,34
 		font-family = ""
 		font-size = 0
 		font-style = "bold"
@@ -3452,10 +3372,10 @@ window "Login"
 		text-wrap = false
 	elem "label18"
 		type = LABEL
-		pos = 208,395
+		pos = 114,312
 		size = 166x21
-		anchor1 = 35,66
-		anchor2 = 62,69
+		anchor1 = 19,52
+		anchor2 = 47,56
 		font-family = ""
 		font-size = 0
 		font-style = "bold"
@@ -3476,37 +3396,11 @@ window "Login"
 		keep-aspect = false
 		align = center
 		text-wrap = false
-	elem "version"
-		type = LABEL
-		pos = 472,21
-		size = 118x19
-		anchor1 = 79,4
-		anchor2 = 98,7
-		font-family = ""
-		font-size = 0
-		font-style = "bold"
-		text-color = #004080
-		background-color = #000000
-		is-visible = true
-		is-disabled = false
-		is-transparent = true
-		is-default = false
-		border = none
-		drop-zone = false
-		right-click = false
-		saved-params = ""
-		on-size = ""
-		text = "Version:"
-		image = ""
-		image-mode = center
-		keep-aspect = false
-		align = left
-		text-wrap = false
 
 window "SKILLTREE"
 	elem "SKILLTREE"
 		type = MAIN
-		pos = 281,0
+		pos = 372,0
 		size = 925x566
 		anchor1 = none
 		anchor2 = none
@@ -4518,7 +4412,7 @@ window "Stree_bloodline"
 window "Updates"
 	elem "Updates"
 		type = MAIN
-		pos = 0,358
+		pos = 372,0
 		size = 288x248
 		anchor1 = none
 		anchor2 = none
@@ -4659,7 +4553,7 @@ window "addy"
 window "charcreate"
 	elem "charcreate"
 		type = MAIN
-		pos = 0,358
+		pos = 372,0
 		size = 600x600
 		anchor1 = none
 		anchor2 = none
@@ -4667,7 +4561,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #161616
+		background-color = #303030
 		is-visible = false
 		is-disabled = false
 		is-transparent = false
@@ -4688,10 +4582,10 @@ window "charcreate"
 		is-maximized = false
 		can-scroll = none
 		icon = ""
-		image = 'Game Files\\Skin\\grid pngs\\SAO-1.png'
+		image = ""
 		image-mode = stretch
 		keep-aspect = false
-		transparent-color = none
+		transparent-color = #303030
 		alpha = 255
 		macro = ""
 		menu = ""
@@ -4706,7 +4600,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #1b1b1b
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -4734,7 +4628,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #1b1b1b
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -4762,7 +4656,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #1b1b1b
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -4790,7 +4684,7 @@ window "charcreate"
 		font-size = 0
 		font-style = "bold"
 		text-color = #008000
-		background-color = #000000
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = true
@@ -4808,7 +4702,7 @@ window "charcreate"
 		text-wrap = false
 	elem "label16"
 		type = LABEL
-		pos = 441,152
+		pos = 440,156
 		size = 119x20
 		anchor1 = 74,25
 		anchor2 = 93,29
@@ -4816,7 +4710,7 @@ window "charcreate"
 		font-size = 0
 		font-style = "bold"
 		text-color = #008000
-		background-color = #000000
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = true
@@ -4842,7 +4736,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #1b1b1b
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -4873,7 +4767,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #161616
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -4904,7 +4798,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #1b1b1b
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -4930,7 +4824,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #1b1b1b
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -4943,7 +4837,7 @@ window "charcreate"
 		icon-size = 32
 		text-mode = false
 		letterbox = true
-		zoom = 0
+		zoom = 1
 		on-show = ""
 		on-hide = ""
 		style = ""
@@ -4957,7 +4851,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #1b1b1b
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -4970,7 +4864,7 @@ window "charcreate"
 		icon-size = 32
 		text-mode = false
 		letterbox = true
-		zoom = 0
+		zoom = 1
 		on-show = ""
 		on-hide = ""
 		style = ""
@@ -4984,7 +4878,7 @@ window "charcreate"
 		font-size = 0
 		font-style = "bold"
 		text-color = #008000
-		background-color = #000000
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = true
@@ -5010,7 +4904,7 @@ window "charcreate"
 		font-size = 0
 		font-style = "bold"
 		text-color = #008000
-		background-color = #000000
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = true
@@ -5036,7 +4930,7 @@ window "charcreate"
 		font-size = 0
 		font-style = ""
 		text-color = #000000
-		background-color = #1b1b1b
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -5062,7 +4956,7 @@ window "charcreate"
 		font-size = 0
 		font-style = "bold"
 		text-color = #008000
-		background-color = #000000
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = true
@@ -5087,8 +4981,8 @@ window "charcreate"
 		font-family = ""
 		font-size = 0
 		font-style = "bold"
-		text-color = #008000
-		background-color = #1b1b1b
+		text-color = #303030
+		background-color = #008000
 		is-visible = true
 		is-disabled = false
 		is-transparent = false
@@ -5116,7 +5010,7 @@ window "charcreate"
 		font-size = 0
 		font-style = "bold"
 		text-color = #008000
-		background-color = #000000
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = true
@@ -5142,7 +5036,7 @@ window "charcreate"
 		font-size = 0
 		font-style = "bold"
 		text-color = #008000
-		background-color = #000000
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = true
@@ -5168,7 +5062,7 @@ window "charcreate"
 		font-size = 0
 		font-style = "bold"
 		text-color = #008000
-		background-color = #000000
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = true
@@ -5186,7 +5080,7 @@ window "charcreate"
 		text-wrap = false
 	elem "label6"
 		type = LABEL
-		pos = 26,75
+		pos = 24,75
 		size = 150x21
 		anchor1 = 4,13
 		anchor2 = 29,16
@@ -5194,7 +5088,7 @@ window "charcreate"
 		font-size = 0
 		font-style = "bold"
 		text-color = #008000
-		background-color = #000000
+		background-color = #303030
 		is-visible = true
 		is-disabled = false
 		is-transparent = true
@@ -5214,7 +5108,7 @@ window "charcreate"
 window "default"
 	elem "default"
 		type = MAIN
-		pos = 0,358
+		pos = 372,0
 		size = 968x600
 		anchor1 = none
 		anchor2 = none
@@ -5415,7 +5309,7 @@ window "default"
 window "filler1"
 	elem "filler1"
 		type = MAIN
-		pos = 0,358
+		pos = 372,0
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
@@ -5444,7 +5338,7 @@ window "filler1"
 		is-maximized = false
 		can-scroll = none
 		icon = ""
-		image = 'Game Files\\Skin\\grid pngs\\SAO-1.png'
+		image = ""
 		image-mode = stretch
 		keep-aspect = false
 		transparent-color = none
@@ -5452,11 +5346,37 @@ window "filler1"
 		macro = ""
 		menu = ""
 		on-close = ""
+	elem "child4"
+		type = CHILD
+		pos = 0,0
+		size = 640x480
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = #303030
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "splitter"
+		on-size = ""
+		left = "Updates"
+		right = ""
+		is-vert = false
+		splitter = 50
+		show-splitter = true
+		lock = none
 
 window "filler2"
 	elem "filler2"
 		type = MAIN
-		pos = 0,358
+		pos = 372,0
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
@@ -5485,7 +5405,7 @@ window "filler2"
 		is-maximized = false
 		can-scroll = none
 		icon = ""
-		image = 'Game Files\\Skin\\grid pngs\\SAO.png'
+		image = ""
 		image-mode = stretch
 		keep-aspect = false
 		transparent-color = none
@@ -5493,6 +5413,32 @@ window "filler2"
 		macro = ""
 		menu = ""
 		on-close = ""
+	elem "updatesbrowser2"
+		type = BROWSER
+		pos = 0,0
+		size = 640x480
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = #303030
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		show-history = false
+		show-url = false
+		auto-format = true
+		use-title = false
+		on-show = ""
+		on-hide = ""
 
 window "leafclansgrid"
 	elem "leafclansgrid"

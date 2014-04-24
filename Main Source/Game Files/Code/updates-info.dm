@@ -7,9 +7,6 @@ var/Main = {"
 
 	<b>Shinobi Arts Online version<font color = green>:[version]</b><br>
 
-	<font color = red><a href=?Credits>Credits</a><br>
-	<br>
-
 	<hr><font face = courier>
 
 	<br>
@@ -38,6 +35,9 @@ var/Main = {"
 	</body>
 	</html>
 	"}
+
+//<font color = red><a href=?Credits>Credits</a><br>
+//	<br>
 
 var/Credits = {"
 	<html>
@@ -89,7 +89,7 @@ mob/Login()//User Logs In
 mob
 	proc
 		Menu()
-			usr << browse(Main,"window=Updates;[htmlop]")//User Browses The Main Menu Window
+			src.fillers()
 
 
 

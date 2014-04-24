@@ -2,8 +2,8 @@
 /*
 MAP_ICON_TYPE: 0
 WINDOW: scenes\tutorial 2.dm;scenes\tempBunshins.dm;scenes\scenes2.dm;scenes\scenes3.dm;scenes\scenes.dm;z-DEPENDENCIES\MAIN.dm
+LAST_COMPILE_VERSION: 506.1242
 PACKAGE_RSC_NAME: G:\Source\Shinobi-Arts-Online\Cutscene Standalone\Cutscenes_rsc.zip
-LAST_COMPILE_VERSION: 504.1226
 PACKAGE_DME_DEMO: 
 PACKAGE_TYPE: 0
 PACKAGE_DME_START: 
@@ -11,9 +11,9 @@ DIR: cutscene[icons] handling map_Maps\web scenes z-DEPENDENCIES z-DEPENDENCIES\
 PACKAGE_DME_NAME: G:\Source\Shinobi-Arts-Online\Cutscene Standalone\Cutscenes_src.zip
 FILE: scenes\tutorial 2.dm
 PACKAGE_DME_INFO: 
+LAST_COMPILE_TIME: 1398326525
 PACKAGE_DMB_NAME: G:\Source\Shinobi-Arts-Online\Cutscene Standalone\Cutscenes.zip
-LAST_COMPILE_TIME: 1390095050
-PACKAGE_DMB_INFO: 
 AUTO_FILE_DIR: ON
+PACKAGE_DMB_INFO: 
 */
 // END_INTERNALS
