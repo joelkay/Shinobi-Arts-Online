@@ -4,12 +4,12 @@ var/debug=0// TURN THIS TO 1 TO SEE ERROR MESSAGES E.T.C
 
 
 var// my server
-	my_database = "sao"//server database for SAO
-	my_server = "162.243.83.179"
+	my_database = "zadmin_sao"//server database for SAO
+	my_server = "162.243.27.121"
 	server_port = 3306
 	local_port = 2100
 	my_username = "jsqribe"
-	my_password = "123qwertyuiop"
+	my_password = "a3ame4e7y"
 	local_server=1
 
 
