@@ -3,7 +3,7 @@
 MAP_ICON_TYPE: 0
 WINDOW: Code\Topic.dm;Code\SAOHELP.dm;Code\verbs.dm;Code\LibraryTemps.dm;Code\savefile verbs.dm
 LAST_COMPILE_VERSION: 504.1226
-DIR: Code tempicons 
+DIR: Code tempicons Lib 
 FILE: Code\verbs.dm
 LAST_COMPILE_TIME: 1389984333
 AUTO_FILE_DIR: ON

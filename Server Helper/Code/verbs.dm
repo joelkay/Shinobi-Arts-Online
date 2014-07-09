@@ -46,8 +46,8 @@ mob
 	proc
 		Test()
 			var/p = world.Export("[addr]:[port]#ping")
-			src << "Ping returned '[p]'."
 			if(p&&!connected)
+				src << "Ping returned '[p]'."
 				spawn() AutoUpdate()
 				connected=1
 
